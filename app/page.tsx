@@ -14,7 +14,7 @@ const services = [
 	{
 		title: "Private Shop",
 		description:
-			"Access our existing private shop and product catalog at lemarq.de.",
+			"Access our existing private shop and product catalog at LeMarq.",
 		link: "https://lemarq.de",
 		linkLabel: "Open lemarq.de",
 	},
@@ -74,14 +74,6 @@ export default function Home() {
 				<div className="hero-actions">
 					<a className="btn btn-primary" href="#contact">
 						Start a project
-					</a>
-					<a
-						className="btn btn-secondary"
-						href="https://lemarq.de"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						Visit private shop
 					</a>
 				</div>
 			</section>
