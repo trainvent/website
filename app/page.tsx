@@ -1,116 +1,121 @@
 import Image from "next/image";
 
+const services = [
+  {
+    title: "Digital Product Development",
+    description:
+      "Design and implementation of practical web systems for operations, sales, and service teams.",
+  },
+  {
+    title: "Process Automation",
+    description:
+      "Reduce repetitive work with tailored automations, integrations, and reliable delivery workflows.",
+  },
+  {
+    title: "Private Shop",
+    description:
+      "Access our existing private shop and product catalog at lemarq.de.",
+    link: "https://lemarq.de",
+    linkLabel: "Open lemarq.de",
+  },
+];
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
+    <main className="site-shell">
+      <div className="ambient ambient-top" aria-hidden="true" />
+      <div className="ambient ambient-bottom" aria-hidden="true" />
+
+      <header className="topbar reveal">
+        <a className="brand" href="#home" aria-label="Trainvent home">
+          <Image
+            className="brand-logo"
+            src="/icon.png"
+            alt="Trainvent logo"
+            width={32}
+            height={32}
+            priority
+          />
+          <span className="brand-name">Trainvent</span>
+        </a>
+        <nav className="topnav" aria-label="Main navigation">
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <section id="home" className="hero reveal reveal-delay-1">
+        <p className="eyebrow">Engineering practical growth</p>
+        <h1>Trainvent builds digital systems that keep companies moving.</h1>
+        <p className="hero-copy">
+          We combine product thinking, implementation, and operations support to
+          help teams ship faster and execute with less friction.
         </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
+        <div className="hero-actions">
+          <a className="btn btn-primary" href="#contact">
+            Start a project
+          </a>
           <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+            className="btn btn-secondary"
+            href="https://lemarq.de"
             target="_blank"
             rel="noopener noreferrer"
           >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
+            Visit private shop
           </a>
         </div>
-      </div>
+      </section>
 
-      <div className="relative z-[-1] flex flex-col gap-3 place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div>
-          on GitLab Pages
+      <section id="services" className="content-block reveal reveal-delay-2">
+        <div className="section-head">
+          <p className="eyebrow">Services</p>
+          <h2>Focused services with measurable outcomes</h2>
         </div>
-      </div>
+        <div className="cards">
+          {services.map((service) => (
+            <article key={service.title} className="card">
+              <h3>{service.title}</h3>
+              <p>{service.description}</p>
+              {service.link ? (
+                <a
+                  className="inline-link"
+                  href={service.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {service.linkLabel}
+                </a>
+              ) : null}
+            </article>
+          ))}
+        </div>
+      </section>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+      <section id="about" className="content-block reveal reveal-delay-3">
+        <div className="section-head">
+          <p className="eyebrow">About</p>
+          <h2>Built for execution, not slide decks</h2>
+        </div>
+        <p className="body-copy">
+          Trainvent is a company website focused on clarity and action. We help
+          organizations transform ideas into stable digital products, with
+          strong technical foundations and direct communication.
+        </p>
+      </section>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
+      <section id="contact" className="content-block contact reveal reveal-delay-4">
+        <div>
+          <p className="eyebrow">Contact</p>
+          <h2>Let&apos;s discuss your next build.</h2>
+          <p className="body-copy">
+            Send a short summary of your goals, timeline, and current setup.
           </p>
+        </div>
+        <a className="btn btn-primary" href="mailto:hello@trainvent.com">
+          hello@trainvent.com
         </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://docs.gitlab.com/ee/user/project/pages/"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Learn more about deploying your site with GitLab Pages.
-          </p>
-        </a>
-      </div>
+      </section>
     </main>
   );
 }
