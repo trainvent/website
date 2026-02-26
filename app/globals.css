@@ -240,6 +240,56 @@ p {
   max-width: 62ch;
 }
 
+.team-grid {
+  margin-top: 1rem;
+  display: grid;
+  gap: 0.8rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.team-card {
+  border: 2px solid var(--line);
+  background: var(--card);
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.9rem;
+  align-items: center;
+}
+
+.team-photo {
+  width: 4rem;
+  height: 4rem;
+  border: 2px solid var(--line);
+  border-radius: 999px;
+  object-fit: cover;
+  background: #ffffff;
+}
+
+.team-role {
+  margin-top: 0.25rem;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+}
+
+.team-contact {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.2rem;
+}
+
+.team-contact a,
+.team-contact span {
+  border: 1.5px solid var(--line);
+  padding: 0.28rem 0.55rem;
+  font-size: 0.86rem;
+  text-decoration: none;
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.7);
+}
+
 .contact {
   display: flex;
   justify-content: space-between;
@@ -279,6 +329,10 @@ p {
 @media (max-width: 940px) {
   .cards {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
   }
 }
 
