@@ -30,11 +30,11 @@ const teamMembers = [
 		phone: "+49160345542",
 	},
 	{
-		name: "Team Member",
-		role: "Product & Operations",
-		photo: "/icon.png",
-		mail: "",
-		telegram: "",
+		name: "seva",
+		role: "Product & Operations Assistant",
+		photo: "/seva.jpg",
+		mail: "vyslezhivayu@gmail.com",
+		telegram: "vyslezhivayu",
 		phone: "",
 	},
 ];
