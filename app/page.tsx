@@ -3,13 +3,13 @@ import Image from "next/image";
 const services = [
 	{
 		title: "Digital Product Development",
-		description:
-			"Design and implementation of practical web systems for operations, sales, and service teams.",
+		description: `Design and implementation of practical web systems for operations, sales, and service teams.
+			We try to choose tools and hosting that minimise our footprint and are honest about what we can deliver.`,
 	},
 	{
 		title: "Process Automation",
-		description:
-			"Reduce repetitive work with tailored automations, integrations, and reliable delivery workflows.",
+		description: `Reduce repetitive work with tailored automations, integrations, and reliable delivery workflows.
+			We favour open‑source and low‑energy solutions where possible.`,
 	},
 	{
 		title: "Private Shop",
@@ -58,9 +58,6 @@ export default function Home() {
 					<span className="brand-name">Trainvent</span>
 				</a>
 				<nav className="topnav" aria-label="Main navigation">
-					<a href="#services">Services</a>
-					<a href="#about">About</a>
-					<a href="#contact">Contact</a>
 					<a
 						href="https://music.trainvent.com"
 						target="_blank"
@@ -68,16 +65,30 @@ export default function Home() {
 					>
 						Music
 					</a>
+					<a
+						href="https://lemarq.de"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						Shop
+					</a>
 					<a href="/dev">Sources</a>
+					<a href="#services">Services</a>
+					<a href="#about">About</a>
+					<a href="#contact">Contact</a>
 				</nav>
 			</header>
 
 			<section id="home" className="hero reveal reveal-delay-1">
 				<p className="eyebrow">Engineering practical growth</p>
-				<h1>Trainvent builds digital systems that keep companies moving.</h1>
+				<h1>
+					Bringing fresh air in.
+				</h1>
 				<p className="hero-copy">
-					We combine product thinking, implementation, and operations support to
-					help teams ship faster and execute with less friction.
+					We combine product thinking, implementation and basic operations
+					support to help teams move forward with less friction. Not every idea
+					is a unicorn – we’re happy if something is useful and maybe profitable
+					one day.
 				</p>
 				<div className="hero-actions">
 					<a className="btn btn-primary" href="#contact">
@@ -114,12 +125,10 @@ export default function Home() {
 			<section id="about" className="content-block reveal reveal-delay-3">
 				<div className="section-head">
 					<p className="eyebrow">About</p>
-					<h2>Built for execution, not slide decks</h2>
+					<h2>This is us</h2>
 				</div>
 				<p className="body-copy">
-					Trainvent is a company website focused on clarity and action. We help
-					organizations transform ideas into stable digital products, with
-					strong technical foundations and direct communication.
+					Trainvent is a modest company website trying to maximise on displaying a variety of new ideas.
 				</p>
 				<div className="team-grid">
 					{teamMembers.map((member) => (
