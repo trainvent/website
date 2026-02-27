@@ -1,0 +1,131 @@
+.shell {
+	width: min(1100px, 92vw);
+	margin: 0 auto;
+	padding: 1.2rem 0 3rem;
+}
+
+.header {
+	border: 2px solid #1d2333;
+	background: rgba(255, 255, 255, 0.62);
+	padding: 1.15rem;
+}
+
+.back {
+	display: inline-block;
+	margin-bottom: 0.6rem;
+	color: #13161f;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.back:hover {
+	text-decoration: underline;
+	text-underline-offset: 4px;
+}
+
+.eyebrow {
+	margin: 0;
+	font-size: 0.8rem;
+	text-transform: uppercase;
+	letter-spacing: 0.14em;
+	color: #414756;
+	font-weight: 700;
+}
+
+.header h1 {
+	margin: 0.6rem 0 0;
+	font-size: clamp(1.6rem, 4vw, 2.6rem);
+}
+
+.subtext,
+.meta {
+	margin: 0.6rem 0 0;
+	color: #414756;
+}
+
+.subtext a {
+	color: inherit;
+}
+
+.state,
+.stateError {
+	border: 2px solid #1d2333;
+	background: rgba(255, 255, 255, 0.62);
+	padding: 1rem;
+	margin-top: 0.8rem;
+}
+
+.stateError {
+	color: #7a1a1a;
+}
+
+.grid {
+	margin-top: 0.8rem;
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 0.8rem;
+}
+
+.card {
+	border: 2px solid #1d2333;
+	background: rgba(255, 255, 255, 0.75);
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.65rem;
+}
+
+.card h2,
+.card p {
+	margin: 0;
+}
+
+.card h2 {
+	font-size: 1.05rem;
+}
+
+.card p {
+	color: #414756;
+	font-size: 0.95rem;
+}
+
+.stats {
+	display: flex;
+	gap: 0.65rem;
+	flex-wrap: wrap;
+	font-size: 0.85rem;
+	color: #414756;
+}
+
+.card a {
+	margin-top: auto;
+	font-weight: 700;
+	color: #13161f;
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+
+.snippet {
+	white-space: pre-wrap;
+	font-size: 0.9rem;
+	background: #f7f7f7;
+	padding: 0.5rem;
+	border-radius: 4px;
+	margin-top: 0.5rem;
+}
+
+@media (max-width: 980px) {
+	.grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+@media (max-width: 680px) {
+	.shell {
+		width: 94vw;
+	}
+
+	.grid {
+		grid-template-columns: 1fr;
+	}
+}
