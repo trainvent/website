@@ -61,6 +61,13 @@ export default function Home() {
 					<a href="#services">Services</a>
 					<a href="#about">About</a>
 					<a href="#contact">Contact</a>
+					<a
+						href="https://music.trainvent.com"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						Music
+					</a>
 					<a href="/dev">Sources</a>
 				</nav>
 			</header>
