@@ -179,6 +179,12 @@ export default function Home() {
 					hello@trainvent.com
 				</a>
 			</section>
+
+			<footer className="site-footer">
+				<small>
+					<a href="/imprint">Imprint</a>
+				</small>
+			</footer>
 		</main>
 	);
 }
