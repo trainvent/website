@@ -3,6 +3,12 @@ const nextConfig = {
   output: 'export',
   images: {
     unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'www.gravatar.com',
+      },
+    ],
   },
 
   // Specify the path if your app is not deployed at the root of your domain.

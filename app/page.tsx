@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { createHash } from "node:crypto";
 
 const services = [
 	{
@@ -20,12 +21,46 @@ const services = [
 	},
 ];
 
+const projectSites = [
+	{
+		name: "caesim",
+		url: "https://caesim.com",
+		description: "External project website",
+	},
+	{
+		name: "calcrow",
+		url: "https://calcrow.com",
+		description: "External project website",
+	},
+	{
+		name: "stimmapp",
+		url: "https://stimmapp.eu",
+		description: "External project website",
+	},
+	{
+		name: "portopener.com",
+		url: "https://portopener.com",
+		description: "External project website",
+	},
+	{
+		name: "trexip",
+		url: "https://trexip.com",
+		description: "External project website",
+	},
+	{
+		name: "vmfpc",
+		url: "https://vmfpc.com",
+		description: "External project website",
+	},
+];
+
 const teamMembers = [
 	{
 		name: "Leon Marquardt",
 		role: "Founder",
 		photo: "/leon.jpg",
 		mail: "leon@trainvent.com",
+		gravatarEmail: "leon.marquardt@gmx.de",
 		telegram: "lmarquar",
 		phone: "+49160345542",
 	},
@@ -38,6 +73,20 @@ const teamMembers = [
 		phone: "",
 	},
 ];
+
+function getGravatarUrl(email: string) {
+	const normalizedEmail = email.trim().toLowerCase();
+	const hash = createHash("md5").update(normalizedEmail).digest("hex");
+
+	return `https://www.gravatar.com/avatar/${hash}?s=144&d=mp`;
+}
+
+function getGravatarProfileUrl(email: string) {
+	const normalizedEmail = email.trim().toLowerCase();
+	const hash = createHash("sha256").update(normalizedEmail).digest("hex");
+
+	return `https://gravatar.com/${hash}`;
+}
 
 export default function Home() {
 	return (
@@ -74,6 +123,7 @@ export default function Home() {
 					</a>
 					<a href="/dev">Sources</a>
 					<a href="#services">Services</a>
+					<a href="#projects">Projects</a>
 					<a href="#about">About</a>
 					<a href="#contact">Contact</a>
 				</nav>
@@ -122,7 +172,32 @@ export default function Home() {
 				</div>
 			</section>
 
-			<section id="about" className="content-block reveal reveal-delay-3">
+			<section id="projects" className="content-block reveal reveal-delay-3">
+				<div className="section-head">
+					<p className="eyebrow">Projects</p>
+					<h2>Other webpages across our project network</h2>
+				</div>
+				<p className="body-copy">
+					A quick directory of other live project sites.
+				</p>
+				<div className="project-grid">
+					{projectSites.map((site) => (
+						<a
+							key={site.name}
+							className="project-tile"
+							href={site.url}
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<span className="project-domain">{site.name}</span>
+							<span className="project-description">{site.description}</span>
+							<span className="project-cta">Open site</span>
+						</a>
+					))}
+				</div>
+			</section>
+
+			<section id="about" className="content-block reveal reveal-delay-4">
 				<div className="section-head">
 					<p className="eyebrow">About</p>
 					<h2>This is us</h2>
@@ -147,6 +222,15 @@ export default function Home() {
 							<div className="team-contact">
 								{member.mail ? (
 									<a href={`mailto:${member.mail}`}>Mail</a>
+								) : null}
+								{member.gravatarEmail ? (
+									<a
+										href={getGravatarProfileUrl(member.gravatarEmail)}
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										Gravatar
+									</a>
 								) : null}
 								{member.telegram ? (
 									<a
