@@ -25,32 +25,32 @@ const projectSites = [
 	{
 		name: "caesim",
 		url: "https://caesim.com",
-		description: "External project website",
+		description: "data filtering tool",
 	},
 	{
 		name: "calcrow",
 		url: "https://calcrow.com",
-		description: "External project website",
+		description: "single row calc sheet manipulation",
 	},
 	{
 		name: "stimmapp",
 		url: "https://stimmapp.eu",
-		description: "External project website",
+		description: "voting app",
 	},
 	{
-		name: "portopener.com",
+		name: "portopener",
 		url: "https://portopener.com",
-		description: "External project website",
+		description: "universal network tool",
 	},
 	{
 		name: "trexip",
 		url: "https://trexip.com",
-		description: "External project website",
+		description: "cash registry system",
 	},
 	{
 		name: "vmfpc",
 		url: "https://vmfpc.com",
-		description: "External project website",
+		description: "nutrition",
 	},
 ];
 
