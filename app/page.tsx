@@ -204,7 +204,7 @@ export default function Home() {
 				</div>
 				<p className="body-copy">
 					Trainvent is a modest company website trying to maximise on displaying a variety of new ideas.
-					We strictly don't make use of dead animals since founding 24.2.2026.
+					{" "}We strictly don&apos;t make use of dead animals since founding 24.2.2026.
 				</p>
 				<div className="team-grid">
 					{teamMembers.map((member) => (
@@ -260,9 +260,18 @@ export default function Home() {
 						Send a short summary of your goals, timeline, and current setup.
 					</p>
 				</div>
-				<a className="btn btn-primary" href="mailto:hello@trainvent.com">
-					hello@trainvent.com
-				</a>
+				<div className="team-contact">
+					<a className="btn btn-primary" href="mailto:hello@trainvent.com">
+						hello@trainvent.com
+					</a>
+					<a
+						href="https://t.me/trainvent"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						Telegram
+					</a>
+				</div>
 			</section>
 
 			<footer className="site-footer">
