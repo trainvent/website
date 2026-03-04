@@ -204,6 +204,7 @@ export default function Home() {
 				</div>
 				<p className="body-copy">
 					Trainvent is a modest company website trying to maximise on displaying a variety of new ideas.
+					We strictly don't make use of dead animals since founding 24.2.2026.
 				</p>
 				<div className="team-grid">
 					{teamMembers.map((member) => (
