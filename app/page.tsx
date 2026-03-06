@@ -6,6 +6,7 @@ type Service = {
 	description: string;
 	link?: string;
 	linkLabel?: string;
+	openInNewTab?: boolean;
 };
 
 const services: Service[] = [
@@ -18,6 +19,13 @@ const services: Service[] = [
 		title: "Process Automation",
 		description: `Reduce repetitive work with tailored automations, integrations, and reliable delivery workflows.
 			We favour open‑source and low‑energy solutions where possible.`,
+	},
+	{
+		title: "Nextcloud & Homeserver Guidance",
+		description: `Practical help for building a small self-hosted setup with Nextcloud, backups, remote access,
+			and the basics needed to run a reliable homeserver without unnecessary complexity.`,
+		link: "/services/homeserver",
+		linkLabel: "See homeserver help",
 	}
 ];
 
@@ -161,8 +169,8 @@ export default function Home() {
 								<a
 									className="inline-link"
 									href={service.link}
-									target="_blank"
-									rel="noopener noreferrer"
+									target={service.openInNewTab ? "_blank" : undefined}
+									rel={service.openInNewTab ? "noopener noreferrer" : undefined}
 								>
 									{service.linkLabel}
 								</a>
