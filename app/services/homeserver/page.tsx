@@ -11,12 +11,13 @@ export default function HomeserverServicePage() {
 				</div>
 				<p className="body-copy">
 					I help people set up a practical self-hosted system around Nextcloud
-					and a small homeserver. That can include planning hardware, installing
-					services, remote access, backups, updates, file sync, and the basic
+					and a small homeserver. That can include planning hardware, configuring
+					host and installations with docker, remote access, backups, updates, file sync, and the basic
 					security steps needed to keep the setup usable.
 				</p>
 				<p className="body-copy">
-					Nextcloud can bring contacts, calendar, notes, tasks, and file
+					<h2>Nextcloud in Detail</h2>
+					Nextcloud can bring contacts, calendar, notes, tasks, paswords and file
 					management into one place at home, so everyday data stays centralized
 					on a system you control. Instead of spreading information across many
 					different services, you know where your data is and how it is handled.
@@ -48,8 +49,7 @@ export default function HomeserverServicePage() {
 						<h3>Nextcloud installation</h3>
 						<p>
 							Help with installing Nextcloud, connecting storage, setting up user
-							accounts, sync clients, and practical apps for contacts, calendar,
-							notes, tasks, passwords and shared files.
+							accounts, sync clients, and practical apps for the common usecases.
 						</p>
 					</article>
 					<article className="card">
