@@ -98,7 +98,7 @@ export default function Home() {
 				<a className="brand" href="#home" aria-label="Trainvent home">
 					<Image
 						className="brand-logo"
-						src="/icon.png"
+						src="/LeLogo.png"
 						alt="Trainvent logo"
 						width={32}
 						height={32}
