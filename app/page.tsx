@@ -1,7 +1,14 @@
 import Image from "next/image";
 import { createHash } from "node:crypto";
 
-const services = [
+type Service = {
+	title: string;
+	description: string;
+	link?: string;
+	linkLabel?: string;
+};
+
+const services: Service[] = [
 	{
 		title: "Digital Product Development",
 		description: `Design and implementation of practical web systems for operations, sales, and service teams.
@@ -11,14 +18,7 @@ const services = [
 		title: "Process Automation",
 		description: `Reduce repetitive work with tailored automations, integrations, and reliable delivery workflows.
 			We favour open‑source and low‑energy solutions where possible.`,
-	},
-	{
-		title: "Private Shop",
-		description:
-			"Access our existing private shop and product catalog at LeMarq.",
-		link: "https://lemarq.de",
-		linkLabel: "Open lemarq.de",
-	},
+	}
 ];
 
 const projectSites = [
