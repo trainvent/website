@@ -115,7 +115,7 @@ export default function Home() {
 						Music
 					</a>
 					<a
-						href="https://lemarq.de"
+						href="https://trainvent.com"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
