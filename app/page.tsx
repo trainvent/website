@@ -10,15 +10,19 @@ type Service = {
 
 const services: Service[] = [
 	{
-		title: "Digital Product Development",
-		description: `Design and implementation of practical web systems for operations, sales, and service teams.
-			We try to choose tools and hosting that minimise our footprint and are honest about what we can deliver.`,
+		title: "Homeserver and Nextcloud Support",
+		description:
+			"Setup and support for self-hosted homeservers, Nextcloud, backups, remote access, and the small but important security basics that keep the system usable.",
+		link: "/services/homeserver",
+		linkLabel: "See homeserver help",
 	},
 	{
-		title: "Process Automation",
-		description: `Reduce repetitive work with tailored automations, integrations, and reliable delivery workflows.
-			We favour open‑source and low‑energy solutions where possible.`,
-	}
+		title: "Bike Repair in Bielefeld",
+		description:
+			"Practical bicycle repair help in and around Bielefeld for everyday issues like brakes, gears, tubes, chains, and basic maintenance that gets your bike back on the road.",
+		link: "/services/bike-repair",
+		linkLabel: "See bike repair service",
+	},
 ];
 
 const projectSites = [
