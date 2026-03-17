@@ -81,7 +81,7 @@ const teamMembers = [
 
 	},
 	{
-		name: "joe",
+		name: "joe cronin",
 		role: "Debugging",
 		photo: "",
 		mail: "",
