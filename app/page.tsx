@@ -83,7 +83,7 @@ const teamMembers = [
 	{
 		name: "joe cronin",
 		role: "Debugging",
-		photo: "",
+		photo: "/default_avatar.png",
 		mail: "",
 		telegram: "",
 		phone: "",
