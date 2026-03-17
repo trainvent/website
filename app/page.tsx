@@ -67,6 +67,8 @@ const teamMembers = [
 		gravatarEmail: "leon.marquardt@gmx.de",
 		telegram: "lmarquar",
 		phone: "+49160345542",
+		website: "https://leonmarquardt.com",
+
 	},
 	{
 		name: "seva",
@@ -75,7 +77,18 @@ const teamMembers = [
 		mail: "vyslezhivayu@gmail.com",
 		telegram: "vyslezhivayu",
 		phone: "",
+		website: "https://vyslezhivayu.com/",
+
 	},
+	{
+		name: "joe",
+		role: "Debugging",
+		photo: "",
+		mail: "",
+		telegram: "",
+		phone: "",
+		website: "",
+	}
 ];
 
 function getGravatarUrl(email: string) {
@@ -224,33 +237,42 @@ export default function Home() {
 								<h3>{member.name}</h3>
 								<p className="team-role">{member.role}</p>
 							</div>
-							<div className="team-contact">
-								{member.mail ? (
-									<a href={`mailto:${member.mail}`}>Mail</a>
-								) : null}
-								{member.gravatarEmail ? (
-									<a
-										href={getGravatarProfileUrl(member.gravatarEmail)}
-										target="_blank"
-										rel="noopener noreferrer"
-									>
-										Gravatar
-									</a>
-								) : null}
-								{member.telegram ? (
-									<a
-										href={`https://t.me/${member.telegram}`}
-										target="_blank"
-										rel="noopener noreferrer"
-									>
-										Telegram
-									</a>
-								) : null}
-								{member.phone ? <a href={`tel:${member.phone}`}>Phone</a> : null}
-								{!member.mail && !member.telegram && !member.phone ? (
-									<span>Contact on request</span>
-								) : null}
-							</div>
+							                 <div className="team-contact">
+                                {member.mail ? (
+                                    <a href={`mailto:${member.mail}`}>Mail</a>
+                                ) : null}
+                                {member.gravatarEmail ? (
+                                    <a
+                                        href={getGravatarProfileUrl(member.gravatarEmail)}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        Gravatar
+                                    </a>
+                                ) : null}
+                                {member.telegram ? (
+                                    <a
+                                        href={`https://t.me/${member.telegram}`}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        Telegram
+                                    </a>
+                                ) : null}
+                                {member.phone ? <a href={`tel:${member.phone}`}>Phone</a> : null}
+                                {member.website ? (
+                                    <a
+                                        href={member.website}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        Website
+                                    </a>
+                                ) : null}
+                                {!member.mail && !member.telegram && !member.phone && !member.website ? (
+                                    <span>Contact on request</span>
+                                ) : null}
+                            </div>
 						</article>
 					))}
 				</div>
