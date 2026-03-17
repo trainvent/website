@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "Trainvent | Company Website",
   description:
     "Trainvent builds practical digital systems, automation, and product delivery workflows for companies.",
+  icons: {
+    icon: "/LeLogo.png",
+  }
 };
 
 export default function RootLayout({
