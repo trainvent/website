@@ -50,12 +50,7 @@ const projectSites = [
 		name: "trexip",
 		url: "https://trexip.com",
 		description: "cash registry system",
-	},
-	{
-		name: "vmfpc",
-		url: "https://vmfpc.com",
-		description: "nutrition",
-	},
+	}
 ];
 
 const teamMembers = [
