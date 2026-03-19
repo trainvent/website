@@ -5,7 +5,7 @@ type SiteHeaderProps = {
 	navLabel?: string;
 };
 
-const navItems = [
+const navItems: Array<{ href: string; label: string; external?: boolean }> = [
 	{ href: "/", label: "Home" },
 	{ href: "/contact", label: "Contact" },
 	{ href: "/dev", label: "Sources" },
