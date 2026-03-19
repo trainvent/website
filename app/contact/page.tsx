@@ -29,7 +29,7 @@ export default function ContactPage() {
 
 			<SiteHeader navLabel="Contact page navigation" />
 
-			<section className="hero reveal reveal-delay-1">
+			<section className="hero connected-panel reveal reveal-delay-1">
 				<p className="eyebrow">Contact</p>
 				<p className="hero-copy">
 					If you prefer not to use the form, you can also email us directly at:{" "}

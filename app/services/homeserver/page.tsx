@@ -115,7 +115,7 @@ export default function HomeserverServicePage() {
 	return (
 		<main className="site-shell">
 			<SiteHeader navLabel="Homeserver service navigation" />
-			<section className="content-block reveal reveal-delay-1">
+			<section className="content-block connected-panel reveal reveal-delay-1">
 				<div className="service-hero-layout">
 					<div>
 						<div className="section-head">

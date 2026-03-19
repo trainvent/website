@@ -130,6 +130,11 @@ body {
   padding: clamp(1.2rem, 2vw, 2.6rem);
 }
 
+.connected-panel {
+  margin-top: 0;
+  border-top: 0;
+}
+
 .eyebrow {
   margin: 0;
   font-size: 0.8rem;

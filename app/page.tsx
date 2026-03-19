@@ -125,7 +125,7 @@ export default function Home() {
 
 			<SiteHeader />
 
-			<section id="home" className="hero reveal reveal-delay-1">
+			<section id="home" className="hero connected-panel reveal reveal-delay-1">
 				<p className="eyebrow">Intro</p>
 				<h1>
 					blowing fresh ideas.

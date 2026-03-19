@@ -125,7 +125,7 @@ export default function DevPage() {
 	return (
 		<main className={`site-shell ${styles.shell}`}>
 			<SiteHeader navLabel="Developer sources navigation" />
-			<header className={styles.header}>
+			<header className={`${styles.header} connected-panel`}>
 				<p className={styles.eyebrow}>Developer Sources</p>
 				<h1>GitLab Projects</h1>
 				<p className={styles.subtext}>

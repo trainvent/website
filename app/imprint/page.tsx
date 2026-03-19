@@ -4,7 +4,7 @@ export default function Imprint() {
 	return (
 		<main className="site-shell">
 			<SiteHeader navLabel="Imprint page navigation" />
-			<section className="content-block reveal reveal-delay-1">
+			<section className="content-block connected-panel reveal reveal-delay-1">
 				<p>Provider of this website is:</p>
 				<address>
 					<strong>Trainvent, owner Leon Marquardt</strong>

@@ -7,7 +7,7 @@ export default function BikeRepairServicePage() {
 	return (
 		<main className="site-shell">
 			<SiteHeader navLabel="Bike repair service navigation" />
-			<section className="content-block reveal reveal-delay-1">
+			<section className="content-block connected-panel reveal reveal-delay-1">
 				<div className="section-head">
 					<p className="eyebrow">Service</p>
 					<h1>Bike repair in and around Bielefeld</h1>
