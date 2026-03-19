@@ -8,6 +8,13 @@ type Service = {
 	linkLabel?: string;
 };
 
+type ProjectSite = {
+	name: string;
+	url: string;
+	description: string;
+	note?: string;
+};
+
 const services: Service[] = [
 	{
 		title: "Homeserver and Nextcloud Support",
@@ -25,11 +32,12 @@ const services: Service[] = [
 	},
 ];
 
-const projectSites = [
+const projectSites: ProjectSite[] = [
 	{
 		name: "caesim",
 		url: "https://caesim.com",
 		description: "data filtering tool",
+		note: "Not yet prototyped.",
 	},
 	{
 		name: "calcrow",
@@ -38,19 +46,21 @@ const projectSites = [
 	},
 	{
 		name: "stimmapp",
-		url: "https://stimmapp.eu",
+		url: "https://stimmapp.net",
 		description: "voting app",
 	},
 	{
 		name: "portopener",
 		url: "https://portopener.com",
 		description: "universal network tool",
+		note: "Not yet prototyped.",
 	},
 	{
 		name: "trexip",
 		url: "https://trexip.com",
 		description: "cash registry system",
-	}
+		note: "Not yet prototyped.",
+	},
 ];
 
 const teamMembers = [
@@ -137,7 +147,7 @@ export default function Home() {
 					<a href="#services">Services</a>
 					<a href="#projects">Projects</a>
 					<a href="#about">About</a>
-					<a href="#contact">Contact</a>
+					<a href="/contact">Contact</a>
 				</nav>
 			</header>
 
@@ -153,7 +163,7 @@ export default function Home() {
 					one day.
 				</p>
 				<div className="hero-actions">
-					<a className="btn btn-primary" href="#contact">
+					<a className="btn btn-primary" href="/contact">
 						Start a project
 					</a>
 				</div>
@@ -203,6 +213,9 @@ export default function Home() {
 						>
 							<span className="project-domain">{site.name}</span>
 							<span className="project-description">{site.description}</span>
+							{site.note ? (
+								<span className="project-note">{site.note}</span>
+							) : null}
 							<span className="project-cta">Open site</span>
 						</a>
 					))}
@@ -279,10 +292,14 @@ export default function Home() {
 					<h2>Let&apos;s discuss your next build.</h2>
 					<p className="body-copy">
 						Send a short summary of your goals, timeline, and current setup.
+						Use the form to leave your email and optional phone number or Telegram.
 					</p>
 				</div>
 				<div className="team-contact">
-					<a className="btn btn-primary" href="mailto:hello@trainvent.com">
+					<a className="btn btn-primary" href="/contact">
+						Open contact form
+					</a>
+					<a className="btn btn-secondary" href="mailto:hello@trainvent.com">
 						hello@trainvent.com
 					</a>
 					<a
