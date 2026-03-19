@@ -140,6 +140,14 @@ export default function Home() {
 					<a className="btn btn-primary" href="/contact">
 						Start a project
 					</a>
+					<a
+						className="btn btn-secondary"
+						href="https://trainvent.com"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						Shop
+					</a>
 				</div>
 				<nav className="topic-nav" aria-label="Homepage topics">
 					<p className="topic-nav-label">Jump to a topic</p>

@@ -7,6 +7,7 @@ type SiteHeaderProps = {
 
 const navItems = [
 	{ href: "/", label: "Home" },
+	{ href: "https://trainvent.com", label: "Shop", external: true },
 	{ href: "/contact", label: "Contact" },
 	{ href: "/dev", label: "Sources" },
 	{ href: "/imprint", label: "Imprint" },
@@ -30,9 +31,20 @@ export default function SiteHeader({
 			</Link>
 			<nav className="topnav" aria-label={navLabel}>
 				{navItems.map((item) => (
-					<Link key={item.href} href={item.href}>
-						{item.label}
-					</Link>
+					item.external ? (
+						<a
+							key={item.href}
+							href={item.href}
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							{item.label}
+						</a>
+					) : (
+						<Link key={item.href} href={item.href}>
+							{item.label}
+						</Link>
+					)
 				))}
 			</nav>
 		</header>
