@@ -7,7 +7,6 @@ type SiteHeaderProps = {
 
 const navItems = [
 	{ href: "/", label: "Home" },
-	{ href: "https://trainvent.com", label: "Shop", external: true },
 	{ href: "/contact", label: "Contact" },
 	{ href: "/dev", label: "Sources" },
 	{ href: "/imprint", label: "Imprint" },
