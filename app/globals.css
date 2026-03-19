@@ -26,6 +26,7 @@ body {
 
 body {
   min-height: 100vh;
+  overflow-x: hidden;
   color: var(--ink);
   background:
     radial-gradient(circle at 85% 15%, rgba(0, 183, 167, 0.16), transparent 35%),
@@ -40,6 +41,7 @@ body {
   margin: 0 auto;
   padding: 1.25rem 0 4rem;
   position: relative;
+  overflow: clip;
 }
 
 .ambient {
@@ -52,8 +54,9 @@ body {
 .ambient-top {
   width: 420px;
   height: 420px;
-  right: -180px;
-  top: -200px;
+  right: 0;
+  top: 0;
+  transform: translate(42%, -44%);
   background: conic-gradient(from 210deg, rgba(209, 111, 42, 0.28), rgba(0, 183, 167, 0.1), rgba(209, 111, 42, 0.28));
   filter: blur(18px);
 }
@@ -61,8 +64,9 @@ body {
 .ambient-bottom {
   width: 340px;
   height: 340px;
-  left: -150px;
-  bottom: -160px;
+  left: 0;
+  bottom: 0;
+  transform: translate(-30%, 28%);
   background: radial-gradient(circle, rgba(0, 183, 167, 0.24), rgba(0, 183, 167, 0));
 }
 
@@ -160,6 +164,45 @@ p {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
+}
+
+.topic-nav {
+  margin-top: 1.5rem;
+  display: grid;
+  gap: 0.75rem;
+  padding-top: 1rem;
+  border-top: 1.5px solid rgba(19, 22, 31, 0.18);
+}
+
+.topic-nav-label {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--ink-soft);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.topic-nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.topic-chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.2rem;
+  padding: 0.45rem 0.8rem;
+  border: 1.5px solid var(--line);
+  background: rgba(255, 255, 255, 0.76);
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.topic-chip:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .btn {
@@ -624,6 +667,30 @@ p {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
+}
+
+.site-footer {
+  position: relative;
+  z-index: 1;
+  margin-top: 1rem;
+  padding: 0.35rem 0 0;
+}
+
+.site-footer a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2rem;
+  padding: 0.2rem 0;
+  color: var(--ink-soft);
+  text-decoration: none;
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.site-footer a:hover {
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .contact-honeypot {

@@ -1,9 +1,12 @@
+import SiteHeader from "../../components/site-header";
+
 const bookingUrl =
 	"https://cloud.aiomvp.com/apps/calendar/appointment/xKz2fRgR7kj6";
 
 export default function BikeRepairServicePage() {
 	return (
 		<main className="site-shell">
+			<SiteHeader navLabel="Bike repair service navigation" />
 			<section className="content-block reveal reveal-delay-1">
 				<div className="section-head">
 					<p className="eyebrow">Service</p>

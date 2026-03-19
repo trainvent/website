@@ -1,3 +1,5 @@
+import SiteHeader from "../../components/site-header";
+
 type NextcloudFeature = {
 	name: string;
 	description: string;
@@ -112,6 +114,7 @@ function HomeserverGraphic() {
 export default function HomeserverServicePage() {
 	return (
 		<main className="site-shell">
+			<SiteHeader navLabel="Homeserver service navigation" />
 			<section className="content-block reveal reveal-delay-1">
 				<div className="service-hero-layout">
 					<div>

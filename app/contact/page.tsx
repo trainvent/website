@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import Script from "next/script";
+import SiteHeader from "../components/site-header";
 
 export const metadata: Metadata = {
 	title: "Contact | Trainvent",
@@ -27,19 +27,14 @@ export default function ContactPage() {
 			<div className="ambient ambient-top" aria-hidden="true" />
 			<div className="ambient ambient-bottom" aria-hidden="true" />
 
-			<header className="topbar reveal">
-				<Link className="brand" href="/" aria-label="Trainvent home">
-					<span className="brand-name">Trainvent</span>
-				</Link>
-				<nav className="topnav" aria-label="Contact page navigation">
-					<Link href="/">Home</Link>
-					<Link href="/imprint">Imprint</Link>
-				</nav>
-			</header>
+			<SiteHeader navLabel="Contact page navigation" />
 
 			<section className="hero reveal reveal-delay-1">
 				<p className="eyebrow">Contact</p>
-				<h1>Write directly from the website.</h1>
+				<p className="hero-copy">
+					If you prefer not to use the form, you can also email us directly at:{" "}
+					<a href="mailto:hello@trainvent.com">hello@trainvent.com</a>
+				</p>
 			</section>
 
 			<section className="content-block reveal reveal-delay-2">
@@ -107,7 +102,7 @@ export default function ContactPage() {
 								Send message
 							</button>
 							<a className="btn btn-secondary" href="mailto:hello@trainvent.com">
-								Email directly
+								Email hello@trainvent.com
 							</a>
 						</div>
 					</form>

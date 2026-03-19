@@ -1,5 +1,6 @@
-import Image from "next/image";
 import { createHash } from "node:crypto";
+import Image from "next/image";
+import SiteHeader from "./components/site-header";
 
 type Service = {
 	title: string;
@@ -63,6 +64,12 @@ const projectSites: ProjectSite[] = [
 	},
 ];
 
+const homeTopics = [
+	{ href: "#services", label: "Services" },
+	{ href: "#projects", label: "Projects" },
+	{ href: "#about", label: "About" },
+];
+
 const teamMembers = [
 	{
 		name: "Leon Marquardt",
@@ -116,49 +123,16 @@ export default function Home() {
 			<div className="ambient ambient-top" aria-hidden="true" />
 			<div className="ambient ambient-bottom" aria-hidden="true" />
 
-			<header className="topbar reveal">
-				<a className="brand" href="#home" aria-label="Trainvent home">
-					<Image
-						className="brand-logo"
-						src="/LeLogo.png"
-						alt="Trainvent logo"
-						width={32}
-						height={32}
-						priority
-					/>
-					<span className="brand-name">Trainvent</span>
-				</a>
-				<nav className="topnav" aria-label="Main navigation">
-					<a
-						href="https://music.trainvent.com"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						Music
-					</a>
-					<a
-						href="https://trainvent.com"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						Shop
-					</a>
-					<a href="/dev">Sources</a>
-					<a href="#services">Services</a>
-					<a href="#projects">Projects</a>
-					<a href="#about">About</a>
-					<a href="/contact">Contact</a>
-				</nav>
-			</header>
+			<SiteHeader />
 
 			<section id="home" className="hero reveal reveal-delay-1">
-				<p className="eyebrow">Engineering practical growth</p>
+				<p className="eyebrow">Intro</p>
 				<h1>
-					Bringing fresh air in.
+					blowing fresh ideas.
 				</h1>
 				<p className="hero-copy">
 					We combine product thinking, implementation and basic operations
-					support to help teams move forward with less friction. Not every idea
+					to create. Not every idea
 					is a unicorn – we’re happy if something is useful and maybe profitable
 					one day.
 				</p>
@@ -167,6 +141,16 @@ export default function Home() {
 						Start a project
 					</a>
 				</div>
+				<nav className="topic-nav" aria-label="Homepage topics">
+					<p className="topic-nav-label">Jump to a topic</p>
+					<div className="topic-nav-links">
+						{homeTopics.map((topic) => (
+							<a key={topic.href} className="topic-chip" href={topic.href}>
+								{topic.label}
+							</a>
+						))}
+					</div>
+				</nav>
 			</section>
 
 			<section id="services" className="content-block reveal reveal-delay-2">
@@ -283,32 +267,6 @@ export default function Home() {
                             </div>
 						</article>
 					))}
-				</div>
-			</section>
-
-			<section id="contact" className="content-block contact reveal reveal-delay-4">
-				<div>
-					<p className="eyebrow">Contact</p>
-					<h2>Let&apos;s discuss your next build.</h2>
-					<p className="body-copy">
-						Send a short summary of your goals, timeline, and current setup.
-						Use the form to leave your email and optional phone number or Telegram.
-					</p>
-				</div>
-				<div className="team-contact">
-					<a className="btn btn-primary" href="/contact">
-						Open contact form
-					</a>
-					<a className="btn btn-secondary" href="mailto:hello@trainvent.com">
-						hello@trainvent.com
-					</a>
-					<a
-						href="https://t.me/trainvent"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						Telegram
-					</a>
 				</div>
 			</section>
 

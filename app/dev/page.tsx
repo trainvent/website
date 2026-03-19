@@ -1,9 +1,9 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import Link from "next/link";
 import styles from "./page.module.css";
 import React from 'react';
+import SiteHeader from "../components/site-header";
 
 type GitLabProject = {
 	id: number;
@@ -123,11 +123,9 @@ export default function DevPage() {
 	}, [error, loading, projects.length]);
 
 	return (
-		<main className={styles.shell}>
+		<main className={`site-shell ${styles.shell}`}>
+			<SiteHeader navLabel="Developer sources navigation" />
 			<header className={styles.header}>
-				<Link className={styles.back} href="/">
-					Home
-				</Link>
 				<p className={styles.eyebrow}>Developer Sources</p>
 				<h1>GitLab Projects</h1>
 				<p className={styles.subtext}>
