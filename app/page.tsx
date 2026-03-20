@@ -118,6 +118,9 @@ function getGravatarProfileUrl(email: string) {
 }
 
 export default function Home() {
+	const activeProjectSites = projectSites.filter((site) => site.note !== "Not yet prototyped.");
+	const unprototypedProjectSites = projectSites.filter((site) => site.note === "Not yet prototyped.");
+
 	return (
 		<main className="site-shell">
 			<div className="ambient ambient-top" aria-hidden="true" />
@@ -147,6 +150,17 @@ export default function Home() {
 						rel="noopener noreferrer"
 					>
 						Shop
+						<svg
+							className="btn-icon"
+							xmlns="http://www.w3.org/2000/svg"
+							height="24"
+							viewBox="0 -960 960 960"
+							width="24"
+							fill="currentColor"
+							aria-hidden="true"
+						>
+							<path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z" />
+						</svg>
 					</a>
 				</div>
 				<nav className="topic-nav" aria-label="Homepage topics">
@@ -195,7 +209,7 @@ export default function Home() {
 					A quick directory of other live project sites.
 				</p>
 				<div className="project-grid">
-					{projectSites.map((site) => (
+					{activeProjectSites.map((site) => (
 						<a
 							key={site.name}
 							className="project-tile"
@@ -205,13 +219,30 @@ export default function Home() {
 						>
 							<span className="project-domain">{site.name}</span>
 							<span className="project-description">{site.description}</span>
-							{site.note ? (
-								<span className="project-note">{site.note}</span>
-							) : null}
 							<span className="project-cta">Open site</span>
 						</a>
 					))}
 				</div>
+				{unprototypedProjectSites.length > 0 ? (
+					<div className="project-subsection">
+						<p className="project-subheader">not yet prototyped</p>
+						<div className="project-grid">
+							{unprototypedProjectSites.map((site) => (
+								<a
+									key={site.name}
+									className="project-tile"
+									href={site.url}
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<span className="project-domain">{site.name}</span>
+									<span className="project-description">{site.description}</span>
+									<span className="project-cta">Open site</span>
+								</a>
+							))}
+						</div>
+					</div>
+				) : null}
 			</section>
 
 			<section id="about" className="content-block reveal reveal-delay-4">

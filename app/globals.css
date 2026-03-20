@@ -214,6 +214,7 @@ p {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 0.45rem;
   border: 2px solid var(--line);
   padding: 0.58rem 1rem;
   text-decoration: none;
@@ -233,6 +234,12 @@ p {
 .btn-secondary {
   background: transparent;
   color: var(--ink);
+}
+
+.btn-icon {
+  width: 1rem;
+  height: 1rem;
+  flex: 0 0 auto;
 }
 
 .content-block {
@@ -302,6 +309,20 @@ p {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.project-subsection {
+  margin-top: 1.4rem;
+  padding-top: 1rem;
+  border-top: 2px dashed rgba(19, 22, 31, 0.22);
+}
+
+.project-subheader {
+  margin: 0;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--ink-soft);
+}
+
 .project-tile {
   display: grid;
   gap: 0.6rem;
@@ -334,16 +355,6 @@ p {
 .project-description {
   color: var(--ink-soft);
   max-width: 24ch;
-}
-
-.project-note {
-  display: block;
-  padding: 0.6rem 0.7rem;
-  border: 1.5px solid rgba(19, 22, 31, 0.22);
-  background: rgba(255, 255, 255, 0.68);
-  color: var(--ink-soft);
-  font-size: 0.84rem;
-  line-height: 1.4;
 }
 
 .project-cta {

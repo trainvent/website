@@ -101,9 +101,6 @@ export default function ContactPage() {
 							<button className="btn btn-primary" type="submit">
 								Send message
 							</button>
-							<a className="btn btn-secondary" href="mailto:hello@trainvent.com">
-								Email hello@trainvent.com
-							</a>
 						</div>
 					</form>
 				</div>
