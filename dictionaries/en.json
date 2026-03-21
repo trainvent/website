@@ -1,0 +1,234 @@
+{
+  "metadata": {
+    "siteTitle": "Trainvent",
+    "siteDescription": "Trainvent builds practical digital systems, automation, and product delivery workflows for companies."
+  },
+  "header": {
+    "brandAriaLabel": "Trainvent home",
+    "languageLabel": "Language",
+    "localeNames": {
+      "en": "English",
+      "de": "German"
+    },
+    "navItems": {
+      "home": "Home",
+      "contact": "Contact",
+      "dev": "Sources",
+      "imprint": "Imprint"
+    }
+  },
+  "home": {
+    "navLabel": "Main navigation",
+    "eyebrow": "Intro",
+    "title": "blowing fresh ideas.",
+    "copy": "We combine product thinking, implementation and basic operations to create. Not every idea is a unicorn - we are happy if something is useful and maybe profitable one day.",
+    "primaryCta": "Start a project",
+    "secondaryCta": "Shop",
+    "topicNavAriaLabel": "Homepage topics",
+    "topicNavLabel": "Jump to a topic",
+    "topics": {
+      "services": "Services",
+      "projects": "Projects",
+      "about": "About"
+    },
+    "servicesEyebrow": "Services",
+    "servicesTitle": "Focused services with measurable outcomes",
+    "services": {
+      "homeserver": {
+        "title": "Homeserver and Nextcloud Support",
+        "description": "Setup and support for self-hosted homeservers, Nextcloud, backups, remote access, and the small but important security basics that keep the system usable.",
+        "linkLabel": "See homeserver help"
+      },
+      "bikeRepair": {
+        "title": "Bike Repair in Bielefeld",
+        "description": "Practical bicycle repair help in and around Bielefeld for everyday issues like brakes, gears, tubes, chains, and basic maintenance that gets your bike back on the road.",
+        "linkLabel": "See bike repair service"
+      }
+    },
+    "projectsEyebrow": "Projects",
+    "projectsTitle": "Other webpages across our project network",
+    "projectsCopy": "A quick directory of other live project sites.",
+    "projectCta": "Open site",
+    "unprototypedLabel": "not yet prototyped",
+    "aboutEyebrow": "About",
+    "aboutTitle": "This is us",
+    "aboutCopy": "Trainvent is a modest company website trying to maximise on displaying a variety of new ideas. We strictly do not make use of dead animals since founding 24.2.2026.",
+    "teamRoles": {
+      "leon": "Founder",
+      "seva": "Product & Operations Assistant",
+      "joe": "Debugging"
+    },
+    "contactLabels": {
+      "mail": "Mail",
+      "gravatar": "Gravatar",
+      "telegram": "Telegram",
+      "phone": "Phone",
+      "website": "Website",
+      "fallback": "Contact on request"
+    },
+    "footerImprint": "Imprint",
+    "projectDescriptions": {
+      "caesim": "data filtering tool",
+      "calcrow": "single row calc sheet manipulation",
+      "stimmapp": "voting app",
+      "portopener": "universal network tool",
+      "trexip": "cash registry system"
+    }
+  },
+  "contact": {
+    "metadata": {
+      "title": "Contact",
+      "description": "Contact Trainvent with your email, optional phone number or Telegram, and a short project message."
+    },
+    "navLabel": "Contact page navigation",
+    "eyebrow": "Contact",
+    "heroCopy": "If you prefer not to use the form, you can also email us directly at:",
+    "emailLabel": "Your email",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Tell us what you need.",
+    "optionalLabel": "Optional alternative contact",
+    "phoneLabel": "Phone number",
+    "telegramLabel": "Telegram",
+    "submitLabel": "Send message"
+  },
+  "contactSent": {
+    "metadata": {
+      "title": "Message Sent",
+      "description": "Confirmation page after sending a message to Trainvent."
+    },
+    "eyebrow": "Contact",
+    "title": "Thanks for reaching out.",
+    "copy": "Your message has been sent. Trainvent will reply to the email address you left in the form.",
+    "backHome": "Back to home",
+    "sendAnother": "Send another message"
+  },
+  "imprint": {
+    "metadata": {
+      "title": "Imprint",
+      "description": "Legal and provider information for Trainvent."
+    },
+    "navLabel": "Imprint page navigation",
+    "providerLabel": "Provider of this website is:",
+    "phoneLabel": "Phone",
+    "emailLabel": "Email",
+    "companyNumberLabel": "Company number (UNR.S)",
+    "responsibleLabel": "Person responsible according to § 55 para. 1 RStV"
+  },
+  "homeserver": {
+    "metadata": {
+      "title": "Homeserver and Nextcloud Support",
+      "description": "Setup and support for self-hosted homeservers, Nextcloud, remote access, backups, and practical daily workflows."
+    },
+    "navLabel": "Homeserver service navigation",
+    "eyebrow": "Service",
+    "title": "Nextcloud and homeserver help",
+    "badge": "Self-hosted and practical",
+    "copy": "I help people set up a practical self-hosted system around Nextcloud and a small homeserver. That can include planning hardware, configuring host and installations with docker, remote access, backups, updates, file sync, and the basic security steps needed to keep the setup usable.",
+    "bookCta": "Book an online discussion",
+    "mailCta": "Contact by email",
+    "detailsEyebrow": "Nextcloud in detail",
+    "detailsTitle": "One home system, six daily tools",
+    "detailsCopy": "Nextcloud can bring contacts, calendar, notes, tasks, passwords, and file management into one place at home, so everyday data stays centralized on a system you control.",
+    "features": {
+      "contacts": {
+        "name": "Contacts",
+        "description": "A shared address book for people, companies, and quick reachability."
+      },
+      "calendar": {
+        "name": "Calendar",
+        "description": "Appointments, reminders, and family or team scheduling in one place."
+      },
+      "notes": {
+        "name": "Notes",
+        "description": "Simple synced notes for ideas, checklists, and household information."
+      },
+      "tasks": {
+        "name": "Tasks",
+        "description": "Track what needs doing without scattering reminders across apps."
+      },
+      "passwords": {
+        "name": "Passwords",
+        "description": "A practical home base for credentials and sensitive shared access."
+      },
+      "files": {
+        "name": "Files",
+        "description": "Central file management and sync across laptop, phone, and home server."
+      }
+    },
+    "helpEyebrow": "What I can help with",
+    "helpTitle": "From first box to working daily setup",
+    "helpCards": {
+      "planning": {
+        "title": "Planning and hardware",
+        "description": "Choosing a realistic machine, storage layout, and network setup for your home or small office."
+      },
+      "installation": {
+        "title": "Nextcloud installation",
+        "description": "Help with installing Nextcloud, connecting storage, setting up user accounts, sync clients, and practical apps for the common usecases."
+      },
+      "support": {
+        "title": "Remote or onsite support",
+        "description": "Support can happen remotely or onsite, depending on what is easier for the job and your location."
+      }
+    },
+    "pricingEyebrow": "Details",
+    "pricingTitle": "Pricing and contact",
+    "pricingCopy": "Homeserver and Nextcloud support is offered at 15 EUR per hour. Remote sessions and onsite help are both possible.",
+    "bookLink": "Book online discussion",
+    "telegramLabel": "Telegram"
+  },
+  "bikeRepair": {
+    "metadata": {
+      "title": "Bike Repair in Bielefeld",
+      "description": "Practical bicycle repair help in and around Bielefeld for everyday maintenance and common issues."
+    },
+    "navLabel": "Bike repair service navigation",
+    "eyebrow": "Service",
+    "title": "Bike repair in and around Bielefeld",
+    "copyOne": "I help with practical bicycle repairs for city bikes, trekking bikes, and everyday transport bikes in and around Bielefeld. The focus is on reliable fixes, clear communication, and getting your bike back into regular use without turning a simple repair into a drama.",
+    "copyTwo": "Typical jobs include punctures, brake adjustments, chain and cassette work, gear tuning, replacing worn parts, and general maintenance checks before a bike becomes annoying or unsafe to ride.",
+    "bookCta": "Book a repair discussion",
+    "mailCta": "Contact by email",
+    "helpEyebrow": "What I can help with",
+    "helpTitle": "Useful repairs for daily riding",
+    "helpCards": {
+      "drivetrain": {
+        "title": "Brakes, gears, and drivetrain",
+        "description": "Adjustment and replacement work for the parts that most often make a bike noisy, slow, or frustrating to use."
+      },
+      "wear": {
+        "title": "Flat tires and worn parts",
+        "description": "Tube and tire changes, chain wear checks, cables, brake pads, and the common fixes that keep a commuter bike dependable."
+      },
+      "handoff": {
+        "title": "Onsite or arranged handoff",
+        "description": "Depending on the job and distance, support can happen onsite in the Bielefeld area or through an arranged dropoff and pickup."
+      }
+    },
+    "pricingEyebrow": "Details",
+    "pricingTitle": "Pricing and contact",
+    "pricingCopy": "Bike repair support is offered at 15 EUR per hour. Parts are billed separately when replacements are needed.",
+    "bookLink": "Book repair discussion",
+    "telegramLabel": "Telegram"
+  },
+  "dev": {
+    "metadata": {
+      "title": "Sources",
+      "description": "Public Trainvent GitLab projects and recent activity."
+    },
+    "navLabel": "Developer sources navigation",
+    "eyebrow": "Developer Sources",
+    "title": "GitLab Projects",
+    "subtitlePrefix": "Auto-synced from",
+    "loadingProjects": "Loading projects...",
+    "loading": "Loading...",
+    "loadErrorSummary": "Could not load projects.",
+    "loadErrorDetail": "Failed to load projects from GitLab API",
+    "noDescription": "No description provided.",
+    "updatedLabel": "Updated",
+    "openProject": "Open project",
+    "publicProjectsSingular": "public project",
+    "publicProjectsPlural": "public projects"
+  }
+}
+

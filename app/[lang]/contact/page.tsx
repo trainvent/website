@@ -1,14 +1,40 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import Script from "next/script";
-import SiteHeader from "../components/site-header";
 
-export const metadata: Metadata = {
-	title: "Contact | Trainvent",
-	description:
-		"Contact Trainvent with your email, optional phone number or Telegram, and a short project message.",
+import { getDictionary } from "../dictionaries";
+import SiteHeader from "../../components/site-header";
+import { hasLocale } from "@/lib/i18n";
+
+type RouteProps = {
+	params: Promise<{ lang: string }>;
 };
 
-export default function ContactPage() {
+export async function generateMetadata({
+	params,
+}: RouteProps): Promise<Metadata> {
+	const { lang } = await params;
+
+	if (!hasLocale(lang)) {
+		return {};
+	}
+
+	const dict = await getDictionary(lang);
+
+	return {
+		title: dict.contact.metadata.title,
+		description: dict.contact.metadata.description,
+	};
+}
+
+export default async function LocalizedContactPage({ params }: RouteProps) {
+	const { lang } = await params;
+
+	if (!hasLocale(lang)) {
+		notFound();
+	}
+
+	const dict = await getDictionary(lang);
 	const formAction =
 		process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT ??
 		"https://formspree.io/f/your-form-id";
@@ -27,12 +53,26 @@ export default function ContactPage() {
 			<div className="ambient ambient-top" aria-hidden="true" />
 			<div className="ambient ambient-bottom" aria-hidden="true" />
 
-			<SiteHeader navLabel="Contact page navigation" />
+			<SiteHeader
+				navLabel={dict.contact.navLabel}
+				brandHref={`/${lang}`}
+				brandAriaLabel={dict.header.brandAriaLabel}
+				navItems={[
+					{ href: `/${lang}`, label: dict.header.navItems.home },
+					{ href: `/${lang}/contact`, label: dict.header.navItems.contact },
+					{ href: `/${lang}/dev`, label: dict.header.navItems.dev },
+					{ href: `/${lang}/imprint`, label: dict.header.navItems.imprint },
+				]}
+				locale={lang}
+				currentPath="/contact"
+				languageLabel={dict.header.languageLabel}
+				localeNames={dict.header.localeNames}
+			/>
 
 			<section className="hero connected-panel reveal reveal-delay-1">
-				<p className="eyebrow">Contact</p>
+				<p className="eyebrow">{dict.contact.eyebrow}</p>
 				<p className="hero-copy">
-					If you prefer not to use the form, you can also email us directly at:{" "}
+					{dict.contact.heroCopy}{" "}
 					<a href="mailto:hello@trainvent.com">hello@trainvent.com</a>
 				</p>
 			</section>
@@ -44,10 +84,16 @@ export default function ContactPage() {
 						action={formAction}
 						method="POST"
 					>
-						<input type="text" name="_honey" className="contact-honeypot" tabIndex={-1} autoComplete="off" />
+						<input
+							type="text"
+							name="_honey"
+							className="contact-honeypot"
+							tabIndex={-1}
+							autoComplete="off"
+						/>
 
 						<label className="field">
-							<span>Your email</span>
+							<span>{dict.contact.emailLabel}</span>
 							<input
 								type="email"
 								name="email"
@@ -58,10 +104,10 @@ export default function ContactPage() {
 						</label>
 
 						<label className="field">
-							<span>Message</span>
+							<span>{dict.contact.messageLabel}</span>
 							<textarea
 								name="message"
-								placeholder="Tell us what you need."
+								placeholder={dict.contact.messagePlaceholder}
 								rows={7}
 								required
 							/>
@@ -74,10 +120,12 @@ export default function ContactPage() {
 						/>
 
 						<div className="contact-optional">
-							<p className="contact-optional-label">Optional alternative contact</p>
+							<p className="contact-optional-label">
+								{dict.contact.optionalLabel}
+							</p>
 
 							<label className="field">
-								<span>Phone number</span>
+								<span>{dict.contact.phoneLabel}</span>
 								<input
 									type="tel"
 									name="phone"
@@ -87,7 +135,7 @@ export default function ContactPage() {
 							</label>
 
 							<label className="field">
-								<span>Telegram</span>
+								<span>{dict.contact.telegramLabel}</span>
 								<input
 									type="text"
 									name="telegram"
@@ -99,7 +147,7 @@ export default function ContactPage() {
 
 						<div className="contact-form-actions">
 							<button className="btn btn-primary" type="submit">
-								Send message
+								{dict.contact.submitLabel}
 							</button>
 						</div>
 					</form>
@@ -108,3 +156,4 @@ export default function ContactPage() {
 		</main>
 	);
 }
+

@@ -1,0 +1,234 @@
+{
+  "metadata": {
+    "siteTitle": "Trainvent",
+    "siteDescription": "Trainvent entwickelt praktische digitale Systeme, Automatisierung und umsetzbare Produkt-Workflows."
+  },
+  "header": {
+    "brandAriaLabel": "Trainvent Startseite",
+    "languageLabel": "Sprache",
+    "localeNames": {
+      "en": "Englisch",
+      "de": "Deutsch"
+    },
+    "navItems": {
+      "home": "Start",
+      "contact": "Kontakt",
+      "dev": "Quellen",
+      "imprint": "Impressum"
+    }
+  },
+  "home": {
+    "navLabel": "Hauptnavigation",
+    "eyebrow": "Intro",
+    "title": "frische ideen in bewegung.",
+    "copy": "Wir verbinden Produktdenken, Umsetzung und grundlegende Abläufe, um Dinge entstehen zu lassen. Nicht jede Idee ist ein Unicorn - wir sind schon froh, wenn etwas nützlich ist und vielleicht irgendwann Gewinn bringt.",
+    "primaryCta": "Projekt starten",
+    "secondaryCta": "Shop",
+    "topicNavAriaLabel": "Themen der Startseite",
+    "topicNavLabel": "Direkt zu einem Thema",
+    "topics": {
+      "services": "Leistungen",
+      "projects": "Projekte",
+      "about": "Über uns"
+    },
+    "servicesEyebrow": "Leistungen",
+    "servicesTitle": "Fokussierte Leistungen mit greifbarem Ergebnis",
+    "services": {
+      "homeserver": {
+        "title": "Homeserver- und Nextcloud-Support",
+        "description": "Einrichtung und Unterstützung für selbst gehostete Homeserver, Nextcloud, Backups, Fernzugriff und die kleinen, aber wichtigen Sicherheitsgrundlagen, damit das System alltagstauglich bleibt.",
+        "linkLabel": "Homeserver-Hilfe ansehen"
+      },
+      "bikeRepair": {
+        "title": "Fahrradreparatur in Bielefeld",
+        "description": "Praktische Hilfe bei Fahrradreparaturen in und um Bielefeld für Bremsen, Schaltung, Schläuche, Ketten und die Wartung, die dein Rad wieder auf die Straße bringt.",
+        "linkLabel": "Fahrradservice ansehen"
+      }
+    },
+    "projectsEyebrow": "Projekte",
+    "projectsTitle": "Weitere Webseiten in unserem Projektnetzwerk",
+    "projectsCopy": "Ein schneller Überblick über weitere bereits laufende Projektseiten.",
+    "projectCta": "Seite öffnen",
+    "unprototypedLabel": "noch nicht prototypisiert",
+    "aboutEyebrow": "Über uns",
+    "aboutTitle": "Das sind wir",
+    "aboutCopy": "Trainvent ist eine kleine Firmenwebsite, die möglichst viele neue Ideen sichtbar machen will. Seit der Gründung am 24.2.2026 nutzen wir ganz bewusst keine toten Tiere.",
+    "teamRoles": {
+      "leon": "Gründer",
+      "seva": "Assistenz für Produkt & Betrieb",
+      "joe": "Fehlersuche"
+    },
+    "contactLabels": {
+      "mail": "Mail",
+      "gravatar": "Gravatar",
+      "telegram": "Telegram",
+      "phone": "Telefon",
+      "website": "Website",
+      "fallback": "Kontakt auf Anfrage"
+    },
+    "footerImprint": "Impressum",
+    "projectDescriptions": {
+      "caesim": "Werkzeug zur Datenfilterung",
+      "calcrow": "Bearbeitung von Tabellen mit nur einer Zeile",
+      "stimmapp": "Abstimmungs-App",
+      "portopener": "universelles Netzwerkwerkzeug",
+      "trexip": "Kassensystem"
+    }
+  },
+  "contact": {
+    "metadata": {
+      "title": "Kontakt",
+      "description": "Kontaktiere Trainvent mit deiner E-Mail, optionaler Telefonnummer oder Telegram und einer kurzen Nachricht."
+    },
+    "navLabel": "Navigation der Kontaktseite",
+    "eyebrow": "Kontakt",
+    "heroCopy": "Falls du das Formular nicht nutzen möchtest, kannst du uns auch direkt per E-Mail schreiben an:",
+    "emailLabel": "Deine E-Mail",
+    "messageLabel": "Nachricht",
+    "messagePlaceholder": "Erzähl uns kurz, worum es geht.",
+    "optionalLabel": "Optionale alternative Kontaktmöglichkeit",
+    "phoneLabel": "Telefonnummer",
+    "telegramLabel": "Telegram",
+    "submitLabel": "Nachricht senden"
+  },
+  "contactSent": {
+    "metadata": {
+      "title": "Nachricht gesendet",
+      "description": "Bestätigungsseite nach dem Senden einer Nachricht an Trainvent."
+    },
+    "eyebrow": "Kontakt",
+    "title": "Danke für deine Nachricht.",
+    "copy": "Deine Nachricht wurde gesendet. Trainvent antwortet an die E-Mail-Adresse, die du im Formular angegeben hast.",
+    "backHome": "Zur Startseite",
+    "sendAnother": "Noch eine Nachricht senden"
+  },
+  "imprint": {
+    "metadata": {
+      "title": "Impressum",
+      "description": "Anbieter- und Pflichtangaben zu Trainvent."
+    },
+    "navLabel": "Navigation der Impressumsseite",
+    "providerLabel": "Anbieter dieser Website ist:",
+    "phoneLabel": "Telefon",
+    "emailLabel": "E-Mail",
+    "companyNumberLabel": "Unternehmensnummer (UNR.S)",
+    "responsibleLabel": "Verantwortlich nach § 55 Abs. 1 RStV"
+  },
+  "homeserver": {
+    "metadata": {
+      "title": "Homeserver- und Nextcloud-Support",
+      "description": "Einrichtung und Unterstützung für selbst gehostete Homeserver, Nextcloud, Fernzugriff, Backups und praktische Alltagsabläufe."
+    },
+    "navLabel": "Navigation des Homeserver-Services",
+    "eyebrow": "Service",
+    "title": "Hilfe mit Nextcloud und Homeservern",
+    "badge": "Selbst gehostet und alltagstauglich",
+    "copy": "Ich helfe beim Aufbau eines praktischen, selbst gehosteten Systems rund um Nextcloud und einen kleinen Homeserver. Dazu gehören zum Beispiel Hardwareplanung, Einrichtung des Hosts und von Installationen mit Docker, Fernzugriff, Backups, Updates, Dateisynchronisation und die grundlegenden Sicherheitsmaßnahmen, damit das Setup dauerhaft benutzbar bleibt.",
+    "bookCta": "Online-Gespräch buchen",
+    "mailCta": "Per E-Mail kontaktieren",
+    "detailsEyebrow": "Nextcloud im Detail",
+    "detailsTitle": "Ein Heimsystem, sechs Werkzeuge für jeden Tag",
+    "detailsCopy": "Nextcloud kann Kontakte, Kalender, Notizen, Aufgaben, Passwörter und Dateiverwaltung an einem Ort zusammenführen, damit Alltagsdaten auf einem System bleiben, das du selbst kontrollierst.",
+    "features": {
+      "contacts": {
+        "name": "Kontakte",
+        "description": "Ein gemeinsames Adressbuch für Personen, Firmen und schnelle Erreichbarkeit."
+      },
+      "calendar": {
+        "name": "Kalender",
+        "description": "Termine, Erinnerungen und Familien- oder Teamplanung an einem Ort."
+      },
+      "notes": {
+        "name": "Notizen",
+        "description": "Einfache synchronisierte Notizen für Ideen, Checklisten und Haushaltsinformationen."
+      },
+      "tasks": {
+        "name": "Aufgaben",
+        "description": "Behalte im Blick, was erledigt werden muss, ohne Erinnerungen auf viele Apps zu verteilen."
+      },
+      "passwords": {
+        "name": "Passwörter",
+        "description": "Eine praktische zentrale Stelle für Zugangsdaten und sensible gemeinsame Zugriffe."
+      },
+      "files": {
+        "name": "Dateien",
+        "description": "Zentrale Dateiverwaltung und Synchronisation zwischen Laptop, Telefon und Homeserver."
+      }
+    },
+    "helpEyebrow": "Womit ich helfen kann",
+    "helpTitle": "Von der ersten Box bis zum funktionierenden Alltagssystem",
+    "helpCards": {
+      "planning": {
+        "title": "Planung und Hardware",
+        "description": "Die Wahl einer realistischen Maschine, Speicheraufteilung und Netzwerkkonfiguration für Zuhause oder ein kleines Büro."
+      },
+      "installation": {
+        "title": "Nextcloud-Installation",
+        "description": "Hilfe beim Installieren von Nextcloud, beim Einbinden von Speicher, beim Einrichten von Benutzerkonten, Sync-Clients und praktischen Apps für typische Anwendungsfälle."
+      },
+      "support": {
+        "title": "Remote- oder Vor-Ort-Support",
+        "description": "Unterstützung kann remote oder vor Ort stattfinden - je nachdem, was für die Aufgabe und deinen Standort sinnvoller ist."
+      }
+    },
+    "pricingEyebrow": "Details",
+    "pricingTitle": "Preise und Kontakt",
+    "pricingCopy": "Homeserver- und Nextcloud-Support wird für 15 EUR pro Stunde angeboten. Sowohl Remote-Termine als auch Hilfe vor Ort sind möglich.",
+    "bookLink": "Online-Gespräch buchen",
+    "telegramLabel": "Telegram"
+  },
+  "bikeRepair": {
+    "metadata": {
+      "title": "Fahrradreparatur in Bielefeld",
+      "description": "Praktische Hilfe bei Fahrradreparaturen in und um Bielefeld für Alltag, Wartung und typische Defekte."
+    },
+    "navLabel": "Navigation des Fahrradservices",
+    "eyebrow": "Service",
+    "title": "Fahrradreparatur in und um Bielefeld",
+    "copyOne": "Ich helfe bei praktischen Fahrradreparaturen für Citybikes, Trekkingräder und Alltagsräder in und um Bielefeld. Im Mittelpunkt stehen verlässliche Lösungen, klare Kommunikation und ein Fahrrad, das wieder normal genutzt werden kann, ohne aus einer einfachen Reparatur ein Drama zu machen.",
+    "copyTwo": "Typische Arbeiten sind Platten, Bremseneinstellung, Ketten- und Kassettenarbeiten, Schaltungsjustierung, der Austausch verschlissener Teile und allgemeine Wartungschecks, bevor ein Fahrrad nervig oder unsicher wird.",
+    "bookCta": "Reparaturgespräch buchen",
+    "mailCta": "Per E-Mail kontaktieren",
+    "helpEyebrow": "Womit ich helfen kann",
+    "helpTitle": "Nützliche Reparaturen für den Alltag",
+    "helpCards": {
+      "drivetrain": {
+        "title": "Bremsen, Schaltung und Antrieb",
+        "description": "Einstell- und Austauscharbeiten an den Teilen, die ein Fahrrad am häufigsten laut, langsam oder frustrierend machen."
+      },
+      "wear": {
+        "title": "Platten und Verschleißteile",
+        "description": "Schlauch- und Reifenwechsel, Kettenverschleißprüfung, Züge, Bremsbeläge und die typischen Reparaturen, die ein Pendelrad zuverlässig halten."
+      },
+      "handoff": {
+        "title": "Vor Ort oder organisierte Übergabe",
+        "description": "Je nach Aufgabe und Entfernung kann der Support im Raum Bielefeld vor Ort stattfinden oder über eine abgestimmte Bring- und Abholübergabe."
+      }
+    },
+    "pricingEyebrow": "Details",
+    "pricingTitle": "Preise und Kontakt",
+    "pricingCopy": "Fahrradservice wird für 15 EUR pro Stunde angeboten. Ersatzteile werden bei Bedarf zusätzlich berechnet.",
+    "bookLink": "Reparaturgespräch buchen",
+    "telegramLabel": "Telegram"
+  },
+  "dev": {
+    "metadata": {
+      "title": "Quellen",
+      "description": "Öffentliche GitLab-Projekte von Trainvent und ihre letzte Aktivität."
+    },
+    "navLabel": "Navigation der Entwicklerquellen",
+    "eyebrow": "Entwicklerquellen",
+    "title": "GitLab-Projekte",
+    "subtitlePrefix": "Automatisch synchronisiert von",
+    "loadingProjects": "Projekte werden geladen...",
+    "loading": "Lädt...",
+    "loadErrorSummary": "Projekte konnten nicht geladen werden.",
+    "loadErrorDetail": "Projekte konnten nicht aus der GitLab-API geladen werden",
+    "noDescription": "Keine Beschreibung vorhanden.",
+    "updatedLabel": "Aktualisiert",
+    "openProject": "Projekt öffnen",
+    "publicProjectsSingular": "öffentliches Projekt",
+    "publicProjectsPlural": "öffentliche Projekte"
+  }
+}
+

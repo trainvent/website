@@ -81,6 +81,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1rem;
   padding: 0.8rem 1rem;
   border: 2px solid var(--line);
   background: var(--card);
@@ -112,6 +113,12 @@ body {
   gap: 1.1rem;
 }
 
+.topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 .topnav a {
   color: var(--ink);
   text-decoration: none;
@@ -119,6 +126,27 @@ body {
 }
 
 .topnav a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.lang-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding-left: 1rem;
+  border-left: 1.5px solid rgba(19, 22, 31, 0.2);
+  font-size: 0.9rem;
+}
+
+.lang-switcher a,
+.lang-switcher span {
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.lang-switcher a:hover {
   text-decoration: underline;
   text-underline-offset: 4px;
 }
@@ -779,13 +807,23 @@ p {
 
   .topbar {
     flex-direction: column;
-    align-items: start;
+    align-items: stretch;
     gap: 0.65rem;
   }
 
+  .topbar-actions,
   .topnav {
     flex-wrap: wrap;
     gap: 0.7rem;
+  }
+
+  .topbar-actions {
+    justify-content: space-between;
+  }
+
+  .lang-switcher {
+    padding-left: 0;
+    border-left: 0;
   }
 
   .cards {
