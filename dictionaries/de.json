@@ -8,7 +8,10 @@
     "languageLabel": "Sprache",
     "localeNames": {
       "en": "Englisch",
-      "de": "Deutsch"
+      "de": "Deutsch",
+      "nl": "Niederländisch",
+      "ja": "Japanisch",
+      "hr": "Kroatisch"
     },
     "navItems": {
       "home": "Start",
@@ -20,7 +23,7 @@
   "home": {
     "navLabel": "Hauptnavigation",
     "eyebrow": "Intro",
-    "title": "frische ideen in bewegung.",
+    "title": "lüftende Ideen.",
     "copy": "Wir verbinden Produktdenken, Umsetzung und grundlegende Abläufe, um Dinge entstehen zu lassen. Nicht jede Idee ist ein Unicorn - wir sind schon froh, wenn etwas nützlich ist und vielleicht irgendwann Gewinn bringt.",
     "primaryCta": "Projekt starten",
     "secondaryCta": "Shop",
@@ -231,4 +234,3 @@
     "publicProjectsPlural": "öffentliche Projekte"
   }
 }
-

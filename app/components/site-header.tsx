@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { getLocalizedHref, locales, type Locale } from "@/lib/i18n";
+import LanguageMenu from "./language-menu";
+import type { Locale } from "@/lib/i18n";
 
 type NavItem = {
 	href: string;
@@ -38,6 +39,9 @@ export default function SiteHeader({
 	localeNames = {
 		en: "English",
 		de: "German",
+		nl: "Dutch",
+		ja: "Japanese",
+		hr: "Croatian",
 	},
 }: SiteHeaderProps) {
 	return (
@@ -73,21 +77,12 @@ export default function SiteHeader({
 					)}
 				</nav>
 				{locale ? (
-					<nav className="lang-switcher" aria-label={languageLabel}>
-						{locales.map((itemLocale) => {
-							const href = getLocalizedHref(itemLocale, currentPath);
-
-							return itemLocale === locale ? (
-								<span key={itemLocale} aria-current="page">
-									{localeNames[itemLocale]}
-								</span>
-							) : (
-								<Link key={itemLocale} href={href}>
-									{localeNames[itemLocale]}
-								</Link>
-							);
-						})}
-					</nav>
+					<LanguageMenu
+						locale={locale}
+						currentPath={currentPath}
+						languageLabel={languageLabel}
+						localeNames={localeNames}
+					/>
 				) : null}
 			</div>
 		</header>

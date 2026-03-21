@@ -1,0 +1,236 @@
+{
+  "metadata": {
+    "siteTitle": "Trainvent",
+    "siteDescription": "Trainvent gradi prakticne digitalne sustave, automatizaciju i izvedive produktne procese."
+  },
+  "header": {
+    "brandAriaLabel": "Trainvent pocetna stranica",
+    "languageLabel": "Jezik",
+    "localeNames": {
+      "en": "Engleski",
+      "de": "Njemacki",
+      "nl": "Nizozemski",
+      "ja": "Japanski",
+      "hr": "Hrvatski"
+    },
+    "navItems": {
+      "home": "Pocetna",
+      "contact": "Kontakt",
+      "dev": "Izvori",
+      "imprint": "Impresum"
+    }
+  },
+  "home": {
+    "navLabel": "Glavna navigacija",
+    "eyebrow": "Uvod",
+    "title": "svjeze ideje u pokretu.",
+    "copy": "Spajamo produktno razmisljanje, izvedbu i osnovne operacije kako bismo nesto stvorili. Ne mora svaka ideja biti unicorn - zadovoljni smo ako je nesto korisno i mozda jednog dana donese profit.",
+    "primaryCta": "Pokreni projekt",
+    "secondaryCta": "Trgovina",
+    "topicNavAriaLabel": "Teme pocetne stranice",
+    "topicNavLabel": "Skoci na temu",
+    "topics": {
+      "services": "Usluge",
+      "projects": "Projekti",
+      "about": "O nama"
+    },
+    "servicesEyebrow": "Usluge",
+    "servicesTitle": "Usmjerene usluge s mjerljivim rezultatom",
+    "services": {
+      "homeserver": {
+        "title": "Podrska za homeserver i Nextcloud",
+        "description": "Postavljanje i podrska za self-hosted homeservere, Nextcloud, sigurnosne kopije, udaljeni pristup i male, ali vazne sigurnosne osnove koje sustav drze upotrebljivim.",
+        "linkLabel": "Pogledaj pomoc za homeserver"
+      },
+      "bikeRepair": {
+        "title": "Popravak bicikala u Bielefeldu",
+        "description": "Prakticna pomoc oko popravka bicikala u Bielefeldu i okolici za svakodnevne probleme poput kocnica, mjenjaca, zracnica, lanaca i osnovnog odrzavanja koje bicikl vraca na cestu.",
+        "linkLabel": "Pogledaj uslugu popravka bicikla"
+      }
+    },
+    "projectsEyebrow": "Projekti",
+    "projectsTitle": "Ostale web stranice u nasoj projektnoj mrezi",
+    "projectsCopy": "Brz pregled ostalih aktivnih projektnih stranica.",
+    "projectCta": "Otvori stranicu",
+    "unprototypedLabel": "jos nije prototipizirano",
+    "aboutEyebrow": "O nama",
+    "aboutTitle": "To smo mi",
+    "aboutCopy": "Trainvent je skromna web stranica tvrtke koja pokusava prikazati sto vise novih ideja. Od osnutka 24.2.2026. strogo ne koristimo mrtve zivotinje.",
+    "teamRoles": {
+      "leon": "Osnivac",
+      "seva": "Asistentica za proizvod i operacije",
+      "joe": "Debugging"
+    },
+    "contactLabels": {
+      "mail": "Mail",
+      "gravatar": "Gravatar",
+      "telegram": "Telegram",
+      "phone": "Telefon",
+      "website": "Web stranica",
+      "fallback": "Kontakt na zahtjev"
+    },
+    "footerImprint": "Impresum",
+    "projectDescriptions": {
+      "caesim": "alat za filtriranje podataka",
+      "calcrow": "obrada tablica s jednim redom",
+      "stimmapp": "aplikacija za glasanje",
+      "portopener": "univerzalni mrezni alat",
+      "trexip": "blagajnicki sustav"
+    }
+  },
+  "contact": {
+    "metadata": {
+      "title": "Kontakt",
+      "description": "Kontaktiraj Trainvent putem e-poste, opcionalnog broja telefona ili Telegrama i kratke poruke o projektu."
+    },
+    "navLabel": "Navigacija stranice kontakta",
+    "eyebrow": "Kontakt",
+    "heroCopy": "Ako radije ne zelis koristiti obrazac, mozes nam i izravno poslati e-postu na:",
+    "emailLabel": "Tvoj e-mail",
+    "messageLabel": "Poruka",
+    "messagePlaceholder": "Reci nam sto ti treba.",
+    "optionalLabel": "Opcionalni alternativni kontakt",
+    "phoneLabel": "Broj telefona",
+    "telegramLabel": "Telegram",
+    "submitLabel": "Posalji poruku"
+  },
+  "contactSent": {
+    "metadata": {
+      "title": "Poruka poslana",
+      "description": "Stranica potvrde nakon slanja poruke Trainventu."
+    },
+    "eyebrow": "Kontakt",
+    "title": "Hvala na javljanju.",
+    "copy": "Tvoja poruka je poslana. Trainvent ce odgovoriti na adresu e-poste koju si ostavio u obrascu.",
+    "backHome": "Natrag na pocetnu",
+    "sendAnother": "Posalji jos jednu poruku"
+  },
+  "imprint": {
+    "metadata": {
+      "title": "Impresum",
+      "description": "Pravne i podatke o pruzatelju usluge za Trainvent."
+    },
+    "navLabel": "Navigacija stranice impresuma",
+    "providerLabel": "Pruzatelj ove web stranice je:",
+    "phoneLabel": "Telefon",
+    "emailLabel": "E-mail",
+    "companyNumberLabel": "Broj tvrtke (UNR.S)",
+    "responsibleLabel": "Odgovorna osoba prema § 55 st. 1 RStV"
+  },
+  "homeserver": {
+    "metadata": {
+      "title": "Podrska za homeserver i Nextcloud",
+      "description": "Postavljanje i podrska za self-hosted homeservere, Nextcloud, udaljeni pristup, sigurnosne kopije i prakticne svakodnevne procese."
+    },
+    "navLabel": "Navigacija usluge homeservera",
+    "eyebrow": "Usluga",
+    "title": "Pomoc s Nextcloudom i homeserverom",
+    "badge": "Self-hosted i prakticno",
+    "copy": "Pomazem ljudima postaviti praktican self-hosted sustav oko Nextclouda i malog homeservera. To moze ukljucivati planiranje hardvera, konfiguraciju hosta i instalacija s Dockerom, udaljeni pristup, sigurnosne kopije, nadogradnje, sinkronizaciju datoteka i osnovne sigurnosne korake potrebne da sustav ostane upotrebljiv.",
+    "bookCta": "Rezerviraj online razgovor",
+    "mailCta": "Kontakt e-postom",
+    "detailsEyebrow": "Nextcloud detaljno",
+    "detailsTitle": "Jedan kucni sustav, sest svakodnevnih alata",
+    "detailsCopy": "Nextcloud moze objediniti kontakte, kalendar, biljeske, zadatke, lozinke i upravljanje datotekama na jednom mjestu kod kuce, tako da svakodnevni podaci ostanu centralizirani na sustavu koji kontroliras.",
+    "features": {
+      "contacts": {
+        "name": "Kontakti",
+        "description": "Zajednicki adresar za ljude, tvrtke i brzu dostupnost."
+      },
+      "calendar": {
+        "name": "Kalendar",
+        "description": "Termini, podsjetnici i obiteljsko ili timsko planiranje na jednom mjestu."
+      },
+      "notes": {
+        "name": "Biljeske",
+        "description": "Jednostavne sinkronizirane biljeske za ideje, popise i informacije o kucanstvu."
+      },
+      "tasks": {
+        "name": "Zadaci",
+        "description": "Prati sto treba napraviti bez rasprsivanja podsjetnika kroz vise aplikacija."
+      },
+      "passwords": {
+        "name": "Lozinke",
+        "description": "Prakticno centralno mjesto za vjerodajnice i osjetljive zajednicke pristupe."
+      },
+      "files": {
+        "name": "Datoteke",
+        "description": "Centralno upravljanje datotekama i sinkronizacija izmedu laptopa, telefona i homeservera."
+      }
+    },
+    "helpEyebrow": "S cim mogu pomoci",
+    "helpTitle": "Od prve kutije do svakodnevno funkcionalnog sustava",
+    "helpCards": {
+      "planning": {
+        "title": "Planiranje i hardver",
+        "description": "Odabir realnog stroja, rasporeda pohrane i mrezne postavke za tvoj dom ili mali ured."
+      },
+      "installation": {
+        "title": "Instalacija Nextclouda",
+        "description": "Pomoc pri instalaciji Nextclouda, povezivanju pohrane, postavljanju korisnickih racuna, sync klijenata i prakticnih aplikacija za uobicajene slucajeve uporabe."
+      },
+      "support": {
+        "title": "Udaljena ili terenska podrska",
+        "description": "Podrska se moze odvijati udaljeno ili na lokaciji, ovisno o tome sto je jednostavnije za posao i tvoju lokaciju."
+      }
+    },
+    "pricingEyebrow": "Detalji",
+    "pricingTitle": "Cijena i kontakt",
+    "pricingCopy": "Podrska za homeserver i Nextcloud nudi se po cijeni od 15 EUR po satu. Moguce su i udaljene sesije i pomoc na lokaciji.",
+    "bookLink": "Rezerviraj online razgovor",
+    "telegramLabel": "Telegram"
+  },
+  "bikeRepair": {
+    "metadata": {
+      "title": "Popravak bicikala u Bielefeldu",
+      "description": "Prakticna pomoc oko popravka bicikala u Bielefeldu i okolici za svakodnevno odrzavanje i uobicajene probleme."
+    },
+    "navLabel": "Navigacija usluge popravka bicikla",
+    "eyebrow": "Usluga",
+    "title": "Popravak bicikala u Bielefeldu i okolici",
+    "copyOne": "Pomazem s prakticnim popravcima bicikala za gradske bicikle, trekking bicikle i svakodnevne transportne bicikle u Bielefeldu i okolici. Fokus je na pouzdanim rjesenjima, jasnoj komunikaciji i vracanju bicikla u redovitu uporabu bez pretvaranja jednostavnog popravka u dramu.",
+    "copyTwo": "Tipicni poslovi ukljucuju busenja guma, podesavanje kocnica, rad na lancu i kazeti, podesavanje mjenjaca, zamjenu istrosenih dijelova i opce provjere odrzavanja prije nego sto bicikl postane naporan ili nesiguran za voznju.",
+    "bookCta": "Rezerviraj razgovor o popravku",
+    "mailCta": "Kontakt e-postom",
+    "helpEyebrow": "S cim mogu pomoci",
+    "helpTitle": "Korisni popravci za svakodnevnu voznju",
+    "helpCards": {
+      "drivetrain": {
+        "title": "Kocnice, mjenjaci i pogon",
+        "description": "Podesavanje i zamjena dijelova koji bicikl najcesce cine bucnim, sporim ili frustrirajucim za uporabu."
+      },
+      "wear": {
+        "title": "Probushene gume i istroseni dijelovi",
+        "description": "Promjene zracnica i guma, provjere istrosenosti lanca, sajle, pakne i uobicajeni popravci koji odrzavaju gradski bicikl pouzdanim."
+      },
+      "handoff": {
+        "title": "Na lokaciji ili dogovorena primopredaja",
+        "description": "Ovisno o poslu i udaljenosti, podrska se moze odvijati na lokaciji u podrucju Bielefelda ili kroz dogovoreni dropoff i pickup."
+      }
+    },
+    "pricingEyebrow": "Detalji",
+    "pricingTitle": "Cijena i kontakt",
+    "pricingCopy": "Podrska za popravak bicikla nudi se po cijeni od 15 EUR po satu. Dijelovi se naplacuju odvojeno kada su potrebne zamjene.",
+    "bookLink": "Rezerviraj razgovor o popravku",
+    "telegramLabel": "Telegram"
+  },
+  "dev": {
+    "metadata": {
+      "title": "Izvori",
+      "description": "Javni GitLab projekti tvrtke Trainvent i njihova nedavna aktivnost."
+    },
+    "navLabel": "Navigacija izvora za razvoj",
+    "eyebrow": "Izvori za razvoj",
+    "title": "GitLab projekti",
+    "subtitlePrefix": "Automatski sinkronizirano s",
+    "loadingProjects": "Ucitavanje projekata...",
+    "loading": "Ucitavanje...",
+    "loadErrorSummary": "Nije bilo moguce ucitati projekte.",
+    "loadErrorDetail": "Nije bilo moguce ucitati projekte iz GitLab API-ja",
+    "noDescription": "Opis nije naveden.",
+    "updatedLabel": "Azurirano",
+    "openProject": "Otvori projekt",
+    "publicProjectsSingular": "javni projekt",
+    "publicProjectsPlural": "javni projekti"
+  }
+}

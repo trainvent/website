@@ -8,7 +8,10 @@
     "languageLabel": "Language",
     "localeNames": {
       "en": "English",
-      "de": "German"
+      "de": "German",
+      "nl": "Dutch",
+      "ja": "Japanese",
+      "hr": "Croatian"
     },
     "navItems": {
       "home": "Home",
@@ -231,4 +234,3 @@
     "publicProjectsPlural": "public projects"
   }
 }
-

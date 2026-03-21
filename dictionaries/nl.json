@@ -1,0 +1,236 @@
+{
+  "metadata": {
+    "siteTitle": "Trainvent",
+    "siteDescription": "Trainvent bouwt praktische digitale systemen, automatisering en haalbare productworkflows."
+  },
+  "header": {
+    "brandAriaLabel": "Trainvent startpagina",
+    "languageLabel": "Taal",
+    "localeNames": {
+      "en": "Engels",
+      "de": "Duits",
+      "nl": "Nederlands",
+      "ja": "Japans",
+      "hr": "Kroatisch"
+    },
+    "navItems": {
+      "home": "Start",
+      "contact": "Contact",
+      "dev": "Bronnen",
+      "imprint": "Colofon"
+    }
+  },
+  "home": {
+    "navLabel": "Hoofdnavigatie",
+    "eyebrow": "Intro",
+    "title": "frisse ideeen in beweging.",
+    "copy": "Wij combineren productdenken, uitvoering en basisoperaties om dingen te bouwen. Niet elk idee is een unicorn - we zijn al blij als iets nuttig is en misschien ooit winstgevend wordt.",
+    "primaryCta": "Project starten",
+    "secondaryCta": "Shop",
+    "topicNavAriaLabel": "Onderwerpen op de startpagina",
+    "topicNavLabel": "Spring naar een onderwerp",
+    "topics": {
+      "services": "Diensten",
+      "projects": "Projecten",
+      "about": "Over"
+    },
+    "servicesEyebrow": "Diensten",
+    "servicesTitle": "Gerichte diensten met meetbaar resultaat",
+    "services": {
+      "homeserver": {
+        "title": "Homeserver- en Nextcloud-ondersteuning",
+        "description": "Installatie en ondersteuning voor zelfgehoste homeservers, Nextcloud, back-ups, externe toegang en de kleine maar belangrijke veiligheidsbasis die het systeem bruikbaar houdt.",
+        "linkLabel": "Bekijk homeserver-hulp"
+      },
+      "bikeRepair": {
+        "title": "Fietsreparatie in Bielefeld",
+        "description": "Praktische hulp bij fietsreparaties in en rond Bielefeld voor dagelijkse problemen zoals remmen, versnellingen, binnenbanden, kettingen en onderhoud dat je fiets weer op weg helpt.",
+        "linkLabel": "Bekijk fietsservice"
+      }
+    },
+    "projectsEyebrow": "Projecten",
+    "projectsTitle": "Andere websites in ons projectnetwerk",
+    "projectsCopy": "Een snel overzicht van andere actieve projectwebsites.",
+    "projectCta": "Website openen",
+    "unprototypedLabel": "nog niet geprototypeerd",
+    "aboutEyebrow": "Over",
+    "aboutTitle": "Dit zijn wij",
+    "aboutCopy": "Trainvent is een bescheiden bedrijfswebsite die zoveel mogelijk nieuwe ideeen zichtbaar wil maken. Sinds de oprichting op 24.2.2026 gebruiken we nadrukkelijk geen dode dieren.",
+    "teamRoles": {
+      "leon": "Oprichter",
+      "seva": "Assistent Product & Operaties",
+      "joe": "Debugging"
+    },
+    "contactLabels": {
+      "mail": "Mail",
+      "gravatar": "Gravatar",
+      "telegram": "Telegram",
+      "phone": "Telefoon",
+      "website": "Website",
+      "fallback": "Contact op aanvraag"
+    },
+    "footerImprint": "Colofon",
+    "projectDescriptions": {
+      "caesim": "hulpmiddel voor gegevensfiltering",
+      "calcrow": "bewerking van rekenbladen met een enkele rij",
+      "stimmapp": "stemapp",
+      "portopener": "universeel netwerkhulpmiddel",
+      "trexip": "kassasysteem"
+    }
+  },
+  "contact": {
+    "metadata": {
+      "title": "Contact",
+      "description": "Neem contact op met Trainvent met je e-mail, optioneel telefoonnummer of Telegram en een kort projectbericht."
+    },
+    "navLabel": "Navigatie van de contactpagina",
+    "eyebrow": "Contact",
+    "heroCopy": "Als je liever geen formulier gebruikt, kun je ons ook direct mailen op:",
+    "emailLabel": "Je e-mail",
+    "messageLabel": "Bericht",
+    "messagePlaceholder": "Vertel ons wat je nodig hebt.",
+    "optionalLabel": "Optioneel alternatief contact",
+    "phoneLabel": "Telefoonnummer",
+    "telegramLabel": "Telegram",
+    "submitLabel": "Bericht verzenden"
+  },
+  "contactSent": {
+    "metadata": {
+      "title": "Bericht verzonden",
+      "description": "Bevestigingspagina na het verzenden van een bericht naar Trainvent."
+    },
+    "eyebrow": "Contact",
+    "title": "Bedankt voor je bericht.",
+    "copy": "Je bericht is verzonden. Trainvent antwoordt op het e-mailadres dat je in het formulier hebt ingevuld.",
+    "backHome": "Terug naar start",
+    "sendAnother": "Nog een bericht sturen"
+  },
+  "imprint": {
+    "metadata": {
+      "title": "Colofon",
+      "description": "Juridische en aanbiederinformatie voor Trainvent."
+    },
+    "navLabel": "Navigatie van de colofonpagina",
+    "providerLabel": "Aanbieder van deze website is:",
+    "phoneLabel": "Telefoon",
+    "emailLabel": "E-mail",
+    "companyNumberLabel": "Bedrijfsnummer (UNR.S)",
+    "responsibleLabel": "Verantwoordelijke volgens § 55 lid 1 RStV"
+  },
+  "homeserver": {
+    "metadata": {
+      "title": "Homeserver- en Nextcloud-ondersteuning",
+      "description": "Installatie en ondersteuning voor zelfgehoste homeservers, Nextcloud, externe toegang, back-ups en praktische dagelijkse workflows."
+    },
+    "navLabel": "Navigatie van de homeserverdienst",
+    "eyebrow": "Dienst",
+    "title": "Hulp met Nextcloud en homeservers",
+    "badge": "Zelfgehost en praktisch",
+    "copy": "Ik help mensen bij het opzetten van een praktisch zelfgehost systeem rond Nextcloud en een kleine homeserver. Dat kan onder meer hardwareplanning, configuratie van host en installaties met Docker, externe toegang, back-ups, updates, bestandssynchronisatie en de basisbeveiliging omvatten die nodig is om de opstelling bruikbaar te houden.",
+    "bookCta": "Online gesprek boeken",
+    "mailCta": "Contact via e-mail",
+    "detailsEyebrow": "Nextcloud in detail",
+    "detailsTitle": "Een thuissysteem, zes dagelijkse hulpmiddelen",
+    "detailsCopy": "Nextcloud kan contacten, agenda, notities, taken, wachtwoorden en bestandsbeheer op een plek thuis samenbrengen, zodat dagelijkse data centraal blijven op een systeem dat je zelf beheert.",
+    "features": {
+      "contacts": {
+        "name": "Contacten",
+        "description": "Een gedeeld adresboek voor mensen, bedrijven en snelle bereikbaarheid."
+      },
+      "calendar": {
+        "name": "Agenda",
+        "description": "Afspraken, herinneringen en planning voor gezin of team op een plek."
+      },
+      "notes": {
+        "name": "Notities",
+        "description": "Eenvoudige gesynchroniseerde notities voor ideeen, checklists en huishoudinformatie."
+      },
+      "tasks": {
+        "name": "Taken",
+        "description": "Houd bij wat er moet gebeuren zonder herinneringen over allerlei apps te verspreiden."
+      },
+      "passwords": {
+        "name": "Wachtwoorden",
+        "description": "Een praktische thuisbasis voor inloggegevens en gevoelige gedeelde toegang."
+      },
+      "files": {
+        "name": "Bestanden",
+        "description": "Centraal bestandsbeheer en synchronisatie tussen laptop, telefoon en homeserver."
+      }
+    },
+    "helpEyebrow": "Waarmee ik kan helpen",
+    "helpTitle": "Van eerste doos tot werkende dagelijkse opstelling",
+    "helpCards": {
+      "planning": {
+        "title": "Planning en hardware",
+        "description": "Het kiezen van een realistische machine, opslagindeling en netwerkopstelling voor thuis of een klein kantoor."
+      },
+      "installation": {
+        "title": "Nextcloud-installatie",
+        "description": "Hulp bij het installeren van Nextcloud, opslag koppelen, gebruikersaccounts instellen, sync-clients en praktische apps voor veelvoorkomende toepassingen."
+      },
+      "support": {
+        "title": "Remote of op locatie",
+        "description": "Ondersteuning kan op afstand of op locatie plaatsvinden, afhankelijk van wat handiger is voor de klus en jouw locatie."
+      }
+    },
+    "pricingEyebrow": "Details",
+    "pricingTitle": "Prijs en contact",
+    "pricingCopy": "Homeserver- en Nextcloud-ondersteuning wordt aangeboden voor 15 EUR per uur. Sessies op afstand en hulp op locatie zijn beide mogelijk.",
+    "bookLink": "Online gesprek boeken",
+    "telegramLabel": "Telegram"
+  },
+  "bikeRepair": {
+    "metadata": {
+      "title": "Fietsreparatie in Bielefeld",
+      "description": "Praktische hulp bij fietsreparaties in en rond Bielefeld voor dagelijks onderhoud en veelvoorkomende problemen."
+    },
+    "navLabel": "Navigatie van de fietsreparatiedienst",
+    "eyebrow": "Dienst",
+    "title": "Fietsreparatie in en rond Bielefeld",
+    "copyOne": "Ik help bij praktische fietsreparaties voor stadsfietsen, trekkingfietsen en dagelijkse transportfietsen in en rond Bielefeld. De focus ligt op betrouwbare oplossingen, duidelijke communicatie en je fiets weer normaal bruikbaar maken zonder van een eenvoudige reparatie een drama te maken.",
+    "copyTwo": "Typische klussen zijn lekke banden, remafstelling, werk aan ketting en cassette, afstellen van versnellingen, vervangen van versleten onderdelen en algemene onderhoudscontroles voordat een fiets irritant of onveilig wordt om te rijden.",
+    "bookCta": "Reparatiegesprek boeken",
+    "mailCta": "Contact via e-mail",
+    "helpEyebrow": "Waarmee ik kan helpen",
+    "helpTitle": "Nuttige reparaties voor dagelijks fietsen",
+    "helpCards": {
+      "drivetrain": {
+        "title": "Remmen, versnellingen en aandrijving",
+        "description": "Afstel- en vervangingswerk voor de onderdelen die een fiets het vaakst luidruchtig, traag of frustrerend maken."
+      },
+      "wear": {
+        "title": "Lekke banden en slijtageonderdelen",
+        "description": "Binnen- en buitenbandwissels, controle van kettingslijtage, kabels, remblokken en de gebruikelijke reparaties die een forenzenfiets betrouwbaar houden."
+      },
+      "handoff": {
+        "title": "Op locatie of afgesproken overdracht",
+        "description": "Afhankelijk van de klus en afstand kan ondersteuning op locatie in de regio Bielefeld plaatsvinden of via een afgesproken breng- en haalmoment."
+      }
+    },
+    "pricingEyebrow": "Details",
+    "pricingTitle": "Prijs en contact",
+    "pricingCopy": "Fietsreparatie wordt aangeboden voor 15 EUR per uur. Onderdelen worden apart berekend wanneer vervanging nodig is.",
+    "bookLink": "Reparatiegesprek boeken",
+    "telegramLabel": "Telegram"
+  },
+  "dev": {
+    "metadata": {
+      "title": "Bronnen",
+      "description": "Openbare GitLab-projecten van Trainvent en hun recente activiteit."
+    },
+    "navLabel": "Navigatie van ontwikkelaarsbronnen",
+    "eyebrow": "Ontwikkelaarsbronnen",
+    "title": "GitLab-projecten",
+    "subtitlePrefix": "Automatisch gesynchroniseerd van",
+    "loadingProjects": "Projecten laden...",
+    "loading": "Laden...",
+    "loadErrorSummary": "Projecten konden niet worden geladen.",
+    "loadErrorDetail": "Projecten konden niet uit de GitLab-API worden geladen",
+    "noDescription": "Geen beschrijving beschikbaar.",
+    "updatedLabel": "Bijgewerkt",
+    "openProject": "Project openen",
+    "publicProjectsSingular": "openbaar project",
+    "publicProjectsPlural": "openbare projecten"
+  }
+}

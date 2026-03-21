@@ -1,4 +1,4 @@
-export const locales = ["en", "de"] as const;
+export const locales = ["en", "de", "nl", "ja", "hr"] as const;
 
 export type Locale = (typeof locales)[number];
 
@@ -15,4 +15,3 @@ export function getLocalizedHref(locale: Locale, pathname: string) {
 
 	return `/${locale}${pathname.startsWith("/") ? pathname : `/${pathname}`}`;
 }
-

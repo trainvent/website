@@ -1,0 +1,236 @@
+{
+  "metadata": {
+    "siteTitle": "Trainvent",
+    "siteDescription": "Trainventは、実用的なデジタルシステム、自動化、そして現実的なプロダクト運用フローを構築します。"
+  },
+  "header": {
+    "brandAriaLabel": "Trainvent ホーム",
+    "languageLabel": "言語",
+    "localeNames": {
+      "en": "英語",
+      "de": "ドイツ語",
+      "nl": "オランダ語",
+      "ja": "日本語",
+      "hr": "クロアチア語"
+    },
+    "navItems": {
+      "home": "ホーム",
+      "contact": "お問い合わせ",
+      "dev": "ソース",
+      "imprint": "運営者情報"
+    }
+  },
+  "home": {
+    "navLabel": "メインナビゲーション",
+    "eyebrow": "イントロ",
+    "title": "新しいアイデアに風を送る。",
+    "copy": "私たちは、プロダクト思考、実装、そして基本的な運用を組み合わせて何かを形にします。すべてのアイデアがユニコーンである必要はありません。役に立ち、いつか利益につながるかもしれないものなら、それで十分です。",
+    "primaryCta": "プロジェクトを始める",
+    "secondaryCta": "ショップ",
+    "topicNavAriaLabel": "ホームページのトピック",
+    "topicNavLabel": "トピックへ移動",
+    "topics": {
+      "services": "サービス",
+      "projects": "プロジェクト",
+      "about": "私たちについて"
+    },
+    "servicesEyebrow": "サービス",
+    "servicesTitle": "成果が見える、絞り込まれたサービス",
+    "services": {
+      "homeserver": {
+        "title": "ホームサーバーとNextcloudサポート",
+        "description": "セルフホスト型ホームサーバー、Nextcloud、バックアップ、リモートアクセス、そして日常的に使える状態を保つための小さいけれど重要なセキュリティの基本を支援します。",
+        "linkLabel": "ホームサーバー支援を見る"
+      },
+      "bikeRepair": {
+        "title": "ビーレフェルトでの自転車修理",
+        "description": "ブレーキ、変速、チューブ、チェーン、基本的なメンテナンスなど、日常的な問題に対してビーレフェルト周辺で実用的な自転車修理支援を行います。",
+        "linkLabel": "自転車修理サービスを見る"
+      }
+    },
+    "projectsEyebrow": "プロジェクト",
+    "projectsTitle": "私たちのプロジェクトネットワークにある他のウェブページ",
+    "projectsCopy": "公開中の他プロジェクトサイトをすばやく一覧できます。",
+    "projectCta": "サイトを開く",
+    "unprototypedLabel": "まだプロトタイプ未作成",
+    "aboutEyebrow": "私たちについて",
+    "aboutTitle": "私たちについて",
+    "aboutCopy": "Trainventは、さまざまな新しいアイデアを見せることを目指す小さな会社のウェブサイトです。2026年2月24日の設立以来、私たちは厳格に死んだ動物を利用していません。",
+    "teamRoles": {
+      "leon": "創業者",
+      "seva": "プロダクト・オペレーション補佐",
+      "joe": "デバッグ"
+    },
+    "contactLabels": {
+      "mail": "メール",
+      "gravatar": "Gravatar",
+      "telegram": "Telegram",
+      "phone": "電話",
+      "website": "ウェブサイト",
+      "fallback": "お問い合わせ対応"
+    },
+    "footerImprint": "運営者情報",
+    "projectDescriptions": {
+      "caesim": "データ絞り込みツール",
+      "calcrow": "1行計算シート操作",
+      "stimmapp": "投票アプリ",
+      "portopener": "汎用ネットワークツール",
+      "trexip": "レジシステム"
+    }
+  },
+  "contact": {
+    "metadata": {
+      "title": "お問い合わせ",
+      "description": "メールアドレス、任意の電話番号やTelegram、短いメッセージでTrainventへ連絡できます。"
+    },
+    "navLabel": "お問い合わせページのナビゲーション",
+    "eyebrow": "お問い合わせ",
+    "heroCopy": "フォームを使いたくない場合は、次のメールアドレスへ直接ご連絡いただけます:",
+    "emailLabel": "メールアドレス",
+    "messageLabel": "メッセージ",
+    "messagePlaceholder": "必要な内容を教えてください。",
+    "optionalLabel": "任意の別連絡先",
+    "phoneLabel": "電話番号",
+    "telegramLabel": "Telegram",
+    "submitLabel": "メッセージを送信"
+  },
+  "contactSent": {
+    "metadata": {
+      "title": "送信完了",
+      "description": "Trainventへメッセージを送信した後の確認ページです。"
+    },
+    "eyebrow": "お問い合わせ",
+    "title": "ご連絡ありがとうございます。",
+    "copy": "メッセージは送信されました。Trainventから、フォームに入力したメールアドレスへ返信します。",
+    "backHome": "ホームに戻る",
+    "sendAnother": "もう一度送る"
+  },
+  "imprint": {
+    "metadata": {
+      "title": "運営者情報",
+      "description": "Trainventの法的情報および運営者情報。"
+    },
+    "navLabel": "運営者情報ページのナビゲーション",
+    "providerLabel": "このウェブサイトの運営者:",
+    "phoneLabel": "電話",
+    "emailLabel": "メール",
+    "companyNumberLabel": "会社番号 (UNR.S)",
+    "responsibleLabel": "§55 para. 1 RStV に基づく責任者"
+  },
+  "homeserver": {
+    "metadata": {
+      "title": "ホームサーバーとNextcloudサポート",
+      "description": "セルフホスト型ホームサーバー、Nextcloud、リモートアクセス、バックアップ、日常運用の支援。"
+    },
+    "navLabel": "ホームサーバーサービスのナビゲーション",
+    "eyebrow": "サービス",
+    "title": "Nextcloudとホームサーバーの支援",
+    "badge": "セルフホストで実用的",
+    "copy": "私は、Nextcloudと小型ホームサーバーを中心にした実用的なセルフホスト環境の構築を支援します。ハードウェア計画、Dockerによるホストと各種インストールの設定、リモートアクセス、バックアップ、更新、ファイル同期、そして継続利用に必要な基本的なセキュリティ対策まで含められます。",
+    "bookCta": "オンライン相談を予約",
+    "mailCta": "メールで連絡",
+    "detailsEyebrow": "Nextcloudの詳細",
+    "detailsTitle": "ひとつの家庭用システム、6つの日常ツール",
+    "detailsCopy": "Nextcloudは、連絡先、カレンダー、メモ、タスク、パスワード、ファイル管理を家庭内でひとつの場所にまとめ、日常データを自分で管理できるシステム上に集約できます。",
+    "features": {
+      "contacts": {
+        "name": "連絡先",
+        "description": "人や会社のための共有アドレス帳で、すぐに連絡できます。"
+      },
+      "calendar": {
+        "name": "カレンダー",
+        "description": "予定、リマインダー、家族やチームの予定調整をひとつの場所で。"
+      },
+      "notes": {
+        "name": "メモ",
+        "description": "アイデア、チェックリスト、家庭内情報のためのシンプルな同期メモ。"
+      },
+      "tasks": {
+        "name": "タスク",
+        "description": "やるべきことを、複数のアプリに散らさず管理できます。"
+      },
+      "passwords": {
+        "name": "パスワード",
+        "description": "認証情報や共有アクセスを安全にまとめる実用的な拠点です。"
+      },
+      "files": {
+        "name": "ファイル",
+        "description": "ノートPC、スマートフォン、ホームサーバー間の中央ファイル管理と同期。"
+      }
+    },
+    "helpEyebrow": "対応できること",
+    "helpTitle": "最初の箱から日常で使える構成まで",
+    "helpCards": {
+      "planning": {
+        "title": "計画とハードウェア",
+        "description": "自宅や小規模オフィス向けに、現実的なマシン、ストレージ構成、ネットワーク構成を選びます。"
+      },
+      "installation": {
+        "title": "Nextcloudの導入",
+        "description": "Nextcloudのインストール、ストレージ接続、ユーザーアカウント設定、同期クライアント、一般的な用途向けの実用的なアプリ導入を支援します。"
+      },
+      "support": {
+        "title": "リモートまたは現地対応",
+        "description": "作業内容や場所に応じて、リモートでも現地でも対応できます。"
+      }
+    },
+    "pricingEyebrow": "詳細",
+    "pricingTitle": "料金と連絡先",
+    "pricingCopy": "ホームサーバーおよびNextcloudサポートは1時間あたり15ユーロです。リモート対応と現地対応の両方が可能です。",
+    "bookLink": "オンライン相談を予約",
+    "telegramLabel": "Telegram"
+  },
+  "bikeRepair": {
+    "metadata": {
+      "title": "ビーレフェルトでの自転車修理",
+      "description": "ビーレフェルト周辺での日常整備やよくある故障への実用的な自転車修理支援。"
+    },
+    "navLabel": "自転車修理サービスのナビゲーション",
+    "eyebrow": "サービス",
+    "title": "ビーレフェルトとその周辺での自転車修理",
+    "copyOne": "私は、ビーレフェルト周辺でシティバイク、トレッキングバイク、日常輸送用バイクの実用的な修理を手伝います。重視しているのは、信頼できる修理、分かりやすいコミュニケーション、そして簡単な修理を大ごとにせず自転車を再び日常で使える状態に戻すことです。",
+    "copyTwo": "よくある作業には、パンク修理、ブレーキ調整、チェーンとカセット作業、変速調整、消耗部品の交換、そして自転車が扱いづらくなったり危険になったりする前の一般点検が含まれます。",
+    "bookCta": "修理相談を予約",
+    "mailCta": "メールで連絡",
+    "helpEyebrow": "対応できること",
+    "helpTitle": "日常走行のための実用的な修理",
+    "helpCards": {
+      "drivetrain": {
+        "title": "ブレーキ、変速、ドライブトレイン",
+        "description": "自転車をうるさく、遅く、使いにくくしがちな部品の調整や交換に対応します。"
+      },
+      "wear": {
+        "title": "パンクと消耗部品",
+        "description": "チューブとタイヤの交換、チェーン摩耗の確認、ケーブル、ブレーキパッドなど、通勤用自転車を信頼できる状態に保つ一般的な修理です。"
+      },
+      "handoff": {
+        "title": "現地対応または受け渡し調整",
+        "description": "作業内容や距離に応じて、ビーレフェルト地域での現地対応、または持ち込みと受け取りの調整が可能です。"
+      }
+    },
+    "pricingEyebrow": "詳細",
+    "pricingTitle": "料金と連絡先",
+    "pricingCopy": "自転車修理サポートは1時間あたり15ユーロです。交換部品が必要な場合、部品代は別途請求されます。",
+    "bookLink": "修理相談を予約",
+    "telegramLabel": "Telegram"
+  },
+  "dev": {
+    "metadata": {
+      "title": "ソース",
+      "description": "Trainventの公開GitLabプロジェクトと最近の活動。"
+    },
+    "navLabel": "開発ソースのナビゲーション",
+    "eyebrow": "開発ソース",
+    "title": "GitLabプロジェクト",
+    "subtitlePrefix": "次から自動同期",
+    "loadingProjects": "プロジェクトを読み込み中...",
+    "loading": "読み込み中...",
+    "loadErrorSummary": "プロジェクトを読み込めませんでした。",
+    "loadErrorDetail": "GitLab APIからプロジェクトを読み込めませんでした",
+    "noDescription": "説明はありません。",
+    "updatedLabel": "更新日",
+    "openProject": "プロジェクトを開く",
+    "publicProjectsSingular": "公開プロジェクト",
+    "publicProjectsPlural": "公開プロジェクト"
+  }
+}

@@ -42,8 +42,6 @@ const teamMembers: Array<{
 		photo: "/leon.jpg",
 		mail: "leon@trainvent.com",
 		gravatarEmail: "leon.marquardt@gmx.de",
-		telegram: "lmarquar",
-		phone: "+49160345542",
 		website: "https://leonmarquardt.com",
 	},
 	{
