@@ -70,6 +70,7 @@
       "fallback": "Kontakt na zahtjev"
     },
     "footerImprint": "Impresum",
+    "footerSupport": "Softverska podrska",
     "projectDescriptions": {
       "caesim": "alat za filtriranje podataka",
       "calcrow": "obrada tablica s jednim redom",

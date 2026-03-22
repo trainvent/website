@@ -721,7 +721,8 @@ p {
 }
 
 .field input,
-.field textarea {
+.field textarea,
+.field select {
   width: 100%;
   border: 2px solid var(--line);
   border-radius: 0;
@@ -754,7 +755,8 @@ p {
 }
 
 .field input:focus,
-.field textarea:focus {
+.field textarea:focus,
+.field select:focus {
   outline: 3px solid rgba(0, 183, 167, 0.18);
   outline-offset: 1px;
 }

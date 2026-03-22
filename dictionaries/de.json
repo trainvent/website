@@ -70,6 +70,7 @@
       "fallback": "Kontakt auf Anfrage"
     },
     "footerImprint": "Impressum",
+    "footerSupport": "Software-Support",
     "projectDescriptions": {
       "caesim": "Werkzeug zur Datenfilterung",
       "calcrow": "Bearbeitung von Tabellen mit nur einer Zeile",

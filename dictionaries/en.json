@@ -70,6 +70,7 @@
       "fallback": "Contact on request"
     },
     "footerImprint": "Imprint",
+    "footerSupport": "Software Support",
     "projectDescriptions": {
       "caesim": "data filtering tool",
       "calcrow": "single row calc sheet manipulation",

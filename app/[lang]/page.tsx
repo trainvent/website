@@ -285,6 +285,10 @@ export default async function LocalizedHomePage({ params }: RouteProps) {
 					<a href={getLocalizedHref(lang, "/imprint")}>
 						{dict.home.footerImprint}
 					</a>
+					{" · "}
+					<a href={getLocalizedHref(lang, "/software-supprt")}>
+						{dict.home.footerSupport}
+					</a>
 				</small>
 			</footer>
 		</main>

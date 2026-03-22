@@ -70,6 +70,7 @@
       "fallback": "Contact op aanvraag"
     },
     "footerImprint": "Colofon",
+    "footerSupport": "Softwareondersteuning",
     "projectDescriptions": {
       "caesim": "hulpmiddel voor gegevensfiltering",
       "calcrow": "bewerking van rekenbladen met een enkele rij",
