@@ -14,8 +14,9 @@ const nextConfig = {
   // Specify the path if your app is not deployed at the root of your domain.
   // basePath: '/',
 
-  // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
-  // trailingSlash: true,
+  // Emit directory-style routes so static hosts like GitLab Pages can serve
+  // `/en/` from `out/en/index.html`.
+  trailingSlash: true,
 
   // Optional: Prevent automatic `/me` -> `/me/`, instead preserve `href`
   // skipTrailingSlashRedirect: true,
