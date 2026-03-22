@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
+import LocalizedSiteFooter from "../components/localized-site-footer";
 import { getDictionary } from "./dictionaries";
 import { hasLocale, locales } from "@/lib/i18n";
 
@@ -51,6 +52,14 @@ export default async function LocaleLayout({
 		notFound();
 	}
 
-	return <div lang={lang}>{children}</div>;
-}
+	const dict = await getDictionary(lang);
 
+	return (
+		<div lang={lang}>
+			{children}
+			<div className="site-shell">
+				<LocalizedSiteFooter locale={lang} labels={dict.home} />
+			</div>
+		</div>
+	);
+}

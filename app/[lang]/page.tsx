@@ -5,7 +5,7 @@ import { notFound } from "next/navigation";
 import type { Dictionary } from "./dictionaries";
 import { getDictionary } from "./dictionaries";
 import LocalizedSiteHeader from "../components/localized-site-header";
-import { getLocalizedHref, hasLocale, type Locale } from "@/lib/i18n";
+import { getLocalizedHref, hasLocale } from "@/lib/i18n";
 
 type RouteProps = {
 	params: Promise<{ lang: string }>;
@@ -279,18 +279,6 @@ export default async function LocalizedHomePage({ params }: RouteProps) {
 					))}
 				</div>
 			</section>
-
-			<footer className="site-footer">
-				<small>
-					<a href={getLocalizedHref(lang, "/imprint")}>
-						{dict.home.footerImprint}
-					</a>
-					{" · "}
-					<a href={getLocalizedHref(lang, "/software-supprt")}>
-						{dict.home.footerSupport}
-					</a>
-				</small>
-			</footer>
 		</main>
 	);
 }

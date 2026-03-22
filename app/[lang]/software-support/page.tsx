@@ -49,7 +49,7 @@ export default async function LocalizedSoftwareSupportPage({
 				navLabel={dict.contact.navLabel}
 				header={dict.header}
 				locale={lang}
-				currentPath="/software-supprt"
+				currentPath="/software-support"
 			/>
 
 			<section className="hero connected-panel reveal reveal-delay-1">
