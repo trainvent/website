@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 
 import type { Dictionary } from "./dictionaries";
 import { getDictionary } from "./dictionaries";
-import SiteHeader from "../components/site-header";
+import LocalizedSiteHeader from "../components/localized-site-header";
 import { getLocalizedHref, hasLocale, type Locale } from "@/lib/i18n";
 
 type RouteProps = {
@@ -67,15 +67,6 @@ function getGravatarProfileUrl(email: string) {
 	return `https://gravatar.com/${hash}`;
 }
 
-function getHeaderNavItems(dict: Dictionary, locale: Locale) {
-	return [
-		{ href: `/${locale}`, label: dict.header.navItems.home },
-		{ href: `/${locale}/contact`, label: dict.header.navItems.contact },
-		{ href: `/${locale}/dev`, label: dict.header.navItems.dev },
-		{ href: `/${locale}/imprint`, label: dict.header.navItems.imprint },
-	];
-}
-
 export default async function LocalizedHomePage({ params }: RouteProps) {
 	const { lang } = await params;
 
@@ -92,15 +83,11 @@ export default async function LocalizedHomePage({ params }: RouteProps) {
 			<div className="ambient ambient-top" aria-hidden="true" />
 			<div className="ambient ambient-bottom" aria-hidden="true" />
 
-			<SiteHeader
+			<LocalizedSiteHeader
 				navLabel={dict.home.navLabel}
-				brandHref={`/${lang}`}
-				brandAriaLabel={dict.header.brandAriaLabel}
-				navItems={getHeaderNavItems(dict, lang)}
+				header={dict.header}
 				locale={lang}
 				currentPath="/"
-				languageLabel={dict.header.languageLabel}
-				localeNames={dict.header.localeNames}
 			/>
 
 			<section id="home" className="hero connected-panel reveal reveal-delay-1">
@@ -303,4 +290,3 @@ export default async function LocalizedHomePage({ params }: RouteProps) {
 		</main>
 	);
 }
-

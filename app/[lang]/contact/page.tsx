@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import Script from "next/script";
 
 import { getDictionary } from "../dictionaries";
-import SiteHeader from "../../components/site-header";
+import LocalizedSiteHeader from "../../components/localized-site-header";
 import { hasLocale } from "@/lib/i18n";
 
 type RouteProps = {
@@ -53,20 +53,11 @@ export default async function LocalizedContactPage({ params }: RouteProps) {
 			<div className="ambient ambient-top" aria-hidden="true" />
 			<div className="ambient ambient-bottom" aria-hidden="true" />
 
-			<SiteHeader
+			<LocalizedSiteHeader
 				navLabel={dict.contact.navLabel}
-				brandHref={`/${lang}`}
-				brandAriaLabel={dict.header.brandAriaLabel}
-				navItems={[
-					{ href: `/${lang}`, label: dict.header.navItems.home },
-					{ href: `/${lang}/contact`, label: dict.header.navItems.contact },
-					{ href: `/${lang}/dev`, label: dict.header.navItems.dev },
-					{ href: `/${lang}/imprint`, label: dict.header.navItems.imprint },
-				]}
+				header={dict.header}
 				locale={lang}
 				currentPath="/contact"
-				languageLabel={dict.header.languageLabel}
-				localeNames={dict.header.localeNames}
 			/>
 
 			<section className="hero connected-panel reveal reveal-delay-1">
@@ -156,4 +147,3 @@ export default async function LocalizedContactPage({ params }: RouteProps) {
 		</main>
 	);
 }
-

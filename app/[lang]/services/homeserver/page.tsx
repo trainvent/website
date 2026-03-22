@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import { getDictionary } from "../../dictionaries";
-import SiteHeader from "../../../components/site-header";
+import LocalizedSiteHeader from "../../../components/localized-site-header";
 import { hasLocale } from "@/lib/i18n";
 
 type RouteProps = {
@@ -135,20 +135,11 @@ export default async function LocalizedHomeserverPage({ params }: RouteProps) {
 
 	return (
 		<main className="site-shell">
-			<SiteHeader
+			<LocalizedSiteHeader
 				navLabel={dict.homeserver.navLabel}
-				brandHref={`/${lang}`}
-				brandAriaLabel={dict.header.brandAriaLabel}
-				navItems={[
-					{ href: `/${lang}`, label: dict.header.navItems.home },
-					{ href: `/${lang}/contact`, label: dict.header.navItems.contact },
-					{ href: `/${lang}/dev`, label: dict.header.navItems.dev },
-					{ href: `/${lang}/imprint`, label: dict.header.navItems.imprint },
-				]}
+				header={dict.header}
 				locale={lang}
 				currentPath="/services/homeserver"
-				languageLabel={dict.header.languageLabel}
-				localeNames={dict.header.localeNames}
 			/>
 			<section className="content-block connected-panel reveal reveal-delay-1">
 				<div className="service-hero-layout">

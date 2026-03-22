@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 
-import SiteHeader from "./site-header";
+import LocalizedSiteHeader from "./localized-site-header";
 import styles from "../dev/page.module.css";
 import type { Dictionary } from "../[lang]/dictionaries";
 import type { Locale } from "@/lib/i18n";
@@ -156,20 +156,11 @@ export default function DevPageClient({
 
 	return (
 		<main className={`site-shell ${styles.shell}`}>
-			<SiteHeader
+			<LocalizedSiteHeader
 				navLabel={dict.navLabel}
-				brandHref={`/${locale}`}
-				brandAriaLabel={header.brandAriaLabel}
-				navItems={[
-					{ href: `/${locale}`, label: header.navItems.home },
-					{ href: `/${locale}/contact`, label: header.navItems.contact },
-					{ href: `/${locale}/dev`, label: header.navItems.dev },
-					{ href: `/${locale}/imprint`, label: header.navItems.imprint },
-				]}
+				header={header}
 				locale={locale}
 				currentPath="/dev"
-				languageLabel={header.languageLabel}
-				localeNames={header.localeNames}
 			/>
 			<header className={`${styles.header} connected-panel`}>
 				<p className={styles.eyebrow}>{dict.eyebrow}</p>
@@ -229,4 +220,3 @@ export default function DevPageClient({
 		</main>
 	);
 }
-
