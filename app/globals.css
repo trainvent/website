@@ -44,6 +44,10 @@ body {
   overflow: clip;
 }
 
+.site-shell-footer {
+  padding-top: 0.2rem;
+}
+
 .ambient {
   position: absolute;
   pointer-events: none;
@@ -770,7 +774,7 @@ p {
 .site-footer {
   position: relative;
   z-index: 1;
-  margin-top: 1rem;
+  margin-top: 0.35rem;
   padding: 0.35rem 0 0;
 }
 

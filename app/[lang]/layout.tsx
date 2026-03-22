@@ -57,7 +57,7 @@ export default async function LocaleLayout({
 	return (
 		<div lang={lang}>
 			{children}
-			<div className="site-shell">
+			<div className="site-shell site-shell-footer">
 				<LocalizedSiteFooter locale={lang} labels={dict.home} />
 			</div>
 		</div>
