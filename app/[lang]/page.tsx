@@ -23,6 +23,7 @@ const projectSites: Array<{
 	{ key: "calcrow", url: "https://calcrow.com" },
 	{ key: "stimmapp", url: "https://stimmapp.net" },
 	{ key: "portopener", url: "https://portopener.com", note: "unprototyped" },
+	{ key: "hexaclamp", url: "https://hexaclamp.com", note: "unprototyped" },
 	{ key: "trexip", url: "https://trexip.com", note: "unprototyped" },
 ];
 
