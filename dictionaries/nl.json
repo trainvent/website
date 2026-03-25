@@ -111,6 +111,40 @@
     "backHome": "Terug naar start",
     "sendAnother": "Nog een bericht sturen"
   },
+  "softwareSupport": {
+    "metadata": {
+      "title": "Softwareondersteuning",
+      "description": "Algemene pagina voor softwareondersteuning met een korte uitleg en contactformulier."
+    },
+    "eyebrow": "Softwareondersteuning",
+    "title": "Softwareondersteuning",
+    "heroCopyBeforeEmail": "Gebruik deze pagina voor supportverzoeken. Je kunt ook mailen naar",
+    "heroCopyAfterEmail": "Neem contact met ons op via het e-mailadres waarmee je geregistreerd bent.",
+    "formEyebrow": "Support contacteren",
+    "formTitle": "Verstuur je verzoek",
+    "formCopy": "Vertel ons wat je nodig hebt en voeg de details toe die belangrijk zijn voor je verzoek.",
+    "formSubject": "Verzoek om softwareondersteuning",
+    "appLabel": "App",
+    "appPlaceholder": "Kies de app",
+    "apps": {
+      "stimmapp": "Stimmapp",
+      "calcrow": "Calcrow"
+    },
+    "emailLabel": "Geregistreerd e-mailadres",
+    "requestTypeLabel": "Type verzoek",
+    "requestTypePlaceholder": "Kies het type verzoek",
+    "requestTypes": {
+      "accountAccess": "Toegang tot account",
+      "bugReport": "Bugmelding",
+      "billingOrData": "Vraag over facturatie of gegevens",
+      "other": "Ander supportverzoek"
+    },
+    "subjectLabel": "Onderwerp",
+    "subjectPlaceholder": "Korte samenvatting van het probleem",
+    "messageLabel": "Bericht",
+    "messagePlaceholder": "Beschrijf je verzoek en voeg de relevante details toe.",
+    "submitLabel": "Supportverzoek versturen"
+  },
   "imprint": {
     "metadata": {
       "title": "Colofon",

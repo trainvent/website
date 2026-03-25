@@ -111,6 +111,40 @@
     "backHome": "Back to home",
     "sendAnother": "Send another message"
   },
+  "softwareSupport": {
+    "metadata": {
+      "title": "Software Support",
+      "description": "General software support page with a short guide and contact form."
+    },
+    "eyebrow": "Software support",
+    "title": "Software support",
+    "heroCopyBeforeEmail": "Use this page for support requests. You can also email",
+    "heroCopyAfterEmail": "Please contact us with the email address you registered with.",
+    "formEyebrow": "Contact support",
+    "formTitle": "Send your request",
+    "formCopy": "Tell us what you need and include the details that matter for your request.",
+    "formSubject": "Software support request",
+    "appLabel": "App",
+    "appPlaceholder": "Choose the app",
+    "apps": {
+      "stimmapp": "Stimmapp",
+      "calcrow": "Calcrow"
+    },
+    "emailLabel": "Registered email",
+    "requestTypeLabel": "Request type",
+    "requestTypePlaceholder": "Choose the request type",
+    "requestTypes": {
+      "accountAccess": "Account access",
+      "bugReport": "Bug report",
+      "billingOrData": "Billing or data question",
+      "other": "Other support request"
+    },
+    "subjectLabel": "Subject",
+    "subjectPlaceholder": "Short summary of the issue",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Describe your request and include the relevant details.",
+    "submitLabel": "Send support request"
+  },
   "imprint": {
     "metadata": {
       "title": "Imprint",

@@ -111,6 +111,40 @@
     "backHome": "Natrag na pocetnu",
     "sendAnother": "Posalji jos jednu poruku"
   },
+  "softwareSupport": {
+    "metadata": {
+      "title": "Softverska podrska",
+      "description": "Opca stranica za softversku podrsku s kratkim vodicem i obrascem za kontakt."
+    },
+    "eyebrow": "Softverska podrska",
+    "title": "Softverska podrska",
+    "heroCopyBeforeEmail": "Koristi ovu stranicu za zahtjeve za podrsku. Mozes nam se javiti i e-postom na",
+    "heroCopyAfterEmail": "Kontaktiraj nas s adresom e-poste s kojom si registriran.",
+    "formEyebrow": "Kontaktiraj podrsku",
+    "formTitle": "Posalji svoj zahtjev",
+    "formCopy": "Reci nam sto ti treba i ukljuci detalje koji su vazni za tvoj zahtjev.",
+    "formSubject": "Zahtjev za softversku podrsku",
+    "appLabel": "Aplikacija",
+    "appPlaceholder": "Odaberi aplikaciju",
+    "apps": {
+      "stimmapp": "Stimmapp",
+      "calcrow": "Calcrow"
+    },
+    "emailLabel": "Registrirani e-mail",
+    "requestTypeLabel": "Vrsta zahtjeva",
+    "requestTypePlaceholder": "Odaberi vrstu zahtjeva",
+    "requestTypes": {
+      "accountAccess": "Pristup racunu",
+      "bugReport": "Prijava greske",
+      "billingOrData": "Pitanje o naplati ili podacima",
+      "other": "Drugi zahtjev za podrsku"
+    },
+    "subjectLabel": "Predmet",
+    "subjectPlaceholder": "Kratki sazetak problema",
+    "messageLabel": "Poruka",
+    "messagePlaceholder": "Opisi svoj zahtjev i ukljuci relevantne detalje.",
+    "submitLabel": "Posalji zahtjev za podrsku"
+  },
   "imprint": {
     "metadata": {
       "title": "Impresum",

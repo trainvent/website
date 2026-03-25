@@ -21,9 +21,11 @@ export async function generateMetadata({
 		return {};
 	}
 
+	const dict = await getDictionary(lang);
+
 	return {
-		title: "Software Support",
-		description: "General software support page with a short guide and contact form.",
+		title: dict.softwareSupport.metadata.title,
+		description: dict.softwareSupport.metadata.description,
 	};
 }
 
@@ -54,26 +56,23 @@ export default async function LocalizedSoftwareSupportPage({
 			/>
 
 			<section className="hero connected-panel reveal reveal-delay-1">
-				<p className="eyebrow">Software support</p>
-				<h1>Software support</h1>
+				<p className="eyebrow">{dict.softwareSupport.eyebrow}</p>
+				<h1>{dict.softwareSupport.title}</h1>
 				<p className="hero-copy">
-					Use this page for support requests. You can also email{" "}
-					<a href={`mailto:${supportEmail}`}>{supportEmail}</a>. Please contact us
-					with the email address you registered with.
+					{dict.softwareSupport.heroCopyBeforeEmail}{" "}
+					<a href={`mailto:${supportEmail}`}>{supportEmail}</a>.{" "}
+					{dict.softwareSupport.heroCopyAfterEmail}
 				</p>
 			</section>
 
 			<section className="content-block reveal reveal-delay-2">
 				<div className="section-head">
-					<p className="eyebrow">Contact support</p>
-					<h2>Send your request</h2>
+					<p className="eyebrow">{dict.softwareSupport.formEyebrow}</p>
+					<h2>{dict.softwareSupport.formTitle}</h2>
 				</div>
 				<div className="contact-layout">
 					<div className="contact-copy">
-						<p className="body-copy">
-							Tell us what you need and include the details that matter for your
-							request.
-						</p>
+						<p className="body-copy">{dict.softwareSupport.formCopy}</p>
 					</div>
 
 					<form
@@ -92,22 +91,26 @@ export default async function LocalizedSoftwareSupportPage({
 						<input
 							type="hidden"
 							name="_subject"
-							value="Software support request"
+							value={dict.softwareSupport.formSubject}
 						/>
 
 						<label className="field">
-							<span>App</span>
+							<span>{dict.softwareSupport.appLabel}</span>
 							<select name="app" required defaultValue="">
 								<option value="" disabled>
-									Choose the app
+									{dict.softwareSupport.appPlaceholder}
 								</option>
-								<option value="stimmapp">Stimmapp</option>
-								<option value="calcrow">Calcrow</option>
+								<option value="stimmapp">
+									{dict.softwareSupport.apps.stimmapp}
+								</option>
+								<option value="calcrow">
+									{dict.softwareSupport.apps.calcrow}
+								</option>
 							</select>
 						</label>
 
 						<label className="field">
-							<span>Registered email</span>
+							<span>{dict.softwareSupport.emailLabel}</span>
 							<input
 								type="email"
 								name="email"
@@ -118,34 +121,42 @@ export default async function LocalizedSoftwareSupportPage({
 						</label>
 
 						<label className="field">
-							<span>Request type</span>
+							<span>{dict.softwareSupport.requestTypeLabel}</span>
 							<select name="requestType" required defaultValue="">
 								<option value="" disabled>
-									Choose the request type
+									{dict.softwareSupport.requestTypePlaceholder}
 								</option>
-								<option value="account-access">Account access</option>
-								<option value="bug-report">Bug report</option>
-								<option value="billing-or-data">Billing or data question</option>
-								<option value="other">Other support request</option>
+								<option value="account-access">
+									{dict.softwareSupport.requestTypes.accountAccess}
+								</option>
+								<option value="bug-report">
+									{dict.softwareSupport.requestTypes.bugReport}
+								</option>
+								<option value="billing-or-data">
+									{dict.softwareSupport.requestTypes.billingOrData}
+								</option>
+								<option value="other">
+									{dict.softwareSupport.requestTypes.other}
+								</option>
 							</select>
 						</label>
 
 						<label className="field">
-							<span>Subject</span>
+							<span>{dict.softwareSupport.subjectLabel}</span>
 							<input
 								type="text"
 								name="subject"
-								placeholder="Short summary of the issue"
+								placeholder={dict.softwareSupport.subjectPlaceholder}
 								autoComplete="off"
 								required
 							/>
 						</label>
 
 						<label className="field">
-							<span>Message</span>
+							<span>{dict.softwareSupport.messageLabel}</span>
 							<textarea
 								name="message"
-								placeholder="Describe your request and include the relevant details."
+								placeholder={dict.softwareSupport.messagePlaceholder}
 								rows={8}
 								required
 							/>
@@ -162,7 +173,7 @@ export default async function LocalizedSoftwareSupportPage({
 
 						<div className="contact-form-actions">
 							<button className="btn btn-primary" type="submit">
-								Send support request
+								{dict.softwareSupport.submitLabel}
 							</button>
 						</div>
 					</form>

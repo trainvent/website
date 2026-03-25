@@ -111,6 +111,40 @@
     "backHome": "ホームに戻る",
     "sendAnother": "もう一度送る"
   },
+  "softwareSupport": {
+    "metadata": {
+      "title": "ソフトウェアサポート",
+      "description": "簡単な案内とお問い合わせフォームを備えた一般的なソフトウェアサポートページです。"
+    },
+    "eyebrow": "ソフトウェアサポート",
+    "title": "ソフトウェアサポート",
+    "heroCopyBeforeEmail": "サポートの依頼にはこのページをご利用ください。メールでのご連絡先は",
+    "heroCopyAfterEmail": "登録済みのメールアドレスからご連絡ください。",
+    "formEyebrow": "サポートへの連絡",
+    "formTitle": "依頼を送信",
+    "formCopy": "必要な内容と、対応に必要な詳細をお知らせください。",
+    "formSubject": "ソフトウェアサポート依頼",
+    "appLabel": "アプリ",
+    "appPlaceholder": "アプリを選択",
+    "apps": {
+      "stimmapp": "Stimmapp",
+      "calcrow": "Calcrow"
+    },
+    "emailLabel": "登録済みメールアドレス",
+    "requestTypeLabel": "依頼種別",
+    "requestTypePlaceholder": "依頼種別を選択",
+    "requestTypes": {
+      "accountAccess": "アカウントアクセス",
+      "bugReport": "不具合報告",
+      "billingOrData": "請求またはデータに関する質問",
+      "other": "その他のサポート依頼"
+    },
+    "subjectLabel": "件名",
+    "subjectPlaceholder": "問題の概要を短く入力してください",
+    "messageLabel": "メッセージ",
+    "messagePlaceholder": "依頼内容と関連する詳細を記入してください。",
+    "submitLabel": "サポート依頼を送信"
+  },
   "imprint": {
     "metadata": {
       "title": "運営者情報",

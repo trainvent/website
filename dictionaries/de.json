@@ -111,6 +111,40 @@
     "backHome": "Zur Startseite",
     "sendAnother": "Noch eine Nachricht senden"
   },
+  "softwareSupport": {
+    "metadata": {
+      "title": "Software-Support",
+      "description": "Allgemeine Software-Support-Seite mit kurzem Leitfaden und Kontaktformular."
+    },
+    "eyebrow": "Software-Support",
+    "title": "Software-Support",
+    "heroCopyBeforeEmail": "Nutze diese Seite fuer Supportanfragen. Du kannst uns auch per E-Mail schreiben an",
+    "heroCopyAfterEmail": "Bitte kontaktiere uns mit der E-Mail-Adresse, mit der du dich registriert hast.",
+    "formEyebrow": "Support kontaktieren",
+    "formTitle": "Anfrage senden",
+    "formCopy": "Beschreibe dein Anliegen und fuege die Details hinzu, die fuer deine Anfrage wichtig sind.",
+    "formSubject": "Software-Support-Anfrage",
+    "appLabel": "App",
+    "appPlaceholder": "App auswaehlen",
+    "apps": {
+      "stimmapp": "Stimmapp",
+      "calcrow": "Calcrow"
+    },
+    "emailLabel": "Registrierte E-Mail",
+    "requestTypeLabel": "Anfragetyp",
+    "requestTypePlaceholder": "Anfragetyp auswaehlen",
+    "requestTypes": {
+      "accountAccess": "Kontozugang",
+      "bugReport": "Fehler melden",
+      "billingOrData": "Frage zu Abrechnung oder Daten",
+      "other": "Sonstige Supportanfrage"
+    },
+    "subjectLabel": "Betreff",
+    "subjectPlaceholder": "Kurze Zusammenfassung des Problems",
+    "messageLabel": "Nachricht",
+    "messagePlaceholder": "Beschreibe deine Anfrage und fuege die relevanten Details hinzu.",
+    "submitLabel": "Supportanfrage senden"
+  },
   "imprint": {
     "metadata": {
       "title": "Impressum",
