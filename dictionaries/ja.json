@@ -75,6 +75,7 @@
       "caesim": "データ絞り込みツール",
       "calcrow": "1行計算シート操作",
       "stimmapp": "投票アプリ",
+      "aperiodos": "custom aperiodic patterns",
       "portopener": "汎用ネットワークツール",
       "trexip": "レジシステム"
     }
@@ -90,10 +91,6 @@
     "emailLabel": "メールアドレス",
     "messageLabel": "メッセージ",
     "messagePlaceholder": "必要な内容を教えてください。",
-    "attachmentLabel": "添付ファイル",
-    "attachmentHelp": "お問い合わせの補足になる場合は、スクリーンショット、PDF、その他のファイルを追加できます。",
-    "attachmentChooseLabel": "ファイルを選択",
-    "attachmentEmptyLabel": "ファイルが選択されていません",
     "optionalLabel": "任意の別連絡先",
     "phoneLabel": "電話番号",
     "telegramLabel": "Telegram",

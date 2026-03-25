@@ -17,11 +17,17 @@ type TeamMemberKey = keyof Dictionary["home"]["teamRoles"];
 const projectSites: Array<{
 	key: ProjectSiteKey;
 	url: string;
+	label?: string;
 	note?: "unprototyped";
 }> = [
 	{ key: "caesim", url: "https://caesim.com", note: "unprototyped" },
 	{ key: "calcrow", url: "https://calcrow.com" },
 	{ key: "stimmapp", url: "https://stimmapp.net" },
+	{
+		key: "aperiodos",
+		url: "https://www.aperiodos.com",
+		label: "www.aperiodos.com",
+	},
 	{ key: "portopener", url: "https://portopener.com", note: "unprototyped" },
 	{ key: "trexip", url: "https://trexip.com", note: "unprototyped" },
 ];
@@ -178,7 +184,7 @@ export default async function LocalizedHomePage({ params }: RouteProps) {
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							<span className="project-domain">{site.key}</span>
+							<span className="project-domain">{site.label ?? site.key}</span>
 							<span className="project-description">
 								{dict.home.projectDescriptions[site.key]}
 							</span>
@@ -198,7 +204,7 @@ export default async function LocalizedHomePage({ params }: RouteProps) {
 									target="_blank"
 									rel="noopener noreferrer"
 								>
-									<span className="project-domain">{site.key}</span>
+									<span className="project-domain">{site.label ?? site.key}</span>
 									<span className="project-description">
 										{dict.home.projectDescriptions[site.key]}
 									</span>

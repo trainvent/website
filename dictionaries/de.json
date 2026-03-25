@@ -75,6 +75,7 @@
       "caesim": "Werkzeug zur Datenfilterung",
       "calcrow": "Bearbeitung von Tabellen mit nur einer Zeile",
       "stimmapp": "Abstimmungs-App",
+      "aperiodos": "custom aperiodic patterns",
       "portopener": "universelles Netzwerkwerkzeug",
       "trexip": "Kassensystem"
     }
@@ -90,10 +91,6 @@
     "emailLabel": "Deine E-Mail",
     "messageLabel": "Nachricht",
     "messagePlaceholder": "Erzähl uns kurz, worum es geht.",
-    "attachmentLabel": "Anhänge",
-    "attachmentHelp": "Füge Screenshots, PDFs oder andere Dateien hinzu, wenn sie dein Anliegen besser erklären.",
-    "attachmentChooseLabel": "Dateien wählen",
-    "attachmentEmptyLabel": "Keine Dateien ausgewählt",
     "optionalLabel": "Optionale alternative Kontaktmöglichkeit",
     "phoneLabel": "Telefonnummer",
     "telegramLabel": "Telegram",

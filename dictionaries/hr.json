@@ -75,6 +75,7 @@
       "caesim": "alat za filtriranje podataka",
       "calcrow": "obrada tablica s jednim redom",
       "stimmapp": "aplikacija za glasanje",
+      "aperiodos": "custom aperiodic patterns",
       "portopener": "univerzalni mrezni alat",
       "trexip": "blagajnicki sustav"
     }
@@ -90,10 +91,6 @@
     "emailLabel": "Tvoj e-mail",
     "messageLabel": "Poruka",
     "messagePlaceholder": "Reci nam sto ti treba.",
-    "attachmentLabel": "Privitci",
-    "attachmentHelp": "Dodaj snimke zaslona, PDF-ove ili druge datoteke ako pomazu objasniti tvoj upit.",
-    "attachmentChooseLabel": "Odaberi datoteke",
-    "attachmentEmptyLabel": "Nijedna datoteka nije odabrana",
     "optionalLabel": "Opcionalni alternativni kontakt",
     "phoneLabel": "Broj telefona",
     "telegramLabel": "Telegram",

@@ -75,6 +75,7 @@
       "caesim": "data filtering tool",
       "calcrow": "single row calc sheet manipulation",
       "stimmapp": "voting app",
+      "aperiodos": "custom aperiodic patterns",
       "portopener": "universal network tool",
       "trexip": "cash registry system"
     }
@@ -90,10 +91,6 @@
     "emailLabel": "Your email",
     "messageLabel": "Message",
     "messagePlaceholder": "Tell us what you need.",
-    "attachmentLabel": "Attachments",
-    "attachmentHelp": "Add screenshots, PDFs, or other files if they help explain your request.",
-    "attachmentChooseLabel": "Choose files",
-    "attachmentEmptyLabel": "No files selected",
     "optionalLabel": "Optional alternative contact",
     "phoneLabel": "Phone number",
     "telegramLabel": "Telegram",

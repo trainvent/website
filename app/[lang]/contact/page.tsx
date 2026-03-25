@@ -3,7 +3,6 @@ import { notFound } from "next/navigation";
 import Script from "next/script";
 
 import { getDictionary } from "../dictionaries";
-import FileUploadField from "../../components/file-upload-field";
 import LocalizedSiteHeader from "../../components/localized-site-header";
 import { hasLocale } from "@/lib/i18n";
 
@@ -75,7 +74,6 @@ export default async function LocalizedContactPage({ params }: RouteProps) {
 						className="contact-form contact-form-full"
 						action={formAction}
 						method="POST"
-						encType="multipart/form-data"
 					>
 						<input
 							type="text"
@@ -105,15 +103,6 @@ export default async function LocalizedContactPage({ params }: RouteProps) {
 								required
 							/>
 						</label>
-
-						<FileUploadField
-							name="attachment"
-							label={dict.contact.attachmentLabel}
-							helpText={dict.contact.attachmentHelp}
-							chooseLabel={dict.contact.attachmentChooseLabel}
-							emptyLabel={dict.contact.attachmentEmptyLabel}
-							multiple
-						/>
 
 						<div
 							className="h-captcha"

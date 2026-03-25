@@ -75,6 +75,7 @@
       "caesim": "hulpmiddel voor gegevensfiltering",
       "calcrow": "bewerking van rekenbladen met een enkele rij",
       "stimmapp": "stemapp",
+      "aperiodos": "custom aperiodic patterns",
       "portopener": "universeel netwerkhulpmiddel",
       "trexip": "kassasysteem"
     }
@@ -90,10 +91,6 @@
     "emailLabel": "Je e-mail",
     "messageLabel": "Bericht",
     "messagePlaceholder": "Vertel ons wat je nodig hebt.",
-    "attachmentLabel": "Bijlagen",
-    "attachmentHelp": "Voeg screenshots, pdf's of andere bestanden toe als die je vraag duidelijker maken.",
-    "attachmentChooseLabel": "Bestanden kiezen",
-    "attachmentEmptyLabel": "Geen bestanden geselecteerd",
     "optionalLabel": "Optioneel alternatief contact",
     "phoneLabel": "Telefoonnummer",
     "telegramLabel": "Telegram",
