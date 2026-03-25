@@ -26,7 +26,7 @@ const projectSites: Array<{
 	{
 		key: "aperiodos",
 		url: "https://www.aperiodos.com",
-		label: "www.aperiodos.com",
+		label: "aperiodos",
 	},
 	{ key: "portopener", url: "https://portopener.com", note: "unprototyped" },
 	{ key: "trexip", url: "https://trexip.com", note: "unprototyped" },
