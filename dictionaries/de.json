@@ -52,6 +52,7 @@
     "projectsTitle": "Weitere Webseiten in unserem Projektnetzwerk",
     "projectsCopy": "Ein schneller Überblick über weitere bereits laufende Projektseiten.",
     "projectCta": "Seite öffnen",
+    "inDevelopmentLabel": "in Entwicklung",
     "unprototypedLabel": "noch nicht prototypisiert",
     "aboutEyebrow": "Über uns",
     "aboutTitle": "Das sind wir",
@@ -75,7 +76,8 @@
       "caesim": "Werkzeug zur Datenfilterung",
       "calcrow": "Bearbeitung von Tabellen mit nur einer Zeile",
       "stimmapp": "Abstimmungs-App",
-      "aperiodos": "custom aperiodic patterns",
+      "aperiodos": "Aperiodische Muster generieren",
+	  "hexaclamp": "hexagonales Bausystem",
       "portopener": "universelles Netzwerkwerkzeug",
       "trexip": "Kassensystem"
     }

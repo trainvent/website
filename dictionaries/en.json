@@ -52,6 +52,7 @@
     "projectsTitle": "Other webpages across our project network",
     "projectsCopy": "A quick directory of other live project sites.",
     "projectCta": "Open site",
+    "inDevelopmentLabel": "in development",
     "unprototypedLabel": "not yet prototyped",
     "aboutEyebrow": "About",
     "aboutTitle": "This is us",
@@ -76,6 +77,7 @@
       "calcrow": "single row calc sheet manipulation",
       "stimmapp": "voting app",
       "aperiodos": "custom aperiodic patterns",
+	  "hexaclamp": "hexagonal construction system",
       "portopener": "universal network tool",
       "trexip": "cash registry system"
     }

@@ -52,6 +52,7 @@
     "projectsTitle": "私たちのプロジェクトネットワークにある他のウェブページ",
     "projectsCopy": "公開中の他プロジェクトサイトをすばやく一覧できます。",
     "projectCta": "サイトを開く",
+    "inDevelopmentLabel": "開発中",
     "unprototypedLabel": "まだプロトタイプ未作成",
     "aboutEyebrow": "私たちについて",
     "aboutTitle": "私たちについて",
@@ -76,6 +77,7 @@
       "calcrow": "1行計算シート操作",
       "stimmapp": "投票アプリ",
       "aperiodos": "custom aperiodic patterns",
+	  "hexaclamp": "六角形の建設システム",
       "portopener": "汎用ネットワークツール",
       "trexip": "レジシステム"
     }

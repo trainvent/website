@@ -52,6 +52,7 @@
     "projectsTitle": "Ostale web stranice u nasoj projektnoj mrezi",
     "projectsCopy": "Brz pregled ostalih aktivnih projektnih stranica.",
     "projectCta": "Otvori stranicu",
+    "inDevelopmentLabel": "u razvoju",
     "unprototypedLabel": "jos nije prototipizirano",
     "aboutEyebrow": "O nama",
     "aboutTitle": "To smo mi",
@@ -75,6 +76,7 @@
       "caesim": "alat za filtriranje podataka",
       "calcrow": "obrada tablica s jednim redom",
       "stimmapp": "aplikacija za glasanje",
+	  "hexaclamp": "hexagonalni konstrukcijski sustav",
       "aperiodos": "custom aperiodic patterns",
       "portopener": "univerzalni mrezni alat",
       "trexip": "blagajnicki sustav"

@@ -18,7 +18,7 @@ const projectSites: Array<{
 	key: ProjectSiteKey;
 	url: string;
 	label?: string;
-	note?: "unprototyped";
+	note?: "development" | "unprototyped";
 }> = [
 	{ key: "caesim", url: "https://caesim.com", note: "unprototyped" },
 	{ key: "calcrow", url: "https://calcrow.com" },
@@ -28,6 +28,7 @@ const projectSites: Array<{
 		url: "https://www.aperiodos.com",
 		label: "aperiodos",
 	},
+	{ key: "hexaclamp", url: "https://hexaclamp.com", note: "development" },
 	{ key: "portopener", url: "https://portopener.com", note: "unprototyped" },
 	{ key: "trexip", url: "https://trexip.com", note: "unprototyped" },
 ];
@@ -73,6 +74,46 @@ function getGravatarProfileUrl(email: string) {
 	return `https://gravatar.com/${hash}`;
 }
 
+function getFaviconUrl(siteUrl: string) {
+	const { hostname } = new URL(siteUrl);
+
+	return `https://www.google.com/s2/favicons?domain=${hostname}&sz=32`;
+}
+
+function renderProjectTile(
+	site: (typeof projectSites)[number],
+	dict: Dictionary,
+) {
+	return (
+		<a
+			key={site.key}
+			className="project-tile"
+			href={site.url}
+			target="_blank"
+			rel="noopener noreferrer"
+		>
+			<span className="project-domain-row">
+				{/* External favicons stay tiny and don't benefit from Next image optimization. */}
+				{/* eslint-disable-next-line @next/next/no-img-element */}
+				<img
+					className="project-favicon"
+					src={getFaviconUrl(site.url)}
+					alt=""
+					width={16}
+					height={16}
+					loading="lazy"
+					decoding="async"
+				/>
+				<span className="project-domain">{site.label ?? site.key}</span>
+			</span>
+			<span className="project-description">
+				{dict.home.projectDescriptions[site.key]}
+			</span>
+			<span className="project-cta">{dict.home.projectCta}</span>
+		</a>
+	);
+}
+
 export default async function LocalizedHomePage({ params }: RouteProps) {
 	const { lang } = await params;
 
@@ -82,7 +123,12 @@ export default async function LocalizedHomePage({ params }: RouteProps) {
 
 	const dict = await getDictionary(lang);
 	const activeProjectSites = projectSites.filter((site) => !site.note);
-	const unprototypedProjectSites = projectSites.filter((site) => site.note);
+	const developmentProjectSites = projectSites.filter(
+		(site) => site.note === "development",
+	);
+	const unprototypedProjectSites = projectSites.filter(
+		(site) => site.note === "unprototyped",
+	);
 
 	return (
 		<main className="site-shell">
@@ -176,41 +222,21 @@ export default async function LocalizedHomePage({ params }: RouteProps) {
 				</div>
 				<p className="body-copy">{dict.home.projectsCopy}</p>
 				<div className="project-grid">
-					{activeProjectSites.map((site) => (
-						<a
-							key={site.key}
-							className="project-tile"
-							href={site.url}
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							<span className="project-domain">{site.label ?? site.key}</span>
-							<span className="project-description">
-								{dict.home.projectDescriptions[site.key]}
-							</span>
-							<span className="project-cta">{dict.home.projectCta}</span>
-						</a>
-					))}
+					{activeProjectSites.map((site) => renderProjectTile(site, dict))}
 				</div>
+				{developmentProjectSites.length > 0 ? (
+					<div className="project-subsection">
+						<p className="project-subheader">{dict.home.inDevelopmentLabel}</p>
+						<div className="project-grid">
+							{developmentProjectSites.map((site) => renderProjectTile(site, dict))}
+						</div>
+					</div>
+				) : null}
 				{unprototypedProjectSites.length > 0 ? (
 					<div className="project-subsection">
 						<p className="project-subheader">{dict.home.unprototypedLabel}</p>
 						<div className="project-grid">
-							{unprototypedProjectSites.map((site) => (
-								<a
-									key={site.key}
-									className="project-tile"
-									href={site.url}
-									target="_blank"
-									rel="noopener noreferrer"
-								>
-									<span className="project-domain">{site.label ?? site.key}</span>
-									<span className="project-description">
-										{dict.home.projectDescriptions[site.key]}
-									</span>
-									<span className="project-cta">{dict.home.projectCta}</span>
-								</a>
-							))}
+							{unprototypedProjectSites.map((site) => renderProjectTile(site, dict))}
 						</div>
 					</div>
 				) : null}

@@ -52,6 +52,7 @@
     "projectsTitle": "Andere websites in ons projectnetwerk",
     "projectsCopy": "Een snel overzicht van andere actieve projectwebsites.",
     "projectCta": "Website openen",
+    "inDevelopmentLabel": "in ontwikkeling",
     "unprototypedLabel": "nog niet geprototypeerd",
     "aboutEyebrow": "Over",
     "aboutTitle": "Dit zijn wij",
@@ -76,6 +77,7 @@
       "calcrow": "bewerking van rekenbladen met een enkele rij",
       "stimmapp": "stemapp",
       "aperiodos": "custom aperiodic patterns",
+	  "hexaclamp": "hexagonaal constructiesysteem",
       "portopener": "universeel netwerkhulpmiddel",
       "trexip": "kassasysteem"
     }
