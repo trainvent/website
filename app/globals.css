@@ -430,6 +430,20 @@ p {
     linear-gradient(135deg, rgba(0, 183, 167, 0.18), rgba(209, 111, 42, 0.16));
 }
 
+.project-domain-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 0;
+}
+
+.project-favicon {
+  width: 1rem;
+  height: 1rem;
+  flex: 0 0 auto;
+  border-radius: 0.2rem;
+}
+
 .project-domain {
   font-size: 1.05rem;
   font-weight: 700;
