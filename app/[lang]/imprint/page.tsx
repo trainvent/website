@@ -59,6 +59,8 @@ export default async function LocalizedImprintPage({ params }: RouteProps) {
 					<br />
 					{dict.imprint.companyNumberLabel}: 143513874102001
 					<br />
+					{dict.imprint.tradeRegisterLabel}: HRA 17633 Amtsgericht Bielefeld
+					<br />
 					{dict.imprint.responsibleLabel}: Leon Marquardt
 				</address>
 			</section>

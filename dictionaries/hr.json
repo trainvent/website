@@ -153,6 +153,7 @@
     "phoneLabel": "Telefon",
     "emailLabel": "E-mail",
     "companyNumberLabel": "Broj tvrtke (UNR.S)",
+    "tradeRegisterLabel": "Broj trgovackog registra",
     "responsibleLabel": "Odgovorna osoba prema § 55 st. 1 RStV"
   },
   "homeserver": {

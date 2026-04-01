@@ -153,6 +153,7 @@
     "phoneLabel": "Phone",
     "emailLabel": "Email",
     "companyNumberLabel": "Company number (UNR.S)",
+    "tradeRegisterLabel": "Trade register number",
     "responsibleLabel": "Person responsible according to § 55 para. 1 RStV"
   },
   "homeserver": {

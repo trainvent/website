@@ -153,6 +153,7 @@
     "phoneLabel": "電話",
     "emailLabel": "メール",
     "companyNumberLabel": "会社番号 (UNR.S)",
+    "tradeRegisterLabel": "商業登記番号",
     "responsibleLabel": "§55 para. 1 RStV に基づく責任者"
   },
   "homeserver": {
