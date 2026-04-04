@@ -3,102 +3,97 @@
 import { useEffect, useMemo, useState } from "react";
 
 import LocalizedSiteHeader from "./localized-site-header";
-import styles from "../dev/page.module.css";
+import styles from "../sources/page.module.css";
 import type { Dictionary } from "../[lang]/dictionaries";
 import type { Locale } from "@/lib/i18n";
 
-type GitLabProject = {
+type GitHubRepository = {
 	id: number;
 	name: string;
-	web_url: string;
+	html_url: string;
 	description: string | null;
-	star_count: number;
+	stargazers_count: number;
 	forks_count: number;
-	last_activity_at: string;
+	updated_at: string;
 	default_branch: string;
 	snippet?: string;
 };
 
-type DevPageClientProps = {
+type SourcesPageClientProps = {
 	dict: Dictionary["dev"];
 	header: Dictionary["header"];
 	locale: Locale;
 };
 
-const GITLAB_OWNER = process.env.NEXT_PUBLIC_GITLAB_OWNER || "trainvent";
+const GITHUB_OWNER = process.env.NEXT_PUBLIC_GITHUB_OWNER || "Trainvent";
 
-export default function DevPageClient({
+export default function SourcesPageClient({
 	dict,
 	header,
 	locale,
-}: DevPageClientProps) {
-	const [projects, setProjects] = useState<GitLabProject[]>([]);
+}: SourcesPageClientProps) {
+	const [projects, setProjects] = useState<GitHubRepository[]>([]);
 	const [loading, setLoading] = useState(true);
 	const [error, setError] = useState<string | null>(null);
 
 	useEffect(() => {
 		let cancelled = false;
 
-		async function resolveOwnerId(): Promise<{ id: number; type: "group" | "user" }> {
-			let res = await fetch(
-				`https://gitlab.com/api/v4/groups/${encodeURIComponent(GITLAB_OWNER)}`,
-			);
+		async function fetchRepositories(): Promise<GitHubRepository[]> {
+			const owner = encodeURIComponent(GITHUB_OWNER);
+			const orgReposUrl = `https://api.github.com/orgs/${owner}/repos?per_page=100&sort=updated&direction=desc&type=public`;
+			const userReposUrl = `https://api.github.com/users/${owner}/repos?per_page=100&sort=updated&direction=desc&type=owner`;
+
+			let res = await fetch(orgReposUrl, {
+				headers: {
+					Accept: "application/vnd.github+json",
+				},
+			});
 
 			if (res.ok) {
-				const group = await res.json();
-				return { id: group.id, type: "group" };
+				return (await res.json()) as GitHubRepository[];
 			}
 
-			res = await fetch(
-				`https://gitlab.com/api/v4/users?username=${encodeURIComponent(GITLAB_OWNER)}`,
-			);
+			if (res.status !== 404) {
+				throw new Error(`GitHub API returned ${res.status} for ${orgReposUrl}`);
+			}
+
+			res = await fetch(userReposUrl, {
+				headers: {
+					Accept: "application/vnd.github+json",
+				},
+			});
 
 			if (!res.ok) {
-				throw new Error(`owner lookup failed (${res.status})`);
+				throw new Error(`GitHub API returned ${res.status} for ${userReposUrl}`);
 			}
 
-			const users = await res.json();
-
-			if (!Array.isArray(users) || users.length === 0) {
-				throw new Error(`GitLab owner "${GITLAB_OWNER}" not found`);
-			}
-
-			return { id: users[0].id, type: "user" };
+			return (await res.json()) as GitHubRepository[];
 		}
 
 		async function loadProjects() {
 			try {
-				const { id: ownerId, type } = await resolveOwnerId();
-				const projectsUrl = `https://gitlab.com/api/v4/${
-					type === "group" ? "groups" : "users"
-				}/${ownerId}/projects?simple=true&per_page=100&order_by=last_activity_at&sort=desc`;
-
-				const res = await fetch(projectsUrl);
-
-				if (!res.ok) {
-					throw new Error(`GitLab API returned ${res.status} for ${projectsUrl}`);
-				}
-
-				const data = (await res.json()) as GitLabProject[];
+				const data = await fetchRepositories();
 				const withSnippets = await Promise.all(
 					data.map(async (project) => {
 						let snippet = "";
+						const readmeUrl = `https://api.github.com/repos/${encodeURIComponent(
+							GITHUB_OWNER,
+						)}/${encodeURIComponent(project.name)}/readme`;
 
-						if (project.default_branch) {
-							const readmeUrl = `https://gitlab.com/api/v4/projects/${project.id}/repository/files/README.md/raw?ref=${encodeURIComponent(
-								project.default_branch,
-							)}`;
+						try {
+							const readmeResponse = await fetch(readmeUrl, {
+								headers: {
+									Accept: "application/vnd.github.raw+json",
+								},
+							});
 
-							try {
-								const readmeResponse = await fetch(readmeUrl);
-
-								if (readmeResponse.ok) {
-									const text = await readmeResponse.text();
-									snippet = `${text.slice(0, 200).replace(/\r?\n/g, " ")}...`;
-								}
-							} catch (fetchError) {
-								console.debug("failed to fetch readme", readmeUrl, fetchError);
+							if (readmeResponse.ok) {
+								const text = await readmeResponse.text();
+								snippet = `${text.slice(0, 200).replace(/\r?\n/g, " ")}...`;
 							}
+						} catch (fetchError) {
+							console.debug("failed to fetch readme", readmeUrl, fetchError);
 						}
 
 						return { ...project, snippet };
@@ -160,7 +155,7 @@ export default function DevPageClient({
 				navLabel={dict.navLabel}
 				header={header}
 				locale={locale}
-				currentPath="/dev"
+				currentPath="/sources"
 			/>
 			<header className={`${styles.header} connected-panel`}>
 				<p className={styles.eyebrow}>{dict.eyebrow}</p>
@@ -168,11 +163,11 @@ export default function DevPageClient({
 				<p className={styles.subtext}>
 					{dict.subtitlePrefix}{" "}
 					<a
-						href={`https://gitlab.com/${GITLAB_OWNER}`}
+						href={`https://github.com/${GITHUB_OWNER}`}
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						gitlab.com/{GITLAB_OWNER}
+						github.com/{GITHUB_OWNER}
 					</a>
 				</p>
 				<p className={styles.meta}>{projectCountText}</p>
@@ -197,17 +192,17 @@ export default function DevPageClient({
 							) : null}
 
 							<div className={styles.stats}>
-								<span>★ {project.star_count}</span>
+								<span>★ {project.stargazers_count}</span>
 								<span>⑂ {project.forks_count}</span>
 								<span>
 									{dict.updatedLabel}{" "}
-									{new Date(project.last_activity_at).toLocaleDateString(
+									{new Date(project.updated_at).toLocaleDateString(
 										locale === "de" ? "de-DE" : "en-US",
 									)}
 								</span>
 							</div>
 							<a
-								href={project.web_url}
+								href={project.html_url}
 								target="_blank"
 								rel="noopener noreferrer"
 							>

@@ -26,7 +26,10 @@ export default function LocalizedSiteHeader({
 					href: getLocalizedHref(locale, "/contact"),
 					label: header.navItems.contact,
 				},
-				{ href: getLocalizedHref(locale, "/dev"), label: header.navItems.dev },
+				{
+					href: getLocalizedHref(locale, "/sources"),
+					label: header.navItems.dev,
+				},
 			]}
 			locale={locale}
 			currentPath={currentPath}
