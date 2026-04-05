@@ -28,12 +28,12 @@ Read more at the Next.js [documentation](https://nextjs.org/docs).
 The build reads an optional `BASE_PATH` environment variable from
 [`next.config.mjs`](./next.config.mjs).
 
-The workflow automatically sets:
+In GitHub Actions, `BASE_PATH` comes from the repository variable `BASE_PATH`.
 
-1. `BASE_PATH=""` for a user or organization site like `username.github.io`
-1. `BASE_PATH="/repository-name"` for a project site like `username.github.io/repository-name`
+Use:
 
-If you later move to a custom domain, leave `BASE_PATH` empty.
+1. empty `BASE_PATH` for a custom domain like `next.trainvent.com`
+1. `BASE_PATH=/repository-name` for a project site like `username.github.io/repository-name`
 
 ## Troubleshooting
 
