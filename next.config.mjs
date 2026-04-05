@@ -1,6 +1,10 @@
 /** @type {import('next').NextConfig} */
+const basePath = process.env.BASE_PATH ?? "";
+
 const nextConfig = {
   output: 'export',
+  basePath,
+  assetPrefix: basePath || undefined,
   images: {
     unoptimized: true,
     remotePatterns: [
@@ -12,7 +16,7 @@ const nextConfig = {
   },
 
   // Specify the path if your app is not deployed at the root of your domain.
-  // basePath: '/',
+  // BASE_PATH=/repo-name npm run build
 
   // Emit directory-style routes so static hosts like GitLab Pages can serve
   // `/en/` from `out/en/index.html`.
