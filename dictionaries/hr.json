@@ -256,16 +256,16 @@
   "dev": {
     "metadata": {
       "title": "Izvori",
-      "description": "Javni GitLab projekti tvrtke Trainvent i njihova nedavna aktivnost."
+      "description": "Javni github projekti tvrtke Trainvent i njihova nedavna aktivnost."
     },
     "navLabel": "Navigacija izvora za razvoj",
     "eyebrow": "Izvori za razvoj",
-    "title": "GitLab projekti",
+    "title": "github projekti",
     "subtitlePrefix": "Automatski sinkronizirano s",
     "loadingProjects": "Ucitavanje projekata...",
     "loading": "Ucitavanje...",
     "loadErrorSummary": "Nije bilo moguce ucitati projekte.",
-    "loadErrorDetail": "Nije bilo moguce ucitati projekte iz GitLab API-ja",
+    "loadErrorDetail": "Nije bilo moguce ucitati projekte iz github API-ja",
     "noDescription": "Opis nije naveden.",
     "updatedLabel": "Azurirano",
     "openProject": "Otvori projekt",

@@ -256,16 +256,16 @@
   "dev": {
     "metadata": {
       "title": "Quellen",
-      "description": "Öffentliche GitLab-Projekte von Trainvent und ihre letzte Aktivität."
+      "description": "Öffentliche github-Projekte von Trainvent und ihre letzte Aktivität."
     },
     "navLabel": "Navigation der Entwicklerquellen",
     "eyebrow": "Entwicklerquellen",
-    "title": "GitLab-Projekte",
+    "title": "github-Projekte",
     "subtitlePrefix": "Automatisch synchronisiert von",
     "loadingProjects": "Projekte werden geladen...",
     "loading": "Lädt...",
     "loadErrorSummary": "Projekte konnten nicht geladen werden.",
-    "loadErrorDetail": "Projekte konnten nicht aus der GitLab-API geladen werden",
+    "loadErrorDetail": "Projekte konnten nicht aus der github-API geladen werden",
     "noDescription": "Keine Beschreibung vorhanden.",
     "updatedLabel": "Aktualisiert",
     "openProject": "Projekt öffnen",

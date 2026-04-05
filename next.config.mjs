@@ -18,7 +18,7 @@ const nextConfig = {
   // Specify the path if your app is not deployed at the root of your domain.
   // BASE_PATH=/repo-name npm run build
 
-  // Emit directory-style routes so static hosts like GitLab Pages can serve
+  // Emit directory-style routes so static hosts like github Pages can serve
   // `/en/` from `out/en/index.html`.
   trailingSlash: true,
 
@@ -26,7 +26,7 @@ const nextConfig = {
   // skipTrailingSlashRedirect: true,
 
   // Optional: Change the output directory `out` -> `dist`. Remember to update
-  // it in .gitlab-ci.yml as well.
+  // it in .github-ci.yml as well.
   // distDir: 'dist',
 };
 

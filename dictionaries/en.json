@@ -256,16 +256,16 @@
   "dev": {
     "metadata": {
       "title": "Sources",
-      "description": "Public Trainvent GitLab projects and recent activity."
+      "description": "Public Trainvent github projects and recent activity."
     },
     "navLabel": "Developer sources navigation",
     "eyebrow": "Developer Sources",
-    "title": "GitLab Projects",
+    "title": "github Projects",
     "subtitlePrefix": "Auto-synced from",
     "loadingProjects": "Loading projects...",
     "loading": "Loading...",
     "loadErrorSummary": "Could not load projects.",
-    "loadErrorDetail": "Failed to load projects from GitLab API",
+    "loadErrorDetail": "Failed to load projects from github API",
     "noDescription": "No description provided.",
     "updatedLabel": "Updated",
     "openProject": "Open project",

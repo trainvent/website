@@ -256,16 +256,16 @@
   "dev": {
     "metadata": {
       "title": "ソース",
-      "description": "Trainventの公開GitLabプロジェクトと最近の活動。"
+      "description": "Trainventの公開githubプロジェクトと最近の活動。"
     },
     "navLabel": "開発ソースのナビゲーション",
     "eyebrow": "開発ソース",
-    "title": "GitLabプロジェクト",
+    "title": "githubプロジェクト",
     "subtitlePrefix": "次から自動同期",
     "loadingProjects": "プロジェクトを読み込み中...",
     "loading": "読み込み中...",
     "loadErrorSummary": "プロジェクトを読み込めませんでした。",
-    "loadErrorDetail": "GitLab APIからプロジェクトを読み込めませんでした",
+    "loadErrorDetail": "github APIからプロジェクトを読み込めませんでした",
     "noDescription": "説明はありません。",
     "updatedLabel": "更新日",
     "openProject": "プロジェクトを開く",

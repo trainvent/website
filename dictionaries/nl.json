@@ -256,16 +256,16 @@
   "dev": {
     "metadata": {
       "title": "Bronnen",
-      "description": "Openbare GitLab-projecten van Trainvent en hun recente activiteit."
+      "description": "Openbare github-projecten van Trainvent en hun recente activiteit."
     },
     "navLabel": "Navigatie van ontwikkelaarsbronnen",
     "eyebrow": "Ontwikkelaarsbronnen",
-    "title": "GitLab-projecten",
+    "title": "github-projecten",
     "subtitlePrefix": "Automatisch gesynchroniseerd van",
     "loadingProjects": "Projecten laden...",
     "loading": "Laden...",
     "loadErrorSummary": "Projecten konden niet worden geladen.",
-    "loadErrorDetail": "Projecten konden niet uit de GitLab-API worden geladen",
+    "loadErrorDetail": "Projecten konden niet uit de github-API worden geladen",
     "noDescription": "Geen beschrijving beschikbaar.",
     "updatedLabel": "Bijgewerkt",
     "openProject": "Project openen",
