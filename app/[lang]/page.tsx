@@ -6,6 +6,7 @@ import type { Dictionary } from "./dictionaries";
 import { getDictionary } from "./dictionaries";
 import LocalizedSiteHeader from "../components/localized-site-header";
 import ProjectFavicon from "../components/project-favicon";
+import SecretSiteTrigger from "../components/secret-site-trigger";
 import { getLocalizedHref, hasLocale } from "@/lib/i18n";
 
 type RouteProps = {
@@ -117,6 +118,7 @@ export default async function LocalizedHomePage({ params }: RouteProps) {
 
 	return (
 		<main className="site-shell">
+			<SecretSiteTrigger sequence="food" url="https://vmfpc.com" />
 			<div className="ambient ambient-top" aria-hidden="true" />
 			<div className="ambient ambient-bottom" aria-hidden="true" />
 
