@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import type { Dictionary } from "./dictionaries";
 import { getDictionary } from "./dictionaries";
 import LocalizedSiteHeader from "../components/localized-site-header";
+import ProjectFavicon from "../components/project-favicon";
 import { getLocalizedHref, hasLocale } from "@/lib/i18n";
 
 type RouteProps = {
@@ -74,12 +75,6 @@ function getGravatarProfileUrl(email: string) {
 	return `https://gravatar.com/${hash}`;
 }
 
-function getFaviconUrl(siteUrl: string) {
-	const { hostname } = new URL(siteUrl);
-
-	return `https://www.google.com/s2/favicons?domain=${hostname}&sz=32`;
-}
-
 function renderProjectTile(
 	site: (typeof projectSites)[number],
 	dict: Dictionary,
@@ -93,17 +88,7 @@ function renderProjectTile(
 			rel="noopener noreferrer"
 		>
 			<span className="project-domain-row">
-				{/* External favicons stay tiny and don't benefit from Next image optimization. */}
-				{/* eslint-disable-next-line @next/next/no-img-element */}
-				<img
-					className="project-favicon"
-					src={getFaviconUrl(site.url)}
-					alt=""
-					width={16}
-					height={16}
-					loading="lazy"
-					decoding="async"
-				/>
+				<ProjectFavicon className="project-favicon" siteUrl={site.url} />
 				<span className="project-domain">{site.label ?? site.key}</span>
 			</span>
 			<span className="project-description">
