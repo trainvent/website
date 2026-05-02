@@ -33,6 +33,7 @@ const projectSites: Array<{
 	{ key: "hexaclamp", url: "https://hexaclamp.com", note: "development" },
 	{ key: "portopener", url: "https://portopener.com", note: "unprototyped" },
 	{ key: "trexip", url: "https://trexip.com", note: "unprototyped" },
+	{ key: "fytfil", url: "https://fytfil.com", note: "unprototyped" }
 ];
 
 const teamMembers: Array<{
