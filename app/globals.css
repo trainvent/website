@@ -438,10 +438,11 @@ p {
 }
 
 .project-favicon {
-  width: 1rem;
-  height: 1rem;
+  width: 1.35rem;
+  height: 1.35rem;
   flex: 0 0 auto;
   border-radius: 0.2rem;
+  object-fit: contain;
 }
 
 .project-domain {
