@@ -812,7 +812,9 @@ p {
 
 .site-footer a[href*="facebook.com"],
 .site-footer a[href*="youtube.com"],
-.site-footer a[href*="x.com"] {
+.site-footer a[href*="x.com"],
+.site-footer a[href*="patreon.com"],
+.site-footer a[href*="trustpilot.com"] {
   justify-content: center;
   min-width: 1.8rem;
   padding-inline: 0.12rem;

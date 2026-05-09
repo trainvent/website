@@ -64,7 +64,7 @@ export default async function LocalizedContactPage({ params }: RouteProps) {
 				<p className="eyebrow">{dict.contact.eyebrow}</p>
 				<p className="hero-copy">
 					{dict.contact.heroCopy}{" "}
-					<a href="mailto:hello@trainvent.com">hello@trainvent.com</a>
+					<a href="mailto:info@trainvent.com">info@trainvent.com</a>
 				</p>
 			</section>
 
