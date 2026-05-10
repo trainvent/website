@@ -68,6 +68,7 @@
       "telegram": "Telegram",
       "phone": "電話",
       "website": "ウェブサイト",
+      "blog": "Blog",
       "fallback": "お問い合わせ対応"
     },
     "footerImprint": "運営者情報",

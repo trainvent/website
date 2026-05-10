@@ -68,6 +68,7 @@
       "telegram": "Telegram",
       "phone": "Telefon",
       "website": "Web stranica",
+      "blog": "Blog",
       "fallback": "Kontakt na zahtjev"
     },
     "footerImprint": "Impresum",

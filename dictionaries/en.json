@@ -68,6 +68,7 @@
       "telegram": "Telegram",
       "phone": "Phone",
       "website": "Website",
+      "blog": "Blog",
       "fallback": "Contact on request"
     },
     "footerImprint": "Imprint",

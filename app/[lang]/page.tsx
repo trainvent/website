@@ -41,6 +41,7 @@ const teamMembers: Array<{
 	name: string;
 	photo: string;
 	mail: string;
+	blog?: string;
 	gravatarEmail?: string;
 	telegram?: string;
 	phone?: string;
@@ -52,7 +53,7 @@ const teamMembers: Array<{
 		photo: "/leon.jpg",
 		mail: "leon@trainvent.com",
 		gravatarEmail: "leon.marquardt@gmx.de",
-		website: "https://leonmarquardt.com",
+		blog: "https://leonmarquardt.com",
 	},
 	{
 		key: "seva",
@@ -288,10 +289,20 @@ export default async function LocalizedHomePage({ params }: RouteProps) {
 										{dict.home.contactLabels.website}
 									</a>
 								) : null}
+								{member.blog ? (
+									<a
+										href={member.blog}
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										{dict.home.contactLabels.blog}
+									</a>
+								) : null}
 								{!member.mail &&
 								!member.telegram &&
 								!member.phone &&
-								!member.website ? (
+								!member.website &&
+								!member.blog ? (
 									<span>{dict.home.contactLabels.fallback}</span>
 								) : null}
 							</div>

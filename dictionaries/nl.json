@@ -68,6 +68,7 @@
       "telegram": "Telegram",
       "phone": "Telefoon",
       "website": "Website",
+	  "blog": "Blog",
       "fallback": "Contact op aanvraag"
     },
     "footerImprint": "Colofon",
