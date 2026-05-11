@@ -61,7 +61,7 @@ export default function LocalizedSiteFooter({
 				<a href={getLocalizedHref(locale, "/software-support")}>
 					{labels.footerSupport}
 				</a>
-				{"·"}
+				{" ·"}
 				<SocialLink
 					href="https://www.facebook.com/trainvent/"
 					label="Trainvent on Facebook"
