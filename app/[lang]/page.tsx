@@ -22,7 +22,7 @@ const projectSites: Array<{
 	label?: string;
 	note?: "development" | "unprototyped";
 }> = [
-	{ key: "caesim", url: "https://caesim.com", note: "unprototyped" },
+	{ key: "caesim", url: "https://caesim.com", note: "development" },
 	{ key: "calcrow", url: "https://calcrow.com" },
 	{ key: "stimmapp", url: "https://stimmapp.net" },
 	{
