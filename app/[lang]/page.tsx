@@ -121,8 +121,6 @@ export default async function LocalizedHomePage({ params }: RouteProps) {
 	return (
 		<main className="site-shell">
 			<SecretSiteTrigger sequence="food" url="https://vmfpc.com" />
-			<div className="ambient ambient-top" aria-hidden="true" />
-			<div className="ambient ambient-bottom" aria-hidden="true" />
 
 			<LocalizedSiteHeader
 				navLabel={dict.home.navLabel}

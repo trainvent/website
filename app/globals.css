@@ -11,15 +11,15 @@
 }
 
 :root {
-  --bg: #f4f5ef;
-  --bg-soft: #eceee4;
-  --ink: #13161f;
-  --ink-soft: #414756;
-  --line: #1d2333;
-  --accent: #00b7a7;
-  --accent-2: #d16f2a;
-  --card: rgba(255, 255, 255, 0.72);
-  --shadow: rgba(7, 12, 20, 0.12);
+  --bg: #06191a;
+  --bg-soft: #0b2324;
+  --ink: #f1fbf8;
+  --ink-soft: #afd0cb;
+  --line: rgba(203, 244, 237, 0.16);
+  --accent: #2fd1c1;
+  --accent-2: #88f0df;
+  --card: rgba(10, 31, 33, 0.82);
+  --shadow: rgba(0, 0, 0, 0.34);
 }
 
 * {
@@ -37,49 +37,54 @@ body {
   overflow-x: hidden;
   color: var(--ink);
   background:
-    radial-gradient(circle at 85% 15%, rgba(0, 183, 167, 0.16), transparent 35%),
-    radial-gradient(circle at 15% 85%, rgba(209, 111, 42, 0.16), transparent 38%),
-    linear-gradient(155deg, var(--bg) 0%, var(--bg-soft) 100%);
+    radial-gradient(circle at 85% 15%, rgba(47, 209, 193, 0.2), transparent 32%),
+    radial-gradient(circle at 15% 85%, rgba(136, 240, 223, 0.12), transparent 34%),
+    radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.26)),
+    linear-gradient(155deg, var(--bg) 0%, #082021 52%, var(--bg-soft) 100%);
   font-family: "Alliance No.2", "Avenir Next", "Sora", "Trebuchet MS", "Segoe UI", sans-serif;
   line-height: 1.5;
 }
 
-.site-shell {
-  width: min(1100px, 92vw);
-  margin: 0 auto;
-  padding: 1.25rem 0 4rem;
-  position: relative;
-  overflow: clip;
-}
-
-.site-shell-footer {
-  padding-top: 0.2rem;
-}
-
-.ambient {
-  position: absolute;
+body::before,
+body::after {
+  content: "";
+  position: fixed;
   pointer-events: none;
-  z-index: 0;
-  border-radius: 999px;
+  z-index: -1;
 }
 
-.ambient-top {
+body::before {
   width: 420px;
   height: 420px;
   right: 0;
   top: 0;
   transform: translate(42%, -44%);
-  background: conic-gradient(from 210deg, rgba(209, 111, 42, 0.28), rgba(0, 183, 167, 0.1), rgba(209, 111, 42, 0.28));
-  filter: blur(18px);
+  border-radius: 999px;
+  background: conic-gradient(from 210deg, rgba(136, 240, 223, 0.18), rgba(47, 209, 193, 0.08), rgba(136, 240, 223, 0.18));
+  filter: blur(22px);
 }
 
-.ambient-bottom {
+body::after {
   width: 340px;
   height: 340px;
   left: 0;
   bottom: 0;
   transform: translate(-30%, 28%);
-  background: radial-gradient(circle, rgba(0, 183, 167, 0.24), rgba(0, 183, 167, 0));
+  border-radius: 999px;
+  background: radial-gradient(circle, rgba(47, 209, 193, 0.18), rgba(47, 209, 193, 0));
+}
+
+.site-shell {
+  width: min(1100px, 92vw);
+  margin: 0 auto;
+  padding: 1.25rem 0 1rem;
+  position: relative;
+  overflow: clip;
+}
+
+.site-shell-footer {
+  padding-top: 0;
+  padding-left: clamp(1.1rem, 2vw, 2rem);
 }
 
 .topbar,
@@ -99,9 +104,9 @@ body {
   align-items: center;
   gap: 1rem;
   padding: 0.8rem 1rem;
-  border: 2px solid var(--line);
-  background: var(--card);
-  backdrop-filter: blur(6px);
+  border: 1px solid var(--line);
+  background: rgba(8, 24, 25, 0.84);
+  backdrop-filter: blur(10px);
 }
 
 .brand {
@@ -149,7 +154,7 @@ body {
 .lang-menu {
   position: relative;
   padding-left: 1rem;
-  border-left: 1.5px solid rgba(19, 22, 31, 0.2);
+  border-left: 1.5px solid rgba(203, 244, 237, 0.16);
 }
 
 .lang-menu-trigger {
@@ -158,7 +163,7 @@ body {
   gap: 0.45rem;
   min-height: 2.3rem;
   border: 1.5px solid var(--line);
-  background: rgba(255, 255, 255, 0.82);
+  background: rgba(13, 35, 37, 0.9);
   color: var(--ink);
   padding: 0.35rem 0.7rem;
   font: inherit;
@@ -192,8 +197,8 @@ body {
   min-width: 9rem;
   display: grid;
   border: 2px solid var(--line);
-  background: rgba(255, 255, 255, 0.96);
-  box-shadow: 0 14px 28px -20px rgba(7, 12, 20, 0.45);
+  background: rgba(8, 24, 25, 0.96);
+  box-shadow: 0 14px 28px -20px rgba(0, 0, 0, 0.55);
   overflow: hidden;
   z-index: 10;
 }
@@ -208,17 +213,19 @@ body {
 }
 
 .lang-menu-item:hover {
-  background: rgba(0, 183, 167, 0.08);
+  background: rgba(47, 209, 193, 0.12);
 }
 
 .lang-menu-item.is-active {
-  background: rgba(19, 22, 31, 0.08);
+  background: rgba(255, 255, 255, 0.06);
 }
 
 .hero {
   margin-top: 1rem;
-  border: 2px solid var(--line);
-  background: rgba(255, 255, 255, 0.58);
+  border: 1px solid var(--line);
+  background:
+    linear-gradient(180deg, rgba(14, 39, 40, 0.9), rgba(8, 24, 25, 0.86)),
+    linear-gradient(135deg, rgba(47, 209, 193, 0.08), rgba(136, 240, 223, 0.03));
   padding: clamp(1.2rem, 2vw, 2.6rem);
 }
 
@@ -232,7 +239,7 @@ body {
   font-size: 0.8rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--ink-soft);
+  color: #c4e7e2;
   font-weight: 700;
 }
 
@@ -268,13 +275,13 @@ p {
   display: grid;
   gap: 0.75rem;
   padding-top: 1rem;
-  border-top: 1.5px solid rgba(19, 22, 31, 0.18);
+  border-top: 1.5px solid rgba(203, 244, 237, 0.16);
 }
 
 .topic-nav-label {
   font-size: 0.88rem;
   font-weight: 700;
-  color: var(--ink-soft);
+  color: #c4e7e2;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
@@ -291,7 +298,7 @@ p {
   min-height: 2.2rem;
   padding: 0.45rem 0.8rem;
   border: 1.5px solid var(--line);
-  background: rgba(255, 255, 255, 0.76);
+  background: rgba(10, 31, 33, 0.82);
   color: var(--ink);
   text-decoration: none;
   font-weight: 700;
@@ -319,8 +326,8 @@ p {
 }
 
 .btn-primary {
-  background: var(--ink);
-  color: #f7f7f0;
+  background: linear-gradient(180deg, rgba(47, 209, 193, 0.18), rgba(13, 35, 37, 0.96));
+  color: var(--ink);
 }
 
 .btn-secondary {
@@ -336,8 +343,10 @@ p {
 
 .content-block {
   margin-top: 1rem;
-  border: 2px solid var(--line);
-  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid var(--line);
+  background:
+    linear-gradient(180deg, rgba(10, 31, 33, 0.82), rgba(7, 22, 24, 0.78)),
+    linear-gradient(135deg, rgba(47, 209, 193, 0.04), rgba(136, 240, 223, 0.02));
   padding: clamp(1.1rem, 2vw, 2rem);
 }
 
@@ -363,8 +372,8 @@ p {
 }
 
 .card {
-  border: 2px solid var(--line);
-  background: var(--card);
+  border: 1px solid var(--line);
+  background: linear-gradient(180deg, rgba(14, 39, 40, 0.88), rgba(10, 31, 33, 0.86));
   padding: 1rem;
   box-shadow: 0 8px 24px -18px var(--shadow);
 }
@@ -383,7 +392,7 @@ p {
   margin-top: 0.8rem;
   display: inline-block;
   font-weight: 700;
-  color: var(--ink);
+  color: var(--accent-2);
   text-decoration: underline;
   text-underline-offset: 3px;
 }
@@ -404,7 +413,7 @@ p {
 .project-subsection {
   margin-top: 1.4rem;
   padding-top: 1rem;
-  border-top: 2px dashed rgba(19, 22, 31, 0.22);
+  border-top: 1px dashed rgba(203, 244, 237, 0.2);
 }
 
 .project-subheader {
@@ -420,10 +429,10 @@ p {
   gap: 0.6rem;
   min-height: 11rem;
   padding: 1rem;
-  border: 2px solid var(--line);
+  border: 1px solid var(--line);
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 0.62)),
-    linear-gradient(135deg, rgba(0, 183, 167, 0.12), rgba(209, 111, 42, 0.12));
+    linear-gradient(180deg, rgba(14, 39, 40, 0.9), rgba(10, 31, 33, 0.86)),
+    linear-gradient(135deg, rgba(47, 209, 193, 0.11), rgba(136, 240, 223, 0.05));
   text-decoration: none;
   color: var(--ink);
   box-shadow: 0 8px 24px -18px var(--shadow);
@@ -432,10 +441,10 @@ p {
 
 .project-tile:hover {
   transform: translateY(-3px);
-  box-shadow: 0 16px 28px -20px rgba(7, 12, 20, 0.35);
+  box-shadow: 0 16px 28px -20px rgba(0, 0, 0, 0.48);
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.7)),
-    linear-gradient(135deg, rgba(0, 183, 167, 0.18), rgba(209, 111, 42, 0.16));
+    linear-gradient(180deg, rgba(18, 48, 50, 0.94), rgba(12, 35, 36, 0.9)),
+    linear-gradient(135deg, rgba(47, 209, 193, 0.16), rgba(136, 240, 223, 0.08));
 }
 
 .project-domain-row {
@@ -480,8 +489,8 @@ p {
 }
 
 .team-card {
-  border: 2px solid var(--line);
-  background: var(--card);
+  border: 1px solid var(--line);
+  background: linear-gradient(180deg, rgba(14, 39, 40, 0.88), rgba(10, 31, 33, 0.84));
   padding: 1rem;
   display: grid;
   grid-template-columns: auto 1fr;
@@ -492,10 +501,10 @@ p {
 .team-photo {
   width: 4rem;
   height: 4rem;
-  border: 2px solid var(--line);
+  border: 1px solid var(--line);
   border-radius: 999px;
   object-fit: cover;
-  background: #ffffff;
+  background: #0a1e20;
 }
 
 .team-role {
@@ -519,7 +528,7 @@ p {
   font-size: 0.86rem;
   text-decoration: none;
   color: var(--ink);
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(13, 35, 37, 0.88);
 }
 
 .service-contact-list {
@@ -547,7 +556,7 @@ p {
   min-height: 2.3rem;
   padding: 0.35rem 0.8rem;
   border: 1.5px solid var(--line);
-  background: rgba(255, 255, 255, 0.72);
+  background: rgba(13, 35, 37, 0.88);
   font-weight: 700;
 }
 
@@ -570,11 +579,11 @@ p {
 
 .homeserver-screen {
   width: min(100%, 26rem);
-  border: 2px solid var(--line);
+  border: 1px solid var(--line);
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(241, 247, 251, 0.9)),
-    linear-gradient(135deg, rgba(0, 130, 201, 0.12), rgba(0, 183, 167, 0.12));
-  box-shadow: 0 18px 36px -26px rgba(7, 12, 20, 0.45);
+    linear-gradient(180deg, rgba(14, 39, 40, 0.94), rgba(10, 31, 33, 0.92)),
+    linear-gradient(135deg, rgba(0, 130, 201, 0.08), rgba(47, 209, 193, 0.08));
+  box-shadow: 0 18px 36px -26px rgba(0, 0, 0, 0.58);
   overflow: hidden;
 }
 
@@ -582,15 +591,15 @@ p {
   display: flex;
   gap: 0.45rem;
   padding: 0.7rem 0.85rem;
-  border-bottom: 2px solid rgba(19, 22, 31, 0.12);
-  background: rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid rgba(203, 244, 237, 0.14);
+  background: rgba(8, 24, 25, 0.9);
 }
 
 .homeserver-toolbar span {
   width: 0.7rem;
   height: 0.7rem;
   border-radius: 999px;
-  background: rgba(19, 22, 31, 0.18);
+  background: rgba(203, 244, 237, 0.2);
 }
 
 .homeserver-cloud {
@@ -609,17 +618,17 @@ p {
 .homeserver-device {
   position: relative;
   min-height: 7rem;
-  border: 2px solid var(--line);
-  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid var(--line);
+  background: rgba(13, 35, 37, 0.9);
 }
 
 .homeserver-device::before {
   content: "";
   position: absolute;
   inset: 0.7rem;
-  border: 1.5px solid rgba(0, 130, 201, 0.45);
+  border: 1.5px solid rgba(47, 209, 193, 0.26);
   background:
-    linear-gradient(90deg, rgba(0, 130, 201, 0.08) 0 32%, transparent 32% 40%, rgba(0, 183, 167, 0.08) 40% 100%);
+    linear-gradient(90deg, rgba(47, 209, 193, 0.08) 0 32%, transparent 32% 40%, rgba(136, 240, 223, 0.08) 40% 100%);
 }
 
 .homeserver-device-phone {
@@ -635,7 +644,7 @@ p {
   height: 0.22rem;
   transform: translateX(-50%);
   border-radius: 999px;
-  background: rgba(19, 22, 31, 0.22);
+  background: rgba(203, 244, 237, 0.22);
 }
 
 .homeserver-device-server::after {
@@ -644,7 +653,7 @@ p {
   inset: auto 0.75rem 0.75rem;
   height: 0.45rem;
   background:
-    radial-gradient(circle, rgba(0, 130, 201, 0.8) 0 28%, transparent 30%) left center / 1rem 0.45rem repeat-x;
+    radial-gradient(circle, rgba(47, 209, 193, 0.8) 0 28%, transparent 30%) left center / 1rem 0.45rem repeat-x;
 }
 
 .homeserver-device-laptop::after {
@@ -655,7 +664,7 @@ p {
   bottom: -0.6rem;
   height: 0.55rem;
   border: 2px solid var(--line);
-  background: rgba(255, 255, 255, 0.75);
+  background: rgba(13, 35, 37, 0.92);
 }
 
 .feature-grid {
@@ -670,7 +679,7 @@ p {
   grid-template-columns: auto 1fr;
   gap: 0.8rem;
   align-items: start;
-  border: 2px solid var(--line);
+  border: 1px solid var(--line);
   background: var(--card);
   padding: 1rem;
   box-shadow: 0 8px 24px -18px var(--shadow);
@@ -692,7 +701,7 @@ p {
   display: grid;
   place-items: center;
   border: 1.5px solid var(--line);
-  background: linear-gradient(135deg, rgba(0, 130, 201, 0.14), rgba(0, 183, 167, 0.14));
+  background: linear-gradient(135deg, rgba(47, 209, 193, 0.14), rgba(136, 240, 223, 0.1));
 }
 
 .feature-icon svg {
@@ -727,7 +736,7 @@ p {
 .contact-form {
   display: grid;
   gap: 0.9rem;
-  border: 2px solid var(--line);
+  border: 1px solid var(--line);
   background: var(--card);
   padding: 1rem;
   box-shadow: 0 8px 24px -18px var(--shadow);
@@ -757,9 +766,9 @@ p {
 .field textarea,
 .field select {
   width: 100%;
-  border: 2px solid var(--line);
+  border: 1px solid var(--line);
   border-radius: 0;
-  background: rgba(255, 255, 255, 0.82);
+  background: rgba(8, 24, 25, 0.94);
   color: var(--ink);
   padding: 0.72rem 0.8rem;
   font: inherit;
@@ -772,7 +781,7 @@ p {
 .contact-optional {
   display: grid;
   gap: 0.9rem;
-  border-top: 1.5px solid rgba(19, 22, 31, 0.18);
+  border-top: 1.5px solid rgba(203, 244, 237, 0.16);
   padding-top: 0.95rem;
 }
 
@@ -790,7 +799,7 @@ p {
 .field input:focus,
 .field textarea:focus,
 .field select:focus {
-  outline: 3px solid rgba(0, 183, 167, 0.18);
+  outline: 3px solid rgba(47, 209, 193, 0.22);
   outline-offset: 1px;
 }
 
@@ -803,8 +812,15 @@ p {
 .site-footer {
   position: relative;
   z-index: 1;
-  margin-top: 0.35rem;
-  padding: 0.35rem 0 0;
+  margin-top: 0;
+  padding: 0.25rem 0 0;
+}
+
+.site-footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 0.95rem;
 }
 
 .site-footer a {

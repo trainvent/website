@@ -53,39 +53,33 @@ export default function LocalizedSiteFooter({
 }: LocalizedSiteFooterProps) {
 	return (
 		<footer className="site-footer">
-			<small>
+			<small className="site-footer-links">
 				<a href={getLocalizedHref(locale, "/imprint")}>
 					{labels.footerImprint}
 				</a>
-				{" · "}
 				<a href={getLocalizedHref(locale, "/software-support")}>
 					{labels.footerSupport}
 				</a>
-				{" ·"}
 				<SocialLink
 					href="https://www.facebook.com/trainvent/"
 					label="Trainvent on Facebook"
 					kind="facebook"
 				/>
-				{"·"}
 				<SocialLink
 					href="https://www.youtube.com/@trainvent"
 					label="Trainvent on YouTube"
 					kind="youtube"
 				/>
-				{"·"}
 				<SocialLink
 					href="https://x.com/trainventx"
 					label="Trainvent on X"
 					kind="x"
 				/>
-				{"·"}
 				<SocialLink
 					href="https://www.patreon.com/trainvent"
 					label="Trainvent on Patreon"
 					kind="patreon"
 				/>
-				{"·"}
 				<SocialLink
 					href="https://de.trustpilot.com/review/trainvent.com"
 					label="Trainvent on Trustpilot"
