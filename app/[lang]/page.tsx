@@ -136,9 +136,6 @@ export default async function LocalizedHomePage({ params }: RouteProps) {
 				<h1>{dict.home.title}</h1>
 				<p className="hero-copy">{dict.home.copy}</p>
 				<div className="hero-actions">
-					<a className="btn btn-primary" href={`/${lang}/contact`}>
-						{dict.home.primaryCta}
-					</a>
 					<a
 						className="btn btn-secondary"
 						href="https://trainvent.com"
