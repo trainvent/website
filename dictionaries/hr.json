@@ -1,7 +1,7 @@
 {
   "metadata": {
     "siteTitle": "Trainvent",
-    "siteDescription": "Trainvent gradi prakticne digitalne sustave, automatizaciju i izvedive produktne procese."
+    "siteDescription": "Trainvent razvija praktične digitalne sustave, automatizaciju i provedive product-workflowe."
   },
   "header": {
     "brandAriaLabel": "Trainvent pocetna stranica",
@@ -24,7 +24,7 @@
     "navLabel": "Glavna navigacija",
     "eyebrow": "Uvod",
     "title": "<zvuk ventilatora>",
-    "copy": "Pregled svih naših projekata i načina kako nas kontaktirati.",
+    "copy": "Ovdje možete vidjeti sve projekte i mogućnosti kontaktiranja ove tvrtke",
     "secondaryCta": "Trgovina",
     "topicNavAriaLabel": "Teme pocetne stranice",
     "topicNavLabel": "Skoci na temu",
@@ -34,7 +34,7 @@
       "about": "O nama"
     },
     "servicesEyebrow": "Usluge",
-    "servicesTitle": "Usmjerene usluge s mjerljivim rezultatom",
+    "servicesTitle": "Nudimo",
     "services": {
       "homeserver": {
         "title": "Podrska za homeserver i Nextcloud",
@@ -48,18 +48,18 @@
       }
     },
     "projectsEyebrow": "Projekti",
-    "projectsTitle": "Ostale web stranice u nasoj projektnoj mrezi",
-    "projectsCopy": "Brz pregled ostalih aktivnih projektnih stranica.",
+    "projectsTitle": "Predstavljamo",
+    "projectsCopy": "sažeti pregled dodatnih već aktivnih projektnih stranica.",
     "projectCta": "Otvori stranicu",
     "inDevelopmentLabel": "u razvoju",
     "unprototypedLabel": "jos nije prototipizirano",
     "aboutEyebrow": "O nama",
     "aboutTitle": "To smo mi",
-    "aboutCopy": "Trainvent je skromna web stranica tvrtke koja pokusava prikazati sto vise novih ideja. Od osnutka 24.2.2026. strogo ne koristimo mrtve zivotinje.",
+    "aboutCopy": "Trainvent je mala poslovna web stranica koja želi prikazati što više novih ideja. Od osnivanja 24.2.2026. svjesno ne koristimo mrtve životinje.",
     "teamRoles": {
       "leon": "Osnivac",
-      "seva": "Asistentica za proizvod i operacije",
-      "joe": "Debugging"
+      "seva": "Asistent za proizvod i operacije",
+      "joe": "Otklanjanje pogrešaka"
     },
     "contactLabels": {
       "mail": "Mail",
@@ -74,13 +74,13 @@
     "footerSupport": "Softverska podrska",
     "projectDescriptions": {
       "caesim": "alat za filtriranje podataka",
-      "calcrow": "obrada tablica s jednim redom",
-      "stimmapp": "aplikacija za glasanje",
-	  "hexaclamp": "hexagonalni konstrukcijski sustav",
-      "aperiodos": "custom aperiodic patterns",
-      "portopener": "univerzalni mrezni alat",
-      "trexip": "blagajnicki sustav",
-	  "fytfil": "veganska drustvena platforma"
+      "calcrow": "ispunjavanje tablica na mobitelu",
+      "stimmapp": "korištenje anketa i peticija",
+      "hexaclamp": "hexagonalni konstrukcijski sustav",
+      "aperiodos": "generiranje aperiodičnih uzoraka",
+      "portopener": "univerzalni mrežni alat",
+      "trexip": "blagajnički sustav",
+      "fytfil": "veganska društvena platforma"
     }
   },
   "contact": {

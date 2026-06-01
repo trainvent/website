@@ -186,16 +186,6 @@ export default async function LocalizedHomePage({ params }: RouteProps) {
 							{dict.home.services.homeserver.linkLabel}
 						</a>
 					</article>
-					<article className="card">
-						<h3>{dict.home.services.bikeRepair.title}</h3>
-						<p>{dict.home.services.bikeRepair.description}</p>
-						<a
-							className="inline-link"
-							href={getLocalizedHref(lang, "/services/bike-repair")}
-						>
-							{dict.home.services.bikeRepair.linkLabel}
-						</a>
-					</article>
 				</div>
 			</section>
 

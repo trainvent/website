@@ -24,7 +24,7 @@
     "navLabel": "Hauptnavigation",
     "eyebrow": "Intro",
     "title": "<Ventilatorgeräusch>",
-    "copy": "Hier geben wir Einsicht auf alle Projekte dieser Firma und Kontaktmöglichkeiten",
+    "copy": "Hier gibt es Einsicht auf alle Projekte und Kontaktmöglichkeiten dieser Firma",
     "secondaryCta": "Shop",
     "topicNavAriaLabel": "Themen der Startseite",
     "topicNavLabel": "Direkt zu einem Thema",
@@ -34,7 +34,7 @@
       "about": "Über uns"
     },
     "servicesEyebrow": "Leistungen",
-    "servicesTitle": "Fokussierte Leistungen mit greifbarem Ergebnis",
+    "servicesTitle": "Wir bieten",
     "services": {
       "homeserver": {
         "title": "Homeserver- und Nextcloud-Support",
@@ -48,8 +48,8 @@
       }
     },
     "projectsEyebrow": "Projekte",
-    "projectsTitle": "Weitere Webseiten in unserem Projektnetzwerk",
-    "projectsCopy": "Ein schneller Überblick über weitere bereits laufende Projektseiten.",
+    "projectsTitle": "Wir präsentieren",
+    "projectsCopy": "einen kompakten Überblick über weitere bereits laufende Projektseiten.",
     "projectCta": "Seite öffnen",
     "inDevelopmentLabel": "in Entwicklung",
     "unprototypedLabel": "noch nicht prototypisiert",
@@ -74,8 +74,8 @@
     "footerSupport": "Software-Support",
     "projectDescriptions": {
       "caesim": "Werkzeug zur Datenfilterung",
-      "calcrow": "Bearbeitung von Tabellen mit nur einer Zeile",
-      "stimmapp": "Abstimmungs-App",
+      "calcrow": "Tabellen am Handy ausfüllen",
+      "stimmapp": "Unfragen und Petitionen nutzen",
       "aperiodos": "Aperiodische Muster generieren",
 	  "hexaclamp": "hexagonales Bausystem",
       "portopener": "universelles Netzwerkwerkzeug",

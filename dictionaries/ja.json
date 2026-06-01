@@ -1,7 +1,7 @@
 {
   "metadata": {
     "siteTitle": "Trainvent",
-    "siteDescription": "Trainventは、実用的なデジタルシステム、自動化、そして現実的なプロダクト運用フローを構築します。"
+    "siteDescription": "Trainventは、実用的なデジタルシステム、自動化、そして実行可能なプロダクトワークフローを構築します。"
   },
   "header": {
     "brandAriaLabel": "Trainvent ホーム",
@@ -24,7 +24,7 @@
     "navLabel": "メインナビゲーション",
     "eyebrow": "イントロ",
     "title": "<扇風機の音>",
-    "copy": "当社のすべてのプロジェクトと連絡方法の概要をご覧いただけます。",
+    "copy": "こちらでは、この会社のすべてのプロジェクトと連絡方法を確認できます",
     "secondaryCta": "ショップ",
     "topicNavAriaLabel": "ホームページのトピック",
     "topicNavLabel": "トピックへ移動",
@@ -34,7 +34,7 @@
       "about": "私たちについて"
     },
     "servicesEyebrow": "サービス",
-    "servicesTitle": "成果が見える、絞り込まれたサービス",
+    "servicesTitle": "私たちが提供すること",
     "services": {
       "homeserver": {
         "title": "ホームサーバーとNextcloudサポート",
@@ -48,18 +48,18 @@
       }
     },
     "projectsEyebrow": "プロジェクト",
-    "projectsTitle": "私たちのプロジェクトネットワークにある他のウェブページ",
-    "projectsCopy": "公開中の他プロジェクトサイトをすばやく一覧できます。",
+    "projectsTitle": "私たちは紹介します",
+    "projectsCopy": "既に運用中の他のプロジェクトページのコンパクトな概要です。",
     "projectCta": "サイトを開く",
     "inDevelopmentLabel": "開発中",
     "unprototypedLabel": "まだプロトタイプ未作成",
     "aboutEyebrow": "私たちについて",
-    "aboutTitle": "私たちについて",
-    "aboutCopy": "Trainventは、さまざまな新しいアイデアを見せることを目指す小さな会社のウェブサイトです。2026年2月24日の設立以来、私たちは厳格に死んだ動物を利用していません。",
+    "aboutTitle": "これが私たちです",
+    "aboutCopy": "Trainventは、できるだけ多くの新しいアイデアを可視化したい小さな企業のウェブサイトです。2026年2月24日の創立以来、私たちは意図的に死んだ動物を利用していません。",
     "teamRoles": {
       "leon": "創業者",
       "seva": "プロダクト・オペレーション補佐",
-      "joe": "デバッグ"
+      "joe": "トラブルシューティング"
     },
     "contactLabels": {
       "mail": "メール",
@@ -67,20 +67,20 @@
       "telegram": "Telegram",
       "phone": "電話",
       "website": "ウェブサイト",
-      "blog": "Blog",
+      "blog": "ブログ",
       "fallback": "お問い合わせ対応"
     },
     "footerImprint": "運営者情報",
     "footerSupport": "ソフトウェアサポート",
     "projectDescriptions": {
       "caesim": "データ絞り込みツール",
-      "calcrow": "1行計算シート操作",
-      "stimmapp": "投票アプリ",
-      "aperiodos": "custom aperiodic patterns",
-	  "hexaclamp": "六角形の建設システム",
+      "calcrow": "携帯でスプレッドシートを埋める",
+      "stimmapp": "投票や請願を使う",
+      "aperiodos": "非周期的パターンを生成する",
+      "hexaclamp": "六角形の組立システム",
       "portopener": "汎用ネットワークツール",
       "trexip": "レジシステム",
-	  "fytfil": "ヴィーガンコミュニティ or ヴィーガングループ"
+      "fytfil": "ビーガン向けソーシャルプラットフォーム"
     }
   },
   "contact": {
@@ -117,7 +117,7 @@
     },
     "eyebrow": "ソフトウェアサポート",
     "title": "ソフトウェアサポート",
-    "heroCopyBeforeEmail": "サポートの依頼にはこのページをご利用ください。メールでのご連絡先は",
+    "heroCopyBeforeEmail": "このページはサポート依頼のためにご利用ください。メールでもご連絡いただけます：",
     "heroCopyAfterEmail": "登録済みのメールアドレスからご連絡ください。",
     "formEyebrow": "サポートへの連絡",
     "formTitle": "依頼を送信",
@@ -262,13 +262,13 @@
     "navLabel": "開発ソースのナビゲーション",
     "eyebrow": "開発ソース",
     "title": "githubプロジェクト",
-    "subtitlePrefix": "次から自動同期",
+    "subtitlePrefix": "自動同期元",
     "loadingProjects": "プロジェクトを読み込み中...",
     "loading": "読み込み中...",
     "loadErrorSummary": "プロジェクトを読み込めませんでした。",
     "loadErrorDetail": "github APIからプロジェクトを読み込めませんでした",
     "noDescription": "説明はありません。",
-    "updatedLabel": "更新日",
+    "updatedLabel": "更新",
     "openProject": "プロジェクトを開く",
     "publicProjectsSingular": "公開プロジェクト",
     "publicProjectsPlural": "公開プロジェクト"

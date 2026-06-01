@@ -1,7 +1,7 @@
 {
   "metadata": {
     "siteTitle": "Trainvent",
-    "siteDescription": "Trainvent bouwt praktische digitale systemen, automatisering en haalbare productworkflows."
+    "siteDescription": "Trainvent ontwikkelt praktische digitale systemen, automatisering en uitvoerbare product-workflows."
   },
   "header": {
     "brandAriaLabel": "Trainvent startpagina",
@@ -24,7 +24,7 @@
     "navLabel": "Hoofdnavigatie",
     "eyebrow": "Intro",
     "title": "<ventilatorgeluid>",
-    "copy": "Een overzicht van al onze projecten en hoe je contact kunt opnemen.",
+    "copy": "Hier kun je inzicht krijgen in alle projecten en contactmogelijkheden van dit bedrijf",
     "secondaryCta": "Shop",
     "topicNavAriaLabel": "Onderwerpen op de startpagina",
     "topicNavLabel": "Spring naar een onderwerp",
@@ -34,7 +34,7 @@
       "about": "Over"
     },
     "servicesEyebrow": "Diensten",
-    "servicesTitle": "Gerichte diensten met meetbaar resultaat",
+    "servicesTitle": "Wij bieden",
     "services": {
       "homeserver": {
         "title": "Homeserver- en Nextcloud-ondersteuning",
@@ -48,18 +48,18 @@
       }
     },
     "projectsEyebrow": "Projecten",
-    "projectsTitle": "Andere websites in ons projectnetwerk",
-    "projectsCopy": "Een snel overzicht van andere actieve projectwebsites.",
+    "projectsTitle": "Wij presenteren",
+    "projectsCopy": "een compact overzicht van aanvullende reeds lopende projectpagina's.",
     "projectCta": "Website openen",
     "inDevelopmentLabel": "in ontwikkeling",
     "unprototypedLabel": "nog niet geprototypeerd",
     "aboutEyebrow": "Over",
     "aboutTitle": "Dit zijn wij",
-    "aboutCopy": "Trainvent is een bescheiden bedrijfswebsite die zoveel mogelijk nieuwe ideeen zichtbaar wil maken. Sinds de oprichting op 24.2.2026 gebruiken we nadrukkelijk geen dode dieren.",
+    "aboutCopy": "Trainvent is een kleine bedrijfswebsite die zoveel mogelijk nieuwe ideeën zichtbaar wil maken. Sinds de oprichting op 24.2.2026 gebruiken we bewust geen dode dieren.",
     "teamRoles": {
       "leon": "Oprichter",
-      "seva": "Assistent Product & Operaties",
-      "joe": "Debugging"
+      "seva": "Assistent voor Product & Operaties",
+      "joe": "Foutopsporing"
     },
     "contactLabels": {
       "mail": "Mail",
@@ -76,8 +76,8 @@
       "caesim": "hulpmiddel voor gegevensfiltering",
       "calcrow": "bewerking van rekenbladen met een enkele rij",
       "stimmapp": "stemapp",
-      "aperiodos": "custom aperiodic patterns",
-	  "hexaclamp": "hexagonaal constructiesysteem",
+      "aperiodos": "aperiodische patronen genereren",
+      "hexaclamp": "hexagonaal constructiesysteem",
       "portopener": "universeel netwerkhulpmiddel",
       "trexip": "kassasysteem",
 	  "fytfil": "veganistisch sociaal platform"

@@ -1,7 +1,7 @@
 {
   "metadata": {
     "siteTitle": "Trainvent",
-    "siteDescription": "Trainvent builds practical digital systems, automation, and product delivery workflows for companies."
+    "siteDescription": "Trainvent builds practical digital systems, automation, and actionable product workflows."
   },
   "header": {
     "brandAriaLabel": "Trainvent home",
@@ -23,8 +23,8 @@
   "home": {
     "navLabel": "Main navigation",
     "eyebrow": "Intro",
-    "title": "<ventilator noise>",
-    "copy": "An overview of all our projects and how to get in touch.",
+    "title": "<fan noise>",
+    "copy": "Here you can view all projects and contact options for this company",
     "secondaryCta": "Shop",
     "topicNavAriaLabel": "Homepage topics",
     "topicNavLabel": "Jump to a topic",
@@ -34,11 +34,11 @@
       "about": "About"
     },
     "servicesEyebrow": "Services",
-    "servicesTitle": "Focused services with measurable outcomes",
+    "servicesTitle": "We offer",
     "services": {
       "homeserver": {
         "title": "Homeserver and Nextcloud Support",
-        "description": "Setup and support for self-hosted homeservers, Nextcloud, backups, remote access, and the small but important security basics that keep the system usable.",
+        "description": "Setup and support for self-hosted homeservers, Nextcloud, backups, remote access and the small but important security basics so the system remains usable in daily life.",
         "linkLabel": "See homeserver help"
       },
       "bikeRepair": {
@@ -48,18 +48,18 @@
       }
     },
     "projectsEyebrow": "Projects",
-    "projectsTitle": "Other webpages across our project network",
-    "projectsCopy": "A quick directory of other live project sites.",
+    "projectsTitle": "We present",
+    "projectsCopy": "a compact overview of additional already running project pages.",
     "projectCta": "Open site",
     "inDevelopmentLabel": "in development",
     "unprototypedLabel": "not yet prototyped",
     "aboutEyebrow": "About",
     "aboutTitle": "This is us",
-    "aboutCopy": "Trainvent is a modest company website trying to maximise on displaying a variety of new ideas. We strictly do not make use of dead animals since founding 24.2.2026.",
+    "aboutCopy": "Trainvent is a small company website that aims to make as many new ideas visible as possible. Since founding on 24.2.2026 we consciously do not use dead animals.",
     "teamRoles": {
       "leon": "Founder",
-      "seva": "Product & Operations Assistant",
-      "joe": "Debugging"
+      "seva": "Assistant for Product & Operations",
+      "joe": "Troubleshooting"
     },
     "contactLabels": {
       "mail": "Mail",
@@ -73,14 +73,14 @@
     "footerImprint": "Imprint",
     "footerSupport": "Software Support",
     "projectDescriptions": {
-      "caesim": "data filtering tool",
-      "calcrow": "single row calc sheet manipulation",
-      "stimmapp": "voting app",
-      "aperiodos": "custom aperiodic patterns",
-	  "hexaclamp": "hexagonal construction system",
+      "caesim": "tool for data filtering",
+      "calcrow": "fill spreadsheets on mobile",
+      "stimmapp": "use polls and petitions",
+      "aperiodos": "generate aperiodic patterns",
+      "hexaclamp": "hexagonal construction system",
       "portopener": "universal network tool",
-      "trexip": "cash registry system",
-	  "fytfil": "vegan social platform"
+      "trexip": "point-of-sale system",
+      "fytfil": "vegan social platform"
     }
   },
   "contact": {
