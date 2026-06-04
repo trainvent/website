@@ -55,20 +55,20 @@ const teamMembers: Array<{
 		gravatarEmail: "leon.marquardt@gmx.de",
 		blog: "https://leonmarquardt.com",
 	},
-	{
-		key: "seva",
-		name: "seva",
-		photo: "/seva.jpg",
-		mail: "vyslezhivayu@gmail.com",
-		telegram: "vyslezhivayu",
-		website: "https://vyslezhivayu.com/",
-	},
-	{
-		key: "joe",
-		name: "joe cronin",
-		photo: "/default_avatar.png",
-		mail: "",
-	},
+	// {
+	// 	key: "seva",
+	// 	name: "seva",
+	// 	photo: "/seva.jpg",
+	// 	mail: "vyslezhivayu@gmail.com",
+	// 	telegram: "vyslezhivayu",
+	// 	website: "https://vyslezhivayu.com/",
+	// },
+	// {
+	// 	key: "joe",
+	// 	name: "joe cronin",
+	// 	photo: "/default_avatar.png",
+	// 	mail: "",
+	// },
 ];
 
 function getGravatarProfileUrl(email: string) {
