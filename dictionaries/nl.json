@@ -31,7 +31,8 @@
     "topics": {
       "services": "Diensten",
       "projects": "Projecten",
-      "about": "Over"
+      "about": "Over",
+      "contributors": "Bijdragers"
     },
     "servicesEyebrow": "Diensten",
     "servicesTitle": "Wij bieden",
@@ -56,10 +57,15 @@
     "aboutEyebrow": "Over",
     "aboutTitle": "Dit zijn wij",
     "aboutCopy": "Trainvent is een klein bedrijf dat veel nieuwe ideeën zichtbaar wil maken en verwezenlijken. Sinds de oprichting op 24.2.2026 zijn we vrij van dierlijke producten, oftewel veganistisch.",
+    "contributorsEyebrow": "Bijdragers",
+    "contributorsTitle": "Vrienden en vrijwilligers",
     "teamRoles": {
       "leon": "Oprichter",
       "seva": "Assistent voor Product & Operaties",
       "joe": "Foutopsporing"
+    },
+    "contributorRoles": {
+      "seva": "Strategisch advies"
     },
     "contactLabels": {
       "mail": "Mail",

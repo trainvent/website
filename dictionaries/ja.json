@@ -31,7 +31,8 @@
     "topics": {
       "services": "サービス",
       "projects": "プロジェクト",
-      "about": "私たちについて"
+      "about": "私たちについて",
+      "contributors": "コントリビューター"
     },
     "servicesEyebrow": "サービス",
     "servicesTitle": "私たちが提供すること",
@@ -56,10 +57,15 @@
     "aboutEyebrow": "私たちについて",
     "aboutTitle": "これが私たちです",
     "aboutCopy": "Trainventは、多くの新しいアイデアを見える形にし、実現したいと考えている小さな会社です。2026年2月24日の創立以来、私たちは動物性製品を使用しない、つまりヴィーガンの方針をとっています。",
+    "contributorsEyebrow": "コントリビューター",
+    "contributorsTitle": "友人とボランティア",
     "teamRoles": {
       "leon": "創業者",
       "seva": "プロダクト・オペレーション補佐",
       "joe": "トラブルシューティング"
+    },
+    "contributorRoles": {
+      "seva": "戦略的アドバイス"
     },
     "contactLabels": {
       "mail": "メール",

@@ -15,6 +15,18 @@ type RouteProps = {
 
 type ProjectSiteKey = keyof Dictionary["home"]["projectDescriptions"];
 type TeamMemberKey = keyof Dictionary["home"]["teamRoles"];
+type ContributorKey = keyof Dictionary["home"]["contributorRoles"];
+
+type PersonCard = {
+	name: string;
+	photo: string;
+	mail: string;
+	blog?: string;
+	gravatarEmail?: string;
+	telegram?: string;
+	phone?: string;
+	website?: string;
+};
 
 const projectSites: Array<{
 	key: ProjectSiteKey;
@@ -38,15 +50,7 @@ const projectSites: Array<{
 
 const teamMembers: Array<{
 	key: TeamMemberKey;
-	name: string;
-	photo: string;
-	mail: string;
-	blog?: string;
-	gravatarEmail?: string;
-	telegram?: string;
-	phone?: string;
-	website?: string;
-}> = [
+} & PersonCard> = [
 	{
 		key: "leon",
 		name: "Leon Marquardt",
@@ -69,6 +73,19 @@ const teamMembers: Array<{
 	// 	photo: "/default_avatar.png",
 	// 	mail: "",
 	// },
+];
+
+const contributors: Array<{
+	key: ContributorKey;
+} & PersonCard> = [
+	{
+		key: "seva",
+		name: "seva",
+		photo: "/seva.jpg",
+		mail: "vyslezhivayu@gmail.com",
+		telegram: "vyslezhivayu",
+		website: "https://vyslezhivayu.com/",
+	},
 ];
 
 function getGravatarProfileUrl(email: string) {
@@ -99,6 +116,76 @@ function renderProjectTile(
 			</span>
 			<span className="project-cta">{dict.home.projectCta}</span>
 		</a>
+	);
+}
+
+function renderPersonCard(
+	member: PersonCard,
+	role: string,
+	dict: Dictionary,
+	key: string,
+) {
+	return (
+		<article key={key} className="team-card">
+			<Image
+				className="team-photo"
+				src={member.photo}
+				alt={`${member.name} profile`}
+				width={72}
+				height={72}
+			/>
+			<div>
+				<h3>{member.name}</h3>
+				<p className="team-role">{role}</p>
+			</div>
+			<div className="team-contact">
+				{member.mail ? (
+					<a href={`mailto:${member.mail}`}>{dict.home.contactLabels.mail}</a>
+				) : null}
+				{member.gravatarEmail ? (
+					<a
+						href={getGravatarProfileUrl(member.gravatarEmail)}
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						{dict.home.contactLabels.gravatar}
+					</a>
+				) : null}
+				{member.telegram ? (
+					<a
+						href={`https://t.me/${member.telegram}`}
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						{dict.home.contactLabels.telegram}
+					</a>
+				) : null}
+				{member.phone ? (
+					<a href={`tel:${member.phone}`}>{dict.home.contactLabels.phone}</a>
+				) : null}
+				{member.website ? (
+					<a
+						href={member.website}
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						{dict.home.contactLabels.website}
+					</a>
+				) : null}
+				{member.blog ? (
+					<a href={member.blog} target="_blank" rel="noopener noreferrer">
+						{dict.home.contactLabels.blog}
+					</a>
+				) : null}
+				{!member.mail &&
+				!member.telegram &&
+				!member.phone &&
+				!member.website &&
+				!member.blog ? (
+					<span>{dict.home.contactLabels.fallback}</span>
+				) : null}
+			</div>
+		</article>
 	);
 }
 
@@ -166,6 +253,9 @@ export default async function LocalizedHomePage({ params }: RouteProps) {
 						<a className="topic-chip" href="#about">
 							{dict.home.topics.about}
 						</a>
+						<a className="topic-chip" href="#contributors">
+							{dict.home.topics.contributors}
+						</a>
 					</div>
 				</nav>
 			</section>
@@ -216,85 +306,42 @@ export default async function LocalizedHomePage({ params }: RouteProps) {
 				) : null}
 			</section>
 
-			<section id="about" className="content-block reveal reveal-delay-4">
-				<div className="section-head">
-					<p className="eyebrow">{dict.home.aboutEyebrow}</p>
-					<h2>{dict.home.aboutTitle}</h2>
-				</div>
-				<p className="body-copy">{dict.home.aboutCopy}</p>
-				<div className="team-grid">
-					{teamMembers.map((member) => (
-						<article key={member.key} className="team-card">
-							<Image
-								className="team-photo"
-								src={member.photo}
-								alt={`${member.name} profile`}
-								width={72}
-								height={72}
-							/>
-							<div>
-								<h3>{member.name}</h3>
-								<p className="team-role">{dict.home.teamRoles[member.key]}</p>
-							</div>
-							<div className="team-contact">
-								{member.mail ? (
-									<a href={`mailto:${member.mail}`}>
-										{dict.home.contactLabels.mail}
-									</a>
-								) : null}
-								{member.gravatarEmail ? (
-									<a
-										href={getGravatarProfileUrl(member.gravatarEmail)}
-										target="_blank"
-										rel="noopener noreferrer"
-									>
-										{dict.home.contactLabels.gravatar}
-									</a>
-								) : null}
-								{member.telegram ? (
-									<a
-										href={`https://t.me/${member.telegram}`}
-										target="_blank"
-										rel="noopener noreferrer"
-									>
-										{dict.home.contactLabels.telegram}
-									</a>
-								) : null}
-								{member.phone ? (
-									<a href={`tel:${member.phone}`}>
-										{dict.home.contactLabels.phone}
-									</a>
-								) : null}
-								{member.website ? (
-									<a
-										href={member.website}
-										target="_blank"
-										rel="noopener noreferrer"
-									>
-										{dict.home.contactLabels.website}
-									</a>
-								) : null}
-								{member.blog ? (
-									<a
-										href={member.blog}
-										target="_blank"
-										rel="noopener noreferrer"
-									>
-										{dict.home.contactLabels.blog}
-									</a>
-								) : null}
-								{!member.mail &&
-								!member.telegram &&
-								!member.phone &&
-								!member.website &&
-								!member.blog ? (
-									<span>{dict.home.contactLabels.fallback}</span>
-								) : null}
-							</div>
-						</article>
-					))}
-				</div>
-			</section>
+			<div className="about-contributors-grid reveal reveal-delay-4">
+				<section id="about" className="content-block">
+					<div className="section-head">
+						<p className="eyebrow">{dict.home.aboutEyebrow}</p>
+						<h2>{dict.home.aboutTitle}</h2>
+					</div>
+					<p className="body-copy">{dict.home.aboutCopy}</p>
+					<div className="team-grid">
+						{teamMembers.map((member) => (
+							renderPersonCard(
+								member,
+								dict.home.teamRoles[member.key],
+								dict,
+								member.key,
+							)
+						))}
+					</div>
+				</section>
+
+				<section id="contributors" className="content-block">
+					<div className="section-head">
+						<p className="eyebrow">{dict.home.contributorsEyebrow}</p>
+						<h2>{dict.home.contributorsTitle}</h2>
+					</div>
+					<div className="team-grid">
+						{contributors.map((contributor) =>
+							renderPersonCard(
+								contributor,
+								dict.home.contributorRoles[contributor.key],
+								dict,
+								contributor.key,
+							),
+						)}
+					</div>
+				</section>
+			</div>
 		</main>
 	);
 }

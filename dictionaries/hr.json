@@ -31,7 +31,8 @@
     "topics": {
       "services": "Usluge",
       "projects": "Projekti",
-      "about": "O nama"
+      "about": "O nama",
+      "contributors": "Suradnici"
     },
     "servicesEyebrow": "Usluge",
     "servicesTitle": "Nudimo",
@@ -56,10 +57,15 @@
     "aboutEyebrow": "O nama",
     "aboutTitle": "To smo mi",
     "aboutCopy": "Trainvent je mala tvrtka koja želi učiniti mnoge nove ideje vidljivima i ostvariti ih. Od osnivanja 24.2.2026. ne koristimo životinjske proizvode, odnosno veganski smo.",
+    "contributorsEyebrow": "Suradnici",
+    "contributorsTitle": "Prijatelji i volonteri",
     "teamRoles": {
       "leon": "Osnivac",
       "seva": "Asistent za proizvod i operacije",
       "joe": "Otklanjanje pogrešaka"
+    },
+    "contributorRoles": {
+      "seva": "Stratesko savjetovanje"
     },
     "contactLabels": {
       "mail": "Mail",

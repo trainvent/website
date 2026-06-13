@@ -352,6 +352,21 @@ p {
   padding: clamp(1.1rem, 2vw, 2rem);
 }
 
+.about-contributors-grid {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.about-contributors-grid .content-block {
+  margin-top: 0;
+}
+
+.about-contributors-grid .team-grid {
+  grid-template-columns: 1fr;
+}
+
 .section-head h2 {
   margin-top: 0.55rem;
   font-size: clamp(1.2rem, 3vw, 2rem);
@@ -1035,6 +1050,10 @@ p {
   }
 
   .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-contributors-grid {
     grid-template-columns: 1fr;
   }
 

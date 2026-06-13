@@ -31,7 +31,8 @@
     "topics": {
       "services": "Services",
       "projects": "Projects",
-      "about": "About"
+      "about": "About",
+      "contributors": "Contributors"
     },
     "servicesEyebrow": "Services",
     "servicesTitle": "We offer",
@@ -56,10 +57,15 @@
     "aboutEyebrow": "About",
     "aboutTitle": "This is us",
     "aboutCopy": "Trainvent is a small company that wants to make many new ideas visible and bring them to life. Since its founding on 24.2.2026, we have been animal-product-free, or vegan.",
+    "contributorsEyebrow": "Contributors",
+    "contributorsTitle": "Friends and Volunteers",
     "teamRoles": {
       "leon": "Founder",
       "seva": "Assistant for Product & Operations",
       "joe": "Troubleshooting"
+    },
+    "contributorRoles": {
+      "seva": "Strategic advising"
     },
     "contactLabels": {
       "mail": "Mail",
