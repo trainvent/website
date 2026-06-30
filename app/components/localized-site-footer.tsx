@@ -71,11 +71,6 @@ export default function LocalizedSiteFooter({
 					kind="youtube"
 				/>
 				<SocialLink
-					href="https://x.com/trainventx"
-					label="Trainvent on X"
-					kind="x"
-				/>
-				<SocialLink
 					href="https://www.patreon.com/trainvent"
 					label="Trainvent on Patreon"
 					kind="patreon"
