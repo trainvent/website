@@ -4,7 +4,7 @@ import { getLocalizedHref, type Locale } from "@/lib/i18n";
 type SocialLinkProps = {
 	href: string;
 	label: string;
-	kind: "facebook" | "youtube" | "x" | "patreon" | "trustpilot";
+	kind: "facebook" | "youtube" | "x" | "patreon" | "trustpilot" | "whatsapp";
 };
 
 function SocialLink({ href, label, kind }: SocialLinkProps) {
@@ -35,6 +35,11 @@ function SocialLink({ href, label, kind }: SocialLinkProps) {
 				{kind === "trustpilot" ? (
 					<svg viewBox="0 0 24 24" role="presentation" focusable="false">
 						<path d="M12 2.7 14.8 8.4l6.3.9-4.6 4.5 1.1 6.3L12 17.1 6.4 20.1l1.1-6.3L2.9 9.3l6.3-.9L12 2.7Z" fill="currentColor" />
+					</svg>
+				) : null}
+				{kind === "whatsapp" ? (
+					<svg viewBox="0 0 24 24" role="presentation" focusable="false">
+						<path d="M12 2.5A9.4 9.4 0 0 0 3.9 16.7L2.8 21.5l4.9-1.1A9.4 9.4 0 1 0 12 2.5Zm0 1.9a7.5 7.5 0 0 1 0 15 7.4 7.4 0 0 1-3.8-1l-.3-.2-2.5.6.6-2.4-.2-.3A7.5 7.5 0 0 1 12 4.4Zm-3.2 4c-.2 0-.5.1-.7.4-.3.3-.9.9-.9 2.1 0 1.3.9 2.5 1 2.7.1.2 1.8 2.9 4.5 3.9 2.2.9 2.7.7 3.2.7.5-.1 1.6-.7 1.8-1.3.2-.7.2-1.2.2-1.3-.1-.1-.2-.2-.5-.4l-1.7-.8c-.2-.1-.4-.1-.6.2l-.8 1c-.1.2-.3.2-.6.1-.3-.2-1.1-.4-2.1-1.3-.8-.7-1.3-1.6-1.5-1.8-.1-.3 0-.4.1-.6l.4-.4c.1-.1.2-.3.3-.4.1-.2 0-.3 0-.5l-.8-1.8c-.2-.4-.4-.4-.6-.4h-.7Z" fill="currentColor" />
 					</svg>
 				) : null}
 			</span>
@@ -79,6 +84,11 @@ export default function LocalizedSiteFooter({
 					href="https://de.trustpilot.com/review/trainvent.com"
 					label="Trainvent on Trustpilot"
 					kind="trustpilot"
+				/>
+				<SocialLink
+					href="https://wa.me/491603455942"
+					label="Contact Trainvent on WhatsApp"
+					kind="whatsapp"
 				/>
 			</small>
 		</footer>
