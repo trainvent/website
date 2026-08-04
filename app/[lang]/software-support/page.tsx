@@ -64,18 +64,25 @@ export default async function LocalizedSoftwareSupportPage({
 				</p>
 			</section>
 
-			<section className="content-block reveal reveal-delay-2">
-				<div className="section-head">
-					<p className="eyebrow">{dict.softwareSupport.formEyebrow}</p>
-					<h2>{dict.softwareSupport.formTitle}</h2>
-				</div>
-				<div className="contact-layout">
-					<div className="contact-copy">
+			<section className="content-block support-contact reveal reveal-delay-2">
+				<div className="contact-layout support-contact-layout">
+					<div className="contact-copy support-contact-intro">
+						<div className="section-head">
+							<p className="eyebrow">{dict.softwareSupport.formEyebrow}</p>
+							<h2>{dict.softwareSupport.formTitle}</h2>
+						</div>
 						<p className="body-copy">{dict.softwareSupport.formCopy}</p>
+						<a
+							className="support-email-link"
+							href={`mailto:${supportEmail}`}
+						>
+							<span>{supportEmail}</span>
+							<span aria-hidden="true">&#8599;</span>
+						</a>
 					</div>
 
 					<form
-						className="contact-form"
+						className="contact-form support-contact-form"
 						action={formAction}
 						method="POST"
 					>
