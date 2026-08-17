@@ -133,7 +133,8 @@
     "appPlaceholder": "Choose the app",
     "apps": {
       "stimmapp": "Stimmapp",
-      "calcrow": "Calcrow"
+      "calcrow": "Calcrow",
+      "aperiodos": "aperiodos"
     },
     "emailLabel": "Registered email",
     "requestTypeLabel": "Request type",

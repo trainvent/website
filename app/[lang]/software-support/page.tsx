@@ -111,6 +111,9 @@ export default async function LocalizedSoftwareSupportPage({
 								<option value="calcrow">
 									{dict.softwareSupport.apps.calcrow}
 								</option>
+								<option value="aperiodos">
+									{dict.softwareSupport.apps.aperiodos}
+								</option>
 							</select>
 						</label>
 

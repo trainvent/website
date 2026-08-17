@@ -133,7 +133,8 @@
     "appPlaceholder": "Odaberi aplikaciju",
     "apps": {
       "stimmapp": "Stimmapp",
-      "calcrow": "Calcrow"
+      "calcrow": "Calcrow",
+      "aperiodos": "aperiodos"
     },
     "emailLabel": "Registrirani e-mail",
     "requestTypeLabel": "Vrsta zahtjeva",

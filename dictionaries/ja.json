@@ -133,7 +133,8 @@
     "appPlaceholder": "アプリを選択",
     "apps": {
       "stimmapp": "Stimmapp",
-      "calcrow": "Calcrow"
+      "calcrow": "Calcrow",
+      "aperiodos": "aperiodos"
     },
     "emailLabel": "登録済みメールアドレス",
     "requestTypeLabel": "依頼種別",
