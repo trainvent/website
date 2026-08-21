@@ -127,15 +127,6 @@ export default async function LocalizedContactPage({ params }: RouteProps) {
 								/>
 							</label>
 
-							<label className="field">
-								<span>{dict.contact.telegramLabel}</span>
-								<input
-									type="text"
-									name="telegram"
-									placeholder="@name"
-									autoComplete="off"
-								/>
-							</label>
 						</div>
 
 						<div className="contact-form-actions">
