@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { getDictionary } from "../../dictionaries";
 import LocalizedSiteHeader from "../../../components/localized-site-header";
 import { hasLocale } from "@/lib/i18n";
+import { getPageAlternates } from "@/lib/site";
 
 type RouteProps = {
 	params: Promise<{ lang: string }>;
@@ -26,6 +27,7 @@ export async function generateMetadata({
 	return {
 		title: dict.bikeRepair.metadata.title,
 		description: dict.bikeRepair.metadata.description,
+		alternates: getPageAlternates(lang, "/services/bike-repair"),
 	};
 }
 

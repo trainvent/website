@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import LocalizedSiteFooter from "../components/localized-site-footer";
 import { getDictionary } from "./dictionaries";
 import { hasLocale, locales } from "@/lib/i18n";
+import { getPageAlternates } from "@/lib/site";
 
 type LayoutProps = {
 	children: React.ReactNode;
@@ -33,12 +34,7 @@ export async function generateMetadata({
 			template: `%s | ${dict.metadata.siteTitle}`,
 		},
 		description: dict.metadata.siteDescription,
-		alternates: {
-			languages: {
-				en: "/en",
-				de: "/de",
-			},
-		},
+		alternates: getPageAlternates(lang, "/"),
 	};
 }
 

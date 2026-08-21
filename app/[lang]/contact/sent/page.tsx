@@ -3,7 +3,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { getDictionary } from "../../dictionaries";
-import { hasLocale } from "@/lib/i18n";
+import { getLocalizedHref, hasLocale } from "@/lib/i18n";
+import { getPageAlternates } from "@/lib/site";
 
 type RouteProps = {
 	params: Promise<{ lang: string }>;
@@ -23,6 +24,11 @@ export async function generateMetadata({
 	return {
 		title: dict.contactSent.metadata.title,
 		description: dict.contactSent.metadata.description,
+		alternates: getPageAlternates(lang, "/contact/sent"),
+		robots: {
+			index: false,
+			follow: true,
+		},
 	};
 }
 
@@ -45,10 +51,13 @@ export default async function LocalizedContactSentPage({ params }: RouteProps) {
 				<h1>{dict.contactSent.title}</h1>
 				<p className="hero-copy">{dict.contactSent.copy}</p>
 				<div className="hero-actions">
-					<Link className="btn btn-primary" href={`/${lang}`}>
+					<Link className="btn btn-primary" href={getLocalizedHref(lang, "/")}>
 						{dict.contactSent.backHome}
 					</Link>
-					<Link className="btn btn-secondary" href={`/${lang}/contact`}>
+					<Link
+						className="btn btn-secondary"
+						href={getLocalizedHref(lang, "/contact")}
+					>
 						{dict.contactSent.sendAnother}
 					</Link>
 				</div>
@@ -56,4 +65,3 @@ export default async function LocalizedContactSentPage({ params }: RouteProps) {
 		</main>
 	);
 }
-

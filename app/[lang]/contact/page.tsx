@@ -5,6 +5,7 @@ import Script from "next/script";
 import { getDictionary } from "../dictionaries";
 import LocalizedSiteHeader from "../../components/localized-site-header";
 import { hasLocale } from "@/lib/i18n";
+import { getPageAlternates } from "@/lib/site";
 
 type RouteProps = {
 	params: Promise<{ lang: string }>;
@@ -24,6 +25,7 @@ export async function generateMetadata({
 	return {
 		title: dict.contact.metadata.title,
 		description: dict.contact.metadata.description,
+		alternates: getPageAlternates(lang, "/contact"),
 	};
 }
 

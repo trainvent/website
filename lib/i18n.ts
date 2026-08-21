@@ -10,8 +10,12 @@ export function hasLocale(value: string): value is Locale {
 
 export function getLocalizedHref(locale: Locale, pathname: string) {
 	if (!pathname || pathname === "/") {
-		return `/${locale}`;
+		return `/${locale}/`;
 	}
 
-	return `/${locale}${pathname.startsWith("/") ? pathname : `/${pathname}`}`;
+	const localizedPath = `/${locale}${
+		pathname.startsWith("/") ? pathname : `/${pathname}`
+	}`;
+
+	return localizedPath.endsWith("/") ? localizedPath : `${localizedPath}/`;
 }

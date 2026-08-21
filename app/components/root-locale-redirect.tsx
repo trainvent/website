@@ -4,6 +4,14 @@ import { useEffect } from "react";
 
 import { defaultLocale } from "@/lib/i18n";
 
+const languageLinks = [
+	{ href: "/en/", label: "English" },
+	{ href: "/de/", label: "Deutsch" },
+	{ href: "/nl/", label: "Nederlands" },
+	{ href: "/ja/", label: "日本語" },
+	{ href: "/hr/", label: "Hrvatski" },
+];
+
 function detectLocale() {
 	const languages = navigator.languages?.length
 		? navigator.languages
@@ -35,8 +43,25 @@ function detectLocale() {
 export default function RootLocaleRedirect() {
 	useEffect(() => {
 		const nextLocale = detectLocale();
-		window.location.replace(`/${nextLocale}`);
+		window.location.replace(`/${nextLocale}/`);
 	}, []);
 
-	return null;
+	return (
+		<main className="site-shell">
+			<section className="hero connected-panel">
+				<p className="eyebrow">Trainvent</p>
+				<h1>Choose your language</h1>
+				<p className="hero-copy">
+					We are taking you to the version that best matches your browser.
+				</p>
+				<nav className="hero-actions" aria-label="Available languages">
+					{languageLinks.map((language) => (
+						<a className="btn btn-secondary" href={language.href} key={language.href}>
+							{language.label}
+						</a>
+					))}
+				</nav>
+			</section>
+		</main>
+	);
 }

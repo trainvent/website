@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { getDictionary } from "../dictionaries";
 import LocalizedSiteHeader from "../../components/localized-site-header";
 import { hasLocale } from "@/lib/i18n";
+import { getPageAlternates } from "@/lib/site";
 
 type RouteProps = {
 	params: Promise<{ lang: string }>;
@@ -25,6 +26,7 @@ export async function generateMetadata({
 	return {
 		title: dict.softwareSupport.metadata.title,
 		description: dict.softwareSupport.metadata.description,
+		alternates: getPageAlternates(lang, "/software-support"),
 	};
 }
 

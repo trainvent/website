@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import SourcesPageClient from "../../components/sources-page-client";
 import { getDictionary } from "../dictionaries";
 import { hasLocale } from "@/lib/i18n";
+import { getPageAlternates } from "@/lib/site";
 
 type RouteProps = {
 	params: Promise<{ lang: string }>;
@@ -23,6 +24,7 @@ export async function generateMetadata({
 	return {
 		title: dict.dev.metadata.title,
 		description: dict.dev.metadata.description,
+		alternates: getPageAlternates(lang, "/sources"),
 	};
 }
 
