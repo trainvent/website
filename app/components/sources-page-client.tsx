@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 
 import LocalizedSiteHeader from "./localized-site-header";
+import { WagonCoupler } from "./wagon-section";
 import styles from "../sources/page.module.css";
 import type { Dictionary } from "../[lang]/dictionaries";
 import type { Locale } from "@/lib/i18n";
@@ -172,6 +173,7 @@ export default function SourcesPageClient({
 				</p>
 				<p className={styles.meta}>{projectCountText}</p>
 			</header>
+			<WagonCoupler />
 
 			{loading ? <p className={styles.state}>{dict.loading}</p> : null}
 			{error ? (
@@ -181,7 +183,7 @@ export default function SourcesPageClient({
 			) : null}
 
 			{!loading && !error ? (
-				<section className={styles.grid}>
+				<section className={`${styles.grid} wagon-panel wagon-terminal`}>
 					{projects.map((project) => (
 						<article key={project.id} className={styles.card}>
 							<h2>{project.name}</h2>

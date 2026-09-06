@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { getDictionary } from "../../dictionaries";
 import { getLocalizedHref, hasLocale } from "@/lib/i18n";
 import { getPageAlternates } from "@/lib/site";
+import { WagonHero } from "../../../components/wagon-section";
 
 type RouteProps = {
 	params: Promise<{ lang: string }>;
@@ -46,7 +47,7 @@ export default async function LocalizedContactSentPage({ params }: RouteProps) {
 			<div className="ambient ambient-top" aria-hidden="true" />
 			<div className="ambient ambient-bottom" aria-hidden="true" />
 
-			<section className="hero reveal">
+			<WagonHero className="reveal" terminal>
 				<p className="eyebrow">{dict.contactSent.eyebrow}</p>
 				<h1>{dict.contactSent.title}</h1>
 				<p className="hero-copy">{dict.contactSent.copy}</p>
@@ -61,7 +62,7 @@ export default async function LocalizedContactSentPage({ params }: RouteProps) {
 						{dict.contactSent.sendAnother}
 					</Link>
 				</div>
-			</section>
+			</WagonHero>
 		</main>
 	);
 }

@@ -323,7 +323,7 @@ export default async function LocalizedHomePage({ params }: RouteProps) {
 			<div className="about-contributors-grid reveal reveal-delay-4">
 				<section
 					id="about"
-					className="content-block about-wagon"
+					className="content-block about-wagon wagon-terminal"
 					aria-label={dict.home.aboutTitle}
 				>
 					<p className="eyebrow">{dict.home.aboutEyebrow}</p>

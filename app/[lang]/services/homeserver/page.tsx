@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 
 import { getDictionary } from "../../dictionaries";
 import LocalizedSiteHeader from "../../../components/localized-site-header";
+import { WagonSection } from "../../../components/wagon-section";
 import { hasLocale } from "@/lib/i18n";
 import { getPageAlternates } from "@/lib/site";
 
@@ -143,7 +144,7 @@ export default async function LocalizedHomeserverPage({ params }: RouteProps) {
 				locale={lang}
 				currentPath="/services/homeserver"
 			/>
-			<section className="content-block connected-panel reveal reveal-delay-1">
+			<WagonSection className="connected-panel reveal reveal-delay-1">
 				<div className="service-hero-layout">
 					<div>
 						<div className="section-head">
@@ -171,9 +172,9 @@ export default async function LocalizedHomeserverPage({ params }: RouteProps) {
 					</div>
 					<HomeserverGraphic />
 				</div>
-			</section>
+			</WagonSection>
 
-			<section className="content-block reveal reveal-delay-2">
+			<WagonSection className="reveal reveal-delay-2">
 				<div className="section-head">
 					<p className="eyebrow">{dict.homeserver.detailsEyebrow}</p>
 					<h2>{dict.homeserver.detailsTitle}</h2>
@@ -192,9 +193,9 @@ export default async function LocalizedHomeserverPage({ params }: RouteProps) {
 						</article>
 					))}
 				</div>
-			</section>
+			</WagonSection>
 
-			<section className="content-block reveal reveal-delay-3">
+			<WagonSection className="reveal reveal-delay-3">
 				<div className="section-head">
 					<p className="eyebrow">{dict.homeserver.helpEyebrow}</p>
 					<h2>{dict.homeserver.helpTitle}</h2>
@@ -213,9 +214,9 @@ export default async function LocalizedHomeserverPage({ params }: RouteProps) {
 						<p>{dict.homeserver.helpCards.support.description}</p>
 					</article>
 				</div>
-			</section>
+			</WagonSection>
 
-			<section className="content-block reveal reveal-delay-4">
+			<WagonSection className="reveal reveal-delay-4" terminal>
 				<div className="section-head">
 					<p className="eyebrow">{dict.homeserver.pricingEyebrow}</p>
 					<h2>{dict.homeserver.pricingTitle}</h2>
@@ -231,7 +232,7 @@ export default async function LocalizedHomeserverPage({ params }: RouteProps) {
 					</a>
 					<a href="tel:+49160345542">+49 160 345542</a>
 				</div>
-			</section>
+			</WagonSection>
 		</main>
 	);
 }

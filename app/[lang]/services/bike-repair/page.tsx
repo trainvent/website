@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 
 import { getDictionary } from "../../dictionaries";
 import LocalizedSiteHeader from "../../../components/localized-site-header";
+import { WagonSection } from "../../../components/wagon-section";
 import { hasLocale } from "@/lib/i18n";
 import { getPageAlternates } from "@/lib/site";
 
@@ -48,7 +49,7 @@ export default async function LocalizedBikeRepairPage({ params }: RouteProps) {
 				locale={lang}
 				currentPath="/services/bike-repair"
 			/>
-			<section className="content-block connected-panel reveal reveal-delay-1">
+			<WagonSection className="connected-panel reveal reveal-delay-1">
 				<div className="section-head">
 					<p className="eyebrow">{dict.bikeRepair.eyebrow}</p>
 					<h1>{dict.bikeRepair.title}</h1>
@@ -68,9 +69,9 @@ export default async function LocalizedBikeRepairPage({ params }: RouteProps) {
 						{dict.bikeRepair.mailCta}
 					</a>
 				</div>
-			</section>
+			</WagonSection>
 
-			<section className="content-block reveal reveal-delay-2">
+			<WagonSection className="reveal reveal-delay-2">
 				<div className="section-head">
 					<p className="eyebrow">{dict.bikeRepair.helpEyebrow}</p>
 					<h2>{dict.bikeRepair.helpTitle}</h2>
@@ -89,9 +90,9 @@ export default async function LocalizedBikeRepairPage({ params }: RouteProps) {
 						<p>{dict.bikeRepair.helpCards.handoff.description}</p>
 					</article>
 				</div>
-			</section>
+			</WagonSection>
 
-			<section className="content-block reveal reveal-delay-3">
+			<WagonSection className="reveal reveal-delay-3" terminal>
 				<div className="section-head">
 					<p className="eyebrow">{dict.bikeRepair.pricingEyebrow}</p>
 					<h2>{dict.bikeRepair.pricingTitle}</h2>
@@ -107,7 +108,7 @@ export default async function LocalizedBikeRepairPage({ params }: RouteProps) {
 					</a>
 					<a href="tel:+49160345542">+49 160 345542</a>
 				</div>
-			</section>
+			</WagonSection>
 		</main>
 	);
 }

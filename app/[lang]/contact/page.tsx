@@ -4,6 +4,7 @@ import Script from "next/script";
 
 import { getDictionary } from "../dictionaries";
 import LocalizedSiteHeader from "../../components/localized-site-header";
+import { WagonHero, WagonSection } from "../../components/wagon-section";
 import { hasLocale } from "@/lib/i18n";
 import { getPageAlternates } from "@/lib/site";
 
@@ -62,15 +63,15 @@ export default async function LocalizedContactPage({ params }: RouteProps) {
 				currentPath="/contact"
 			/>
 
-			<section className="hero connected-panel reveal reveal-delay-1">
+			<WagonHero className="connected-panel reveal reveal-delay-1">
 				<p className="eyebrow">{dict.contact.eyebrow}</p>
 				<p className="hero-copy">
 					{dict.contact.heroCopy}{" "}
 					<a href="mailto:info@trainvent.com">info@trainvent.com</a>
 				</p>
-			</section>
+			</WagonHero>
 
-			<section className="content-block reveal reveal-delay-2">
+			<WagonSection className="reveal reveal-delay-2" terminal>
 				<div className="contact-layout">
 					<form
 						className="contact-form contact-form-full"
@@ -136,7 +137,7 @@ export default async function LocalizedContactPage({ params }: RouteProps) {
 						</div>
 					</form>
 				</div>
-			</section>
+			</WagonSection>
 		</main>
 	);
 }

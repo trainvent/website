@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 
 import { getDictionary } from "../dictionaries";
 import LocalizedSiteHeader from "../../components/localized-site-header";
+import { WagonSection } from "../../components/wagon-section";
 import { hasLocale } from "@/lib/i18n";
 import { getPageAlternates } from "@/lib/site";
 
@@ -45,7 +46,7 @@ export default async function LocalizedImprintPage({ params }: RouteProps) {
 				locale={lang}
 				currentPath="/imprint"
 			/>
-			<section className="content-block connected-panel reveal reveal-delay-1">
+			<WagonSection className="connected-panel reveal reveal-delay-1" terminal>
 				<p>{dict.imprint.providerLabel}</p>
 				<address>
 					<strong>Trainvent, owner Leon Marquardt</strong>
@@ -65,7 +66,7 @@ export default async function LocalizedImprintPage({ params }: RouteProps) {
 					<br />
 					{dict.imprint.responsibleLabel}: Leon Marquardt
 				</address>
-			</section>
+			</WagonSection>
 		</main>
 	);
 }

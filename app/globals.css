@@ -346,6 +346,27 @@ body::after {
   overflow: clip;
 }
 
+.compact-hero {
+  min-height: 0;
+}
+
+.wagon-panel.wagon-hero::after {
+  content: none;
+}
+
+.wagon-hero-group {
+  position: relative;
+  margin-top: 1rem;
+}
+
+.wagon-hero-group .wagon-hero {
+  margin-top: 0;
+}
+
+.wagon-panel {
+  position: relative;
+}
+
 .wagon-coupler {
   position: absolute;
   z-index: 2;
@@ -373,6 +394,44 @@ body::after {
   height: 1rem;
   margin: 0 auto -1rem;
   transform: none;
+}
+
+.wagon-coupler-inline {
+  position: relative;
+  z-index: 2;
+  left: auto;
+  bottom: auto;
+  display: block;
+  width: 1.7rem;
+  height: 1rem;
+  margin: 0 auto -1rem;
+  transform: none;
+}
+
+.wagon-coupler-inline.wagon-terminal,
+.wagon-coupler-external.wagon-terminal {
+  height: 0.5rem;
+  border-bottom: 0;
+  border-radius: 0.12rem 0.12rem 0 0;
+  background:
+    linear-gradient(to bottom, rgba(47, 209, 193, 0.36), rgba(47, 209, 193, 0.18)),
+    linear-gradient(to right, transparent 0 0.25rem, rgba(136, 240, 223, 0.26) 0.25rem 1.45rem, transparent 1.45rem);
+}
+
+.wagon-coupler-inline.wagon-terminal {
+  margin-bottom: -0.5rem;
+}
+
+.wagon-coupler-external.wagon-terminal {
+  bottom: -0.5rem;
+}
+
+.wagon-coupler-external {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  bottom: -1rem;
+  transform: translateX(-50%);
 }
 
 .eyebrow {
@@ -505,7 +564,8 @@ main [id] {
 }
 
 .site-shell > .content-block::after,
-.about-contributors-grid > .content-block::after {
+.about-contributors-grid > .content-block::after,
+.wagon-panel::after {
   content: "";
   position: absolute;
   z-index: 0;
@@ -523,7 +583,9 @@ main [id] {
   pointer-events: none;
 }
 
-.about-contributors-grid > .content-block::after {
+.site-shell > .wagon-terminal::after,
+.about-contributors-grid > .wagon-terminal::after,
+.wagon-terminal::after {
   bottom: -0.5rem;
   height: 0.5rem;
   border-bottom: 0;
