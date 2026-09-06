@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import type { Dictionary } from "../[lang]/dictionaries";
 import { getLocalizedHref, type Locale } from "@/lib/i18n";
 
@@ -12,9 +14,7 @@ function SocialLink({ href, label, kind }: SocialLinkProps) {
 		<a href={href} target="_blank" rel="noopener noreferrer" aria-label={label}>
 			<span className="footer-social-icon" aria-hidden="true">
 				{kind === "facebook" ? (
-					<svg viewBox="0 0 24 24" role="presentation" focusable="false">
-						<path d="M13.5 8.5H15V6h-1.5C11.4 6 10 7.4 10 9.5V11H8v2.5h2V18h2.5v-4.5h2l.5-2.5h-2.5V9.5c0-.55.45-1 1-1Z" fill="currentColor" />
-					</svg>
+					<Image src="/facebook.svg" alt="" width={24} height={24} />
 				) : null}
 				{kind === "youtube" ? (
 					<svg viewBox="0 0 24 24" role="presentation" focusable="false">
@@ -38,9 +38,7 @@ function SocialLink({ href, label, kind }: SocialLinkProps) {
 					</svg>
 				) : null}
 				{kind === "whatsapp" ? (
-					<svg viewBox="0 0 24 24" role="presentation" focusable="false">
-						<path d="M12 2.5A9.4 9.4 0 0 0 3.9 16.7L2.8 21.5l4.9-1.1A9.4 9.4 0 1 0 12 2.5Zm0 1.9a7.5 7.5 0 0 1 0 15 7.4 7.4 0 0 1-3.8-1l-.3-.2-2.5.6.6-2.4-.2-.3A7.5 7.5 0 0 1 12 4.4Zm-3.2 4c-.2 0-.5.1-.7.4-.3.3-.9.9-.9 2.1 0 1.3.9 2.5 1 2.7.1.2 1.8 2.9 4.5 3.9 2.2.9 2.7.7 3.2.7.5-.1 1.6-.7 1.8-1.3.2-.7.2-1.2.2-1.3-.1-.1-.2-.2-.5-.4l-1.7-.8c-.2-.1-.4-.1-.6.2l-.8 1c-.1.2-.3.2-.6.1-.3-.2-1.1-.4-2.1-1.3-.8-.7-1.3-1.6-1.5-1.8-.1-.3 0-.4.1-.6l.4-.4c.1-.1.2-.3.3-.4.1-.2 0-.3 0-.5l-.8-1.8c-.2-.4-.4-.4-.6-.4h-.7Z" fill="currentColor" />
-					</svg>
+					<Image src="/whatsapp.svg" alt="" width={24} height={24} />
 				) : null}
 			</span>
 		</a>
@@ -66,14 +64,19 @@ export default function LocalizedSiteFooter({
 					{labels.footerSupport}
 				</a>
 				<SocialLink
-					href="https://www.facebook.com/trainvent/"
-					label="Trainvent on Facebook"
-					kind="facebook"
-				/>
-				<SocialLink
 					href="https://www.youtube.com/@trainvent"
 					label="Trainvent on YouTube"
 					kind="youtube"
+				/>
+				<SocialLink
+					href="https://wa.me/491603455942"
+					label="Contact Trainvent on WhatsApp"
+					kind="whatsapp"
+				/>
+				<SocialLink
+					href="https://www.facebook.com/trainvent/"
+					label="Trainvent on Facebook"
+					kind="facebook"
 				/>
 				<SocialLink
 					href="https://www.patreon.com/trainvent"
@@ -84,11 +87,6 @@ export default function LocalizedSiteFooter({
 					href="https://de.trustpilot.com/review/trainvent.com"
 					label="Trainvent on Trustpilot"
 					kind="trustpilot"
-				/>
-				<SocialLink
-					href="https://wa.me/491603455942"
-					label="Contact Trainvent on WhatsApp"
-					kind="whatsapp"
 				/>
 			</small>
 		</footer>

@@ -81,7 +81,7 @@
     "projectDescriptions": {
       "caesim": "hulpmiddel voor gegevensfiltering",
       "calcrow": "bewerking van rekenbladen met een enkele rij",
-      "stimmapp": "stemapp",
+      "stimmapp": "meedoen aan peilingen en petities",
       "aperiodos": "aperiodische patronen genereren",
       "hexaclamp": "hexagonaal constructiesysteem",
       "portopener": "universeel netwerkhulpmiddel",
@@ -264,16 +264,16 @@
   "dev": {
     "metadata": {
       "title": "Bronnen",
-      "description": "Openbare github-projecten van Trainvent en hun recente activiteit."
+      "description": "Openbare GitHub-projecten van Trainvent en hun recente activiteit."
     },
     "navLabel": "Navigatie van ontwikkelaarsbronnen",
     "eyebrow": "Ontwikkelaarsbronnen",
-    "title": "github-projecten",
+    "title": "GitHub-projecten",
     "subtitlePrefix": "Automatisch gesynchroniseerd van",
     "loadingProjects": "Projecten laden...",
     "loading": "Laden...",
     "loadErrorSummary": "Projecten konden niet worden geladen.",
-    "loadErrorDetail": "Projecten konden niet uit de github-API worden geladen",
+    "loadErrorDetail": "Projecten konden niet uit de GitHub-API worden geladen",
     "noDescription": "Geen beschrijving beschikbaar.",
     "updatedLabel": "Bijgewerkt",
     "openProject": "Project openen",

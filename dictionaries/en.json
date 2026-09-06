@@ -81,7 +81,7 @@
     "projectDescriptions": {
       "caesim": "tool for data filtering",
       "calcrow": "fill spreadsheets on mobile",
-      "stimmapp": "use polls and petitions",
+      "stimmapp": "take part in polls and petitions",
       "aperiodos": "generate aperiodic patterns",
       "hexaclamp": "hexagonal construction system",
       "portopener": "universal network tool",
@@ -264,16 +264,16 @@
   "dev": {
     "metadata": {
       "title": "Sources",
-      "description": "Public Trainvent github projects and recent activity."
+      "description": "Public Trainvent GitHub projects and recent activity."
     },
     "navLabel": "Developer sources navigation",
     "eyebrow": "Developer Sources",
-    "title": "github Projects",
+    "title": "GitHub Projects",
     "subtitlePrefix": "Auto-synced from",
     "loadingProjects": "Loading projects...",
     "loading": "Loading...",
     "loadErrorSummary": "Could not load projects.",
-    "loadErrorDetail": "Failed to load projects from github API",
+    "loadErrorDetail": "Failed to load projects from GitHub API",
     "noDescription": "No description provided.",
     "updatedLabel": "Updated",
     "openProject": "Open project",

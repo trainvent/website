@@ -167,7 +167,7 @@ export default function SourcesPageClient({
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						github.com/{GITHUB_OWNER}
+						GitHub / {GITHUB_OWNER}
 					</a>
 				</p>
 				<p className={styles.meta}>{projectCountText}</p>

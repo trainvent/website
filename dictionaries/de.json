@@ -81,7 +81,7 @@
     "projectDescriptions": {
       "caesim": "Werkzeug zur Datenfilterung",
       "calcrow": "Tabellen am Handy ausfüllen",
-      "stimmapp": "Unfragen und Petitionen nutzen",
+      "stimmapp": "an Umfragen und Petitionen teilnehmen",
       "aperiodos": "Aperiodische Muster generieren",
 	  "hexaclamp": "hexagonales Bausystem",
       "portopener": "universelles Netzwerkwerkzeug",
@@ -264,16 +264,16 @@
   "dev": {
     "metadata": {
       "title": "Quellen",
-      "description": "Öffentliche github-Projekte von Trainvent und ihre letzte Aktivität."
+      "description": "Öffentliche GitHub-Projekte von Trainvent und ihre letzte Aktivität."
     },
     "navLabel": "Navigation der Entwicklerquellen",
     "eyebrow": "Entwicklerquellen",
-    "title": "github-Projekte",
+    "title": "GitHub-Projekte",
     "subtitlePrefix": "Automatisch synchronisiert von",
     "loadingProjects": "Projekte werden geladen...",
     "loading": "Lädt...",
     "loadErrorSummary": "Projekte konnten nicht geladen werden.",
-    "loadErrorDetail": "Projekte konnten nicht aus der github-API geladen werden",
+    "loadErrorDetail": "Projekte konnten nicht aus der GitHub-API geladen werden",
     "noDescription": "Keine Beschreibung vorhanden.",
     "updatedLabel": "Aktualisiert",
     "openProject": "Projekt öffnen",
