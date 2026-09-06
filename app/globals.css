@@ -27,6 +27,7 @@
     calc((100vw - var(--shell-max)) / 2),
     clamp(1rem, 2.5vw, 3.5rem)
   );
+  --track-sleeper-overhang: clamp(0.65rem, 1.3vw, 1.3rem);
 }
 
 html {
@@ -69,6 +70,17 @@ body::after {
   inset: 0;
   z-index: 0;
   pointer-events: none;
+  background:
+    repeating-linear-gradient(
+      to bottom,
+      transparent 0 3.25rem,
+      #627578 3.25rem 3.72rem,
+      #4b5d60 3.72rem 3.8rem,
+      transparent 3.8rem 4.25rem
+    )
+    calc(var(--shell-gutter) - var(--track-sleeper-overhang)) 0 /
+    calc(100% - var(--shell-gutter) - var(--shell-gutter) + var(--track-sleeper-overhang) + var(--track-sleeper-overhang)) 100%
+    no-repeat;
 }
 
 .track-rails::before,
@@ -77,14 +89,16 @@ body::after {
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 0.32rem;
-  border-inline: 1px solid rgba(136, 240, 223, 0.2);
-  background: repeating-linear-gradient(
-    to bottom,
-    rgba(47, 209, 193, 0.18) 0 0.32rem,
-    transparent 0.32rem 1.45rem
+  width: 0.46rem;
+  border-inline: 1px solid #aebfc0;
+  background: linear-gradient(
+    to right,
+    #6f8588,
+    #c5d0d0 50%,
+    #6f8588
   );
-  opacity: 0.56;
+  box-shadow: 0 0 0.65rem rgba(0, 0, 0, 0.3);
+  opacity: 1;
 }
 
 .track-rails::before {
@@ -289,6 +303,7 @@ body::after {
   align-content: center;
   isolation: isolate;
   overflow: hidden;
+  background-color: #081819;
 }
 
 .hero::before {
@@ -325,6 +340,39 @@ body::after {
 .connected-panel {
   margin-top: 0;
   border-top: 0;
+}
+
+.home-wagon {
+  overflow: clip;
+}
+
+.wagon-coupler {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  bottom: -1rem;
+  width: 1.7rem;
+  height: 1rem;
+  transform: translateX(-50%);
+  border: 1px solid rgba(136, 240, 223, 0.32);
+  border-radius: 0.12rem;
+  background:
+    linear-gradient(to bottom, transparent 0 0.25rem, rgba(47, 209, 193, 0.36) 0.25rem 0.72rem, transparent 0.72rem),
+    linear-gradient(to right, transparent 0 0.25rem, rgba(136, 240, 223, 0.26) 0.25rem 1.45rem, transparent 1.45rem);
+  box-shadow: 0 0 0.7rem rgba(47, 209, 193, 0.12);
+  pointer-events: none;
+}
+
+.hero-coupler {
+  position: relative;
+  z-index: 2;
+  left: auto;
+  bottom: auto;
+  display: block;
+  width: 1.7rem;
+  height: 1rem;
+  margin: 0 auto -1rem;
+  transform: none;
 }
 
 .eyebrow {
@@ -448,6 +496,7 @@ main [id] {
     linear-gradient(135deg, rgba(47, 209, 193, 0.04), rgba(136, 240, 223, 0.02));
   padding: clamp(1.2rem, 2.25vw, 2.5rem);
   box-shadow: 0 16px 44px -40px var(--shadow);
+  background-color: #071618;
 }
 
 .site-shell > .content-block,
@@ -465,11 +514,23 @@ main [id] {
   width: 1.7rem;
   height: 1rem;
   transform: translateX(-50%);
-  border-inline: 1px solid rgba(136, 240, 223, 0.27);
+  border: 1px solid rgba(136, 240, 223, 0.32);
+  border-radius: 0.12rem;
   background:
-    linear-gradient(to bottom, transparent 0 0.38rem, rgba(47, 209, 193, 0.25) 0.38rem 0.58rem, transparent 0.58rem),
-    linear-gradient(to right, transparent 0 0.38rem, rgba(136, 240, 223, 0.18) 0.38rem 1.32rem, transparent 1.32rem);
+    linear-gradient(to bottom, transparent 0 0.25rem, rgba(47, 209, 193, 0.36) 0.25rem 0.72rem, transparent 0.72rem),
+    linear-gradient(to right, transparent 0 0.25rem, rgba(136, 240, 223, 0.26) 0.25rem 1.45rem, transparent 1.45rem);
+  box-shadow: 0 0 0.7rem rgba(47, 209, 193, 0.12);
   pointer-events: none;
+}
+
+.about-contributors-grid > .content-block::after {
+  bottom: -0.5rem;
+  height: 0.5rem;
+  border-bottom: 0;
+  border-radius: 0.12rem 0.12rem 0 0;
+  background:
+    linear-gradient(to bottom, rgba(47, 209, 193, 0.36), rgba(47, 209, 193, 0.18)),
+    linear-gradient(to right, transparent 0 0.25rem, rgba(136, 240, 223, 0.26) 0.25rem 1.45rem, transparent 1.45rem);
 }
 
 .about-contributors-grid {
@@ -537,6 +598,7 @@ main [id] {
   padding: 1rem;
   box-shadow: 0 8px 24px -18px var(--shadow);
   border-radius: var(--radius);
+  background-color: #0a1f21;
 }
 
 .card h3 {
@@ -599,6 +661,7 @@ main [id] {
   box-shadow: 0 8px 24px -18px var(--shadow);
   transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
   border-radius: var(--radius);
+  background-color: #0a1f21;
 }
 
 .project-tile:hover {
@@ -659,6 +722,7 @@ main [id] {
   gap: 0.9rem;
   align-items: center;
   border-radius: var(--radius);
+  background-color: #0a1f21;
 }
 
 .team-photo {
@@ -748,6 +812,7 @@ main [id] {
     linear-gradient(135deg, rgba(0, 130, 201, 0.08), rgba(47, 209, 193, 0.08));
   box-shadow: 0 18px 36px -26px rgba(0, 0, 0, 0.58);
   overflow: hidden;
+  background-color: #0a1f21;
 }
 
 .homeserver-toolbar {
@@ -846,6 +911,7 @@ main [id] {
   background: var(--card);
   padding: 1rem;
   box-shadow: 0 8px 24px -18px var(--shadow);
+  background-color: #0a1f21;
 }
 
 .feature-card h3 {
@@ -903,6 +969,7 @@ main [id] {
   background: var(--card);
   padding: 1rem;
   box-shadow: 0 8px 24px -18px var(--shadow);
+  background-color: #0a1f21;
 }
 
 .contact-form-full {
@@ -1157,6 +1224,7 @@ main [id] {
     background:
       linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(243, 251, 250, 0.88)),
       linear-gradient(135deg, rgba(26, 182, 166, 0.06), rgba(20, 150, 140, 0.03));
+    background-color: #f3fbfa;
   }
 
   .eyebrow,
@@ -1184,6 +1252,7 @@ main [id] {
     background:
       linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(243, 251, 250, 0.88)),
       linear-gradient(135deg, rgba(26, 182, 166, 0.05), rgba(20, 150, 140, 0.03));
+    background-color: #f3fbfa;
   }
 
   .project-tile:hover {

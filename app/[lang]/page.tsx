@@ -216,7 +216,10 @@ export default async function LocalizedHomePage({ params }: RouteProps) {
 				currentPath="/"
 			/>
 
-			<section id="home" className="hero connected-panel reveal reveal-delay-1">
+			<section
+				id="home"
+				className="hero connected-panel home-wagon reveal reveal-delay-1"
+			>
 				<p className="eyebrow">{dict.home.eyebrow}</p>
 				<h1>{dict.home.title}</h1>
 				<p className="hero-copy">{dict.home.copy}</p>
@@ -259,6 +262,7 @@ export default async function LocalizedHomePage({ params }: RouteProps) {
 					</div>
 				</nav>
 			</section>
+			<span className="wagon-coupler hero-coupler" aria-hidden="true" />
 
 			<section id="services" className="content-block reveal reveal-delay-2">
 				<div className="section-head">

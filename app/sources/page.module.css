@@ -15,6 +15,7 @@
 	min-height: clamp(16rem, 32vw, 24rem);
 	display: grid;
 	align-content: center;
+	background-color: #081819;
 }
 
 .header::after {
@@ -81,6 +82,7 @@
 	background: var(--card);
 	padding: 1.1rem 1.25rem;
 	margin-top: 0.8rem;
+	background-color: #0a1f21;
 }
 
 .stateError {
@@ -107,6 +109,7 @@
 	overflow-wrap: break-word;
 	box-shadow: 0 16px 32px -28px var(--shadow);
 	transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+	background-color: #0a1f21;
 }
 
 .card::before {
@@ -175,10 +178,16 @@
 
 
 @media (prefers-color-scheme: light) {
+	.state,
+	.stateError {
+		background-color: #f3fbfa;
+	}
+
 	.header {
 		background:
 			linear-gradient(115deg, rgba(255, 255, 255, 0.95), rgba(243, 251, 250, 0.88)),
 			linear-gradient(135deg, rgba(26, 182, 166, 0.11), transparent 55%);
+		background-color: #f3fbfa;
 	}
 
 	.header::after {
@@ -187,6 +196,7 @@
 
 	.card {
 		background: linear-gradient(160deg, rgba(255, 255, 255, 0.95), rgba(243, 251, 250, 0.9));
+		background-color: #f3fbfa;
 	}
 
 	.snippet {
