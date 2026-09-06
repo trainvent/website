@@ -212,6 +212,7 @@ export default function SourcesPageClient({
 							</a>
 						</article>
 					))}
+					<WagonCoupler className="wagon-coupler-external" terminal />
 				</section>
 			) : null}
 		</main>

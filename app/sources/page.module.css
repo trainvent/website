@@ -139,15 +139,16 @@
 	position: absolute;
 	z-index: 2;
 	bottom: -1rem;
-	width: 1.7rem;
+	width: 4.25rem;
 	height: 1rem;
 	transform: translateX(-50%);
-	border: 1px solid rgba(136, 240, 223, 0.32);
-	border-radius: 0.12rem;
 	background:
-		linear-gradient(to bottom, transparent 0 0.25rem, rgba(47, 209, 193, 0.36) 0.25rem 0.72rem, transparent 0.72rem),
-		linear-gradient(to right, transparent 0 0.25rem, rgba(136, 240, 223, 0.26) 0.25rem 1.45rem, transparent 1.45rem);
-	box-shadow: 0 0 0.7rem rgba(47, 209, 193, 0.12);
+		linear-gradient(to right, #d6e1e1, #6d8083) center top / 100% 0.18rem no-repeat,
+		linear-gradient(to right, #d6e1e1, #6d8083) center bottom / 100% 0.18rem no-repeat,
+		repeating-linear-gradient(to bottom, #c2d0d0 0 0.07rem, #536b6e 0.07rem 0.14rem) calc(50% - 1rem) center / 0.24rem 0.5rem no-repeat,
+		repeating-linear-gradient(to bottom, #c2d0d0 0 0.07rem, #536b6e 0.07rem 0.14rem) calc(50% + 1rem) center / 0.24rem 0.5rem no-repeat,
+		linear-gradient(to right, #536b6e, #c7d5d4 50%, #536b6e) center / 0.22rem 100% no-repeat;
+	box-shadow: 0 0 0.55rem rgba(47, 209, 193, 0.16);
 	pointer-events: none;
 	left: -100%;
 }

@@ -26,6 +26,7 @@ export function WagonSection({
 			className={wagonClassName(`content-block ${className ?? ""}`, terminal)}
 		>
 			{children}
+			<WagonCoupler className="wagon-coupler-external" terminal={terminal} />
 		</section>
 	);
 }
@@ -63,6 +64,12 @@ export function WagonCoupler({
 		<span
 			className={`wagon-coupler ${className}${terminal ? " wagon-terminal" : ""}`}
 			aria-hidden="true"
-		/>
+		>
+			<span className="wagon-dock wagon-dock-back" />
+			<span className="wagon-damper wagon-damper-left" />
+			<span className="wagon-drawbar" />
+			<span className="wagon-damper wagon-damper-right" />
+			<span className="wagon-dock wagon-dock-front" />
+		</span>
 	);
 }

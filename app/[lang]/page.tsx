@@ -7,6 +7,7 @@ import { getDictionary } from "./dictionaries";
 import LocalizedSiteHeader from "../components/localized-site-header";
 import ProjectFavicon from "../components/project-favicon";
 import SecretSiteTrigger from "../components/secret-site-trigger";
+import { WagonCoupler, WagonSection } from "../components/wagon-section";
 import { getLocalizedHref, hasLocale } from "@/lib/i18n";
 
 type RouteProps = {
@@ -262,9 +263,9 @@ export default async function LocalizedHomePage({ params }: RouteProps) {
 					</div>
 				</nav>
 			</section>
-			<span className="wagon-coupler hero-coupler" aria-hidden="true" />
+			<WagonCoupler className="hero-coupler" />
 
-			<section id="services" className="content-block reveal reveal-delay-2">
+			<WagonSection id="services" className="reveal reveal-delay-2">
 				<div className="section-head">
 					<p className="eyebrow">{dict.home.servicesEyebrow}</p>
 					<h2>{dict.home.servicesTitle}</h2>
@@ -291,9 +292,9 @@ export default async function LocalizedHomePage({ params }: RouteProps) {
 						</a>
 					</article>
 				</div>
-			</section>
+			</WagonSection>
 
-			<section id="projects" className="content-block reveal reveal-delay-3">
+			<WagonSection id="projects" className="reveal reveal-delay-3">
 				<div className="section-head">
 					<p className="eyebrow">{dict.home.projectsEyebrow}</p>
 					<h2>{dict.home.projectsTitle}</h2>
@@ -318,12 +319,13 @@ export default async function LocalizedHomePage({ params }: RouteProps) {
 						</div>
 					</div>
 				) : null}
-			</section>
+			</WagonSection>
 
 			<div className="about-contributors-grid reveal reveal-delay-4">
-				<section
+				<WagonSection
 					id="about"
-					className="content-block about-wagon wagon-terminal"
+					className="about-wagon"
+					terminal
 					aria-label={dict.home.aboutTitle}
 				>
 					<p className="eyebrow">{dict.home.aboutEyebrow}</p>
@@ -361,7 +363,7 @@ export default async function LocalizedHomePage({ params }: RouteProps) {
 							</div>
 						</section>
 					</div>
-				</section>
+				</WagonSection>
 			</div>
 		</main>
 	);
