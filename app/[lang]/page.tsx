@@ -317,38 +317,45 @@ export default async function LocalizedHomePage({ params }: RouteProps) {
 			</section>
 
 			<div className="about-contributors-grid reveal reveal-delay-4">
-				<section id="about" className="content-block">
-					<div className="section-head">
-						<p className="eyebrow">{dict.home.aboutEyebrow}</p>
-						<h2>{dict.home.aboutTitle}</h2>
-					</div>
-					<p className="body-copy">{dict.home.aboutCopy}</p>
-					<div className="team-grid">
-						{teamMembers.map((member) => (
-							renderPersonCard(
-								member,
-								dict.home.teamRoles[member.key],
-								dict,
-								member.key,
-							)
-						))}
-					</div>
-				</section>
+				<section
+					id="about"
+					className="content-block about-wagon"
+					aria-label={dict.home.aboutTitle}
+				>
+					<p className="eyebrow">{dict.home.aboutEyebrow}</p>
+					<div className="people-panels">
+						<section className="people-panel" aria-labelledby="team-title">
+							<h3 id="team-title">{dict.home.teamTitle}</h3>
+							<p className="body-copy">{dict.home.aboutCopy}</p>
+							<div className="team-grid">
+								{teamMembers.map((member) =>
+									renderPersonCard(
+										member,
+										dict.home.teamRoles[member.key],
+										dict,
+										member.key,
+									),
+								)}
+							</div>
+						</section>
 
-				<section id="contributors" className="content-block">
-					<div className="section-head">
-						<p className="eyebrow">{dict.home.contributorsEyebrow}</p>
-						<h2>{dict.home.contributorsTitle}</h2>
-					</div>
-					<div className="team-grid">
-						{contributors.map((contributor) =>
-							renderPersonCard(
-								contributor,
-								dict.home.contributorRoles[contributor.key],
-								dict,
-								contributor.key,
-							),
-						)}
+						<section
+							id="contributors"
+							className="people-panel"
+							aria-labelledby="contributors-title"
+						>
+							<h3 id="contributors-title">{dict.home.contributorsEyebrow}</h3>
+							<div className="team-grid">
+								{contributors.map((contributor) =>
+									renderPersonCard(
+										contributor,
+										dict.home.contributorRoles[contributor.key],
+										dict,
+										contributor.key,
+									),
+								)}
+							</div>
+						</section>
 					</div>
 				</section>
 			</div>

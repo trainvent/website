@@ -52,6 +52,7 @@ export default async function LocaleLayout({
 
 	return (
 		<div lang={lang}>
+			<div className="track-rails" aria-hidden="true" />
 			{children}
 			<div className="site-shell site-shell-footer">
 				<LocalizedSiteFooter locale={lang} labels={dict.home} />

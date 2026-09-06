@@ -23,6 +23,10 @@
   --shell-max: 1540px;
   --radius: 0.35rem;
   --anchor-offset: clamp(5.8rem, 9vw, 7.6rem);
+  --shell-gutter: max(
+    calc((100vw - var(--shell-max)) / 2),
+    clamp(1rem, 2.5vw, 3.5rem)
+  );
 }
 
 html {
@@ -60,6 +64,37 @@ body::after {
   z-index: -1;
 }
 
+.track-rails {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.track-rails::before,
+.track-rails::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 0.32rem;
+  border-inline: 1px solid rgba(136, 240, 223, 0.2);
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(47, 209, 193, 0.18) 0 0.32rem,
+    transparent 0.32rem 1.45rem
+  );
+  opacity: 0.56;
+}
+
+.track-rails::before {
+  left: var(--shell-gutter);
+}
+
+.track-rails::after {
+  right: var(--shell-gutter);
+}
+
 body::before {
   width: 420px;
   height: 420px;
@@ -92,10 +127,10 @@ body::after {
 .site-shell-footer {
   position: fixed;
   z-index: 20;
-  left: 50%;
-  bottom: clamp(0.55rem, 1.1vw, 1rem);
-  transform: translateX(-50%);
-  padding: 0 clamp(0.85rem, 1.4vw, 1.25rem);
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 0;
   pointer-events: none;
 }
 
@@ -113,15 +148,16 @@ body::after {
 .topbar {
   position: fixed;
   z-index: 20;
-  top: clamp(0.55rem, 1.1vw, 1rem);
-  left: max(1rem, calc((100vw - var(--shell-max)) / 2));
-  width: min(var(--shell-max), calc(100vw - clamp(2rem, 5vw, 7rem)));
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
   padding: 0.7rem clamp(0.85rem, 1.4vw, 1.25rem);
-  border: 1px solid var(--line);
+  border: 0;
+  border-bottom: 1px solid var(--line);
   background: rgba(8, 24, 25, 0.84);
   backdrop-filter: blur(10px);
   box-shadow: 0 16px 40px -34px var(--shadow);
@@ -414,18 +450,63 @@ main [id] {
   box-shadow: 0 16px 44px -40px var(--shadow);
 }
 
+.site-shell > .content-block,
+.about-contributors-grid > .content-block {
+  border-radius: var(--radius);
+}
+
+.site-shell > .content-block::after,
+.about-contributors-grid > .content-block::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  left: 50%;
+  bottom: -1rem;
+  width: 1.7rem;
+  height: 1rem;
+  transform: translateX(-50%);
+  border-inline: 1px solid rgba(136, 240, 223, 0.27);
+  background:
+    linear-gradient(to bottom, transparent 0 0.38rem, rgba(47, 209, 193, 0.25) 0.38rem 0.58rem, transparent 0.58rem),
+    linear-gradient(to right, transparent 0 0.38rem, rgba(136, 240, 223, 0.18) 0.38rem 1.32rem, transparent 1.32rem);
+  pointer-events: none;
+}
+
 .about-contributors-grid {
   margin-top: 1rem;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1rem;
+  display: block;
 }
 
 .about-contributors-grid .content-block {
   margin-top: 0;
 }
 
-.about-contributors-grid .team-grid {
+.people-panels {
+  margin-top: 1.4rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.people-panel {
+  min-width: 0;
+  padding: 0 clamp(1rem, 2.25vw, 2.5rem);
+}
+
+.people-panel:first-child {
+  padding-left: 0;
+}
+
+.people-panel + .people-panel {
+  border-left: 1px solid var(--line);
+  padding-right: 0;
+}
+
+.people-panel > h3 {
+  margin-top: 0.45rem;
+  font-size: clamp(1.05rem, 1.5vw, 1.35rem);
+}
+
+.people-panel .team-grid {
   grid-template-columns: 1fr;
 }
 
@@ -938,8 +1019,9 @@ main [id] {
   position: relative;
   z-index: 1;
   margin-top: 0;
-  padding: 0.45rem 0.7rem;
-  border: 1px solid var(--line);
+  padding: 0.45rem clamp(1rem, 2.4vw, 2rem);
+  border: 0;
+  border-top: 1px solid var(--line);
   background: rgba(8, 24, 25, 0.84);
   backdrop-filter: blur(14px);
   box-shadow: 0 16px 38px -26px var(--shadow);
@@ -1203,6 +1285,23 @@ main [id] {
     grid-template-columns: 1fr;
   }
 
+  .people-panels {
+    grid-template-columns: 1fr;
+  }
+
+  .people-panel,
+  .people-panel:first-child,
+  .people-panel + .people-panel {
+    padding: 0;
+  }
+
+  .people-panel + .people-panel {
+    margin-top: 1.35rem;
+    padding-top: 1.35rem;
+    border-top: 1px solid var(--line);
+    border-left: 0;
+  }
+
   .service-hero-layout {
     grid-template-columns: 1fr;
   }
@@ -1238,14 +1337,14 @@ main [id] {
   }
 
   .topbar {
-    width: min(100% - 1.25rem, var(--shell-max));
-    left: 0.625rem;
+    width: 100%;
+    left: 0;
   }
 
   .site-shell-footer {
-    width: min(100% - 1.25rem, var(--shell-max));
-    bottom: 0.35rem;
-    padding: 0 0.625rem;
+    width: 100%;
+    bottom: 0;
+    padding: 0;
   }
 
   .site-footer-links {
