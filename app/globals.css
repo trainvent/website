@@ -28,6 +28,9 @@
     clamp(1rem, 2.5vw, 3.5rem)
   );
   --track-sleeper-overhang: clamp(0.65rem, 1.3vw, 1.3rem);
+  --track-sleeper-pitch: 4.5rem;
+  --track-rail-width: 0.46rem;
+  --track-bolt-clearance: clamp(0.38rem, 0.7vw, 0.52rem);
 }
 
 html {
@@ -70,13 +73,60 @@ body::after {
   inset: 0;
   z-index: 0;
   pointer-events: none;
+  /* An abstract overhead track: concrete sleepers, fastening plates, and bolts. */
   background:
+    radial-gradient(
+      circle at calc(var(--shell-gutter) - var(--track-bolt-clearance)) 3.5rem,
+      #d0d4d0 0 0.11rem,
+      #4d5a5a 0.12rem 0.2rem,
+      transparent 0.22rem
+    )
+    0 0 / 100% var(--track-sleeper-pitch) repeat-y,
+    radial-gradient(
+      circle at calc(var(--shell-gutter) + var(--track-rail-width) + var(--track-bolt-clearance)) 3.5rem,
+      #d0d4d0 0 0.11rem,
+      #4d5a5a 0.12rem 0.2rem,
+      transparent 0.22rem
+    )
+    0 0 / 100% var(--track-sleeper-pitch) repeat-y,
+    radial-gradient(
+      circle at calc(100% - var(--shell-gutter) - var(--track-rail-width) - var(--track-bolt-clearance)) 3.5rem,
+      #d0d4d0 0 0.11rem,
+      #4d5a5a 0.12rem 0.2rem,
+      transparent 0.22rem
+    )
+    0 0 / 100% var(--track-sleeper-pitch) repeat-y,
+    radial-gradient(
+      circle at calc(100% - var(--shell-gutter) + var(--track-bolt-clearance)) 3.5rem,
+      #d0d4d0 0 0.11rem,
+      #4d5a5a 0.12rem 0.2rem,
+      transparent 0.22rem
+    )
+    0 0 / 100% var(--track-sleeper-pitch) repeat-y,
+    linear-gradient(to right, #405153, #708080 50%, #405153)
+    calc(var(--shell-gutter) - var(--track-bolt-clearance)) 3.46rem /
+    calc(var(--track-rail-width) + var(--track-bolt-clearance) + var(--track-bolt-clearance)) 0.08rem repeat-y,
+    linear-gradient(to right, #405153, #708080 50%, #405153)
+    right calc(var(--shell-gutter) - var(--track-bolt-clearance)) top 3.46rem /
+    calc(var(--track-rail-width) + var(--track-bolt-clearance) + var(--track-bolt-clearance)) 0.08rem repeat-y,
+    linear-gradient(
+      to bottom,
+      transparent 0 3.02rem,
+      rgba(39, 49, 49, 0.5) 3.02rem 3.12rem,
+      transparent 3.12rem 3.86rem,
+      rgba(224, 222, 209, 0.12) 3.86rem 3.96rem,
+      transparent 3.96rem var(--track-sleeper-pitch)
+    )
+    calc(var(--shell-gutter) - var(--track-sleeper-overhang)) 0 /
+    calc(100% - var(--shell-gutter) - var(--shell-gutter) + var(--track-sleeper-overhang) + var(--track-sleeper-overhang)) var(--track-sleeper-pitch)
+    repeat-y,
     repeating-linear-gradient(
       to bottom,
-      transparent 0 3.25rem,
-      #627578 3.25rem 3.72rem,
-      #4b5d60 3.72rem 3.8rem,
-      transparent 3.8rem 4.25rem
+      transparent 0 3.08rem,
+      #7e817a 3.08rem 3.18rem,
+      #aaaba0 3.18rem 3.78rem,
+      #8a8c83 3.78rem 3.92rem,
+      transparent 3.92rem var(--track-sleeper-pitch)
     )
     calc(var(--shell-gutter) - var(--track-sleeper-overhang)) 0 /
     calc(100% - var(--shell-gutter) - var(--shell-gutter) + var(--track-sleeper-overhang) + var(--track-sleeper-overhang)) 100%
@@ -89,15 +139,16 @@ body::after {
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 0.46rem;
-  border-inline: 1px solid #aebfc0;
+  width: var(--track-rail-width);
+  border-inline: 1px solid #c1cccc;
   background: linear-gradient(
     to right,
-    #6f8588,
-    #c5d0d0 50%,
-    #6f8588
+    #526367,
+    #d3dddd 48%,
+    #86999b 52%,
+    #44575a
   );
-  box-shadow: 0 0 0.65rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 0.65rem rgba(0, 0, 0, 0.34), 0 0.06rem 0.08rem rgba(255, 255, 255, 0.16) inset;
   opacity: 1;
 }
 
