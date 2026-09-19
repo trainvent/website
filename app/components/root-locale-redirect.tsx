@@ -1,67 +1,28 @@
-"use client";
+import { defaultLocale, locales } from "@/lib/i18n";
 
-import { useEffect } from "react";
-
-import { defaultLocale } from "@/lib/i18n";
-
-const languageLinks = [
-	{ href: "/en/", label: "English" },
-	{ href: "/de/", label: "Deutsch" },
-	{ href: "/nl/", label: "Nederlands" },
-	{ href: "/ja/", label: "日本語" },
-	{ href: "/hr/", label: "Hrvatski" },
-];
-
-function detectLocale() {
+// Run while the HTML is parsed, before the English fallback can be painted.
+// Waiting for a React effect would flash English for other browser languages.
+const redirectScript = `(() => {
+	const supported = ${JSON.stringify(locales)};
+	const fallback = ${JSON.stringify(defaultLocale)};
 	const languages = navigator.languages?.length
 		? navigator.languages
 		: [navigator.language];
+	const locale = languages
+		.map(language => language?.toLowerCase().split("-")[0])
+		.find(language => supported.includes(language)) || fallback;
 
-	for (const language of languages) {
-		const normalized = language.toLowerCase();
-
-		if (normalized === "hr" || normalized.startsWith("hr-")) {
-			return "hr";
-		}
-
-		if (normalized === "ja" || normalized.startsWith("ja-")) {
-			return "ja";
-		}
-
-		if (normalized === "nl" || normalized.startsWith("nl-")) {
-			return "nl";
-		}
-
-		if (normalized === "de" || normalized.startsWith("de-")) {
-			return "de";
-		}
+	if (locale !== fallback) {
+		const pending = document.createElement("style");
+		pending.textContent = "body { visibility: hidden !important; }";
+		document.head.appendChild(pending);
+		// Keep the fallback usable if navigation fails.
+		window.setTimeout(() => pending.remove(), 3000);
 	}
 
-	return defaultLocale;
-}
+	window.location.replace("/" + locale + "/" + window.location.search + window.location.hash);
+})();`;
 
 export default function RootLocaleRedirect() {
-	useEffect(() => {
-		const nextLocale = detectLocale();
-		window.location.replace(`/${nextLocale}/`);
-	}, []);
-
-	return (
-		<main className="site-shell">
-			<section className="hero connected-panel">
-				<p className="eyebrow">Trainvent</p>
-				<h1>Choose your language</h1>
-				<p className="hero-copy">
-					We are taking you to the version that best matches your browser.
-				</p>
-				<nav className="hero-actions" aria-label="Available languages">
-					{languageLinks.map((language) => (
-						<a className="btn btn-secondary" href={language.href} key={language.href}>
-							{language.label}
-						</a>
-					))}
-				</nav>
-			</section>
-		</main>
-	);
+	return <script dangerouslySetInnerHTML={{ __html: redirectScript }} />;
 }
