@@ -248,24 +248,48 @@ export default async function LocalizedHomePage({ params }: RouteProps) {
 				<nav className="topic-nav" aria-label={dict.home.topicNavAriaLabel}>
 					<p className="topic-nav-label">{dict.home.topicNavLabel}</p>
 					<div className="topic-nav-links">
-						<a className="topic-chip" href="#services">
-							{dict.home.topics.services}
-						</a>
 						<a className="topic-chip" href="#projects">
 							{dict.home.topics.projects}
 						</a>
+						<a className="topic-chip" href="#services">
+							{dict.home.topics.services}
+						</a>
 						<a className="topic-chip" href="#about">
 							{dict.home.topics.about}
-						</a>
-						<a className="topic-chip" href="#contributors">
-							{dict.home.topics.contributors}
 						</a>
 					</div>
 				</nav>
 			</section>
 			<WagonCoupler className="hero-coupler" />
 
-			<WagonSection id="services" className="reveal reveal-delay-2">
+			<WagonSection id="projects" className="reveal reveal-delay-2">
+				<div className="section-head">
+					<p className="eyebrow">{dict.home.projectsEyebrow}</p>
+					<h2>{dict.home.projectsTitle}</h2>
+				</div>
+				<p className="body-copy">{dict.home.projectsCopy}</p>
+				<div className="project-grid">
+					{activeProjectSites.map((site) => renderProjectTile(site, dict))}
+				</div>
+				{developmentProjectSites.length > 0 ? (
+					<div className="project-subsection">
+						<p className="project-subheader">{dict.home.inDevelopmentLabel}</p>
+						<div className="project-grid">
+							{developmentProjectSites.map((site) => renderProjectTile(site, dict))}
+						</div>
+					</div>
+				) : null}
+				{unprototypedProjectSites.length > 0 ? (
+					<div className="project-subsection">
+						<p className="project-subheader">{dict.home.unprototypedLabel}</p>
+						<div className="project-grid">
+							{unprototypedProjectSites.map((site) => renderProjectTile(site, dict))}
+						</div>
+					</div>
+				) : null}
+			</WagonSection>
+
+			<WagonSection id="services" className="reveal reveal-delay-3">
 				<div className="section-head">
 					<p className="eyebrow">{dict.home.servicesEyebrow}</p>
 					<h2>{dict.home.servicesTitle}</h2>
@@ -292,33 +316,6 @@ export default async function LocalizedHomePage({ params }: RouteProps) {
 						</a>
 					</article>
 				</div>
-			</WagonSection>
-
-			<WagonSection id="projects" className="reveal reveal-delay-3">
-				<div className="section-head">
-					<p className="eyebrow">{dict.home.projectsEyebrow}</p>
-					<h2>{dict.home.projectsTitle}</h2>
-				</div>
-				<p className="body-copy">{dict.home.projectsCopy}</p>
-				<div className="project-grid">
-					{activeProjectSites.map((site) => renderProjectTile(site, dict))}
-				</div>
-				{developmentProjectSites.length > 0 ? (
-					<div className="project-subsection">
-						<p className="project-subheader">{dict.home.inDevelopmentLabel}</p>
-						<div className="project-grid">
-							{developmentProjectSites.map((site) => renderProjectTile(site, dict))}
-						</div>
-					</div>
-				) : null}
-				{unprototypedProjectSites.length > 0 ? (
-					<div className="project-subsection">
-						<p className="project-subheader">{dict.home.unprototypedLabel}</p>
-						<div className="project-grid">
-							{unprototypedProjectSites.map((site) => renderProjectTile(site, dict))}
-						</div>
-					</div>
-				) : null}
 			</WagonSection>
 
 			<div className="about-contributors-grid reveal reveal-delay-4">
