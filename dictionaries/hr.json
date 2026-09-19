@@ -79,6 +79,9 @@
     },
     "footerImprint": "Impresum",
     "footerSupport": "Softverska podrska",
+    "projectNames": {
+      "stimmapp": "vivot"
+    },
     "projectDescriptions": {
       "caesim": "alat za filtriranje podataka",
       "calcrow": "ispunjavanje tablica na mobitelu",
@@ -133,7 +136,7 @@
     "appLabel": "Aplikacija",
     "appPlaceholder": "Odaberi aplikaciju",
     "apps": {
-      "stimmapp": "Stimmapp",
+      "stimmapp": "vivot",
       "calcrow": "Calcrow",
       "aperiodos": "aperiodos"
     },

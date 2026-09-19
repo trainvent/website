@@ -79,6 +79,9 @@
     },
     "footerImprint": "運営者情報",
     "footerSupport": "ソフトウェアサポート",
+    "projectNames": {
+      "stimmapp": "vivot"
+    },
     "projectDescriptions": {
       "caesim": "データ絞り込みツール",
       "calcrow": "携帯でスプレッドシートを埋める",
@@ -133,7 +136,7 @@
     "appLabel": "アプリ",
     "appPlaceholder": "アプリを選択",
     "apps": {
-      "stimmapp": "Stimmapp",
+      "stimmapp": "vivot",
       "calcrow": "Calcrow",
       "aperiodos": "aperiodos"
     },

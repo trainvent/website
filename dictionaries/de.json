@@ -79,6 +79,9 @@
     },
     "footerImprint": "Impressum",
     "footerSupport": "Software-Support",
+    "projectNames": {
+      "stimmapp": "stimmapp"
+    },
     "projectDescriptions": {
       "caesim": "Werkzeug zur Datenfilterung",
       "calcrow": "Tabellen am Handy ausfüllen",

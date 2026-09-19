@@ -110,7 +110,11 @@ function renderProjectTile(
 		>
 			<span className="project-domain-row">
 				<ProjectFavicon className="project-favicon" siteUrl={site.url} />
-				<span className="project-domain">{site.label ?? site.key}</span>
+				<span className="project-domain">
+					{site.key === "stimmapp"
+						? dict.home.projectNames.stimmapp
+						: site.label ?? site.key}
+				</span>
 			</span>
 			<span className="project-description">
 				{dict.home.projectDescriptions[site.key]}

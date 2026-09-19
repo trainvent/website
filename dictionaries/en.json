@@ -79,6 +79,9 @@
     },
     "footerImprint": "Imprint",
     "footerSupport": "Software Support",
+    "projectNames": {
+      "stimmapp": "vivot"
+    },
     "projectDescriptions": {
       "caesim": "tool for data filtering",
       "calcrow": "fill spreadsheets on mobile",
@@ -133,7 +136,7 @@
     "appLabel": "App",
     "appPlaceholder": "Choose the app",
     "apps": {
-      "stimmapp": "Stimmapp",
+      "stimmapp": "vivot",
       "calcrow": "Calcrow",
       "aperiodos": "aperiodos"
     },

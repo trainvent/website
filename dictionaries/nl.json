@@ -79,6 +79,9 @@
     },
     "footerImprint": "Colofon",
     "footerSupport": "Softwareondersteuning",
+    "projectNames": {
+      "stimmapp": "vivot"
+    },
     "projectDescriptions": {
       "caesim": "hulpmiddel voor gegevensfiltering",
       "calcrow": "bewerking van rekenbladen met een enkele rij",
@@ -133,7 +136,7 @@
     "appLabel": "App",
     "appPlaceholder": "Kies de app",
     "apps": {
-      "stimmapp": "Stimmapp",
+      "stimmapp": "vivot",
       "calcrow": "Calcrow",
       "aperiodos": "aperiodos"
     },
