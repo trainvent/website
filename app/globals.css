@@ -1255,6 +1255,7 @@ main [id] {
   font-weight: 700;
 }
 
+.site-footer a[href*="mastodon.social"],
 .site-footer a[href*="t.me/"],
 .site-footer a[href*="youtube.com"],
 .site-footer a[href*="x.com"],
