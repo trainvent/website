@@ -1,20 +1,20 @@
-import Image from "next/image";
-
 import type { Dictionary } from "../[lang]/dictionaries";
 import { getLocalizedHref, type Locale } from "@/lib/i18n";
 
 type SocialLinkProps = {
 	href: string;
 	label: string;
-	kind: "facebook" | "youtube" | "x" | "patreon" | "trustpilot" | "whatsapp";
+	kind: "telegram" | "youtube" | "x" | "patreon" | "trustpilot";
 };
 
 function SocialLink({ href, label, kind }: SocialLinkProps) {
 	return (
 		<a href={href} target="_blank" rel="noopener noreferrer" aria-label={label}>
 			<span className="footer-social-icon" aria-hidden="true">
-				{kind === "facebook" ? (
-					<Image src="/facebook.svg" alt="" width={24} height={24} />
+				{kind === "telegram" ? (
+					<svg viewBox="0 0 24 24" role="presentation" focusable="false">
+						<path d="m21.4 3.6-3.2 16c-.2 1.1-.9 1.4-1.8.9l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9.1-8.2c.4-.4-.1-.6-.6-.2L5.8 13.4 1 11.9c-1-.3-1-1 .2-1.5L20 3.2c.9-.3 1.7.2 1.4.4Z" fill="currentColor" />
+					</svg>
 				) : null}
 				{kind === "youtube" ? (
 					<svg viewBox="0 0 24 24" role="presentation" focusable="false">
@@ -36,9 +36,6 @@ function SocialLink({ href, label, kind }: SocialLinkProps) {
 					<svg viewBox="0 0 24 24" role="presentation" focusable="false">
 						<path d="M12 2.7 14.8 8.4l6.3.9-4.6 4.5 1.1 6.3L12 17.1 6.4 20.1l1.1-6.3L2.9 9.3l6.3-.9L12 2.7Z" fill="currentColor" />
 					</svg>
-				) : null}
-				{kind === "whatsapp" ? (
-					<Image src="/whatsapp.svg" alt="" width={24} height={24} />
 				) : null}
 			</span>
 		</a>
@@ -69,14 +66,9 @@ export default function LocalizedSiteFooter({
 					kind="youtube"
 				/>
 				<SocialLink
-					href="https://wa.me/491603455942"
-					label="Contact Trainvent on WhatsApp"
-					kind="whatsapp"
-				/>
-				<SocialLink
-					href="https://www.facebook.com/trainvent/"
-					label="Trainvent on Facebook"
-					kind="facebook"
+					href="https://t.me/Trainvent"
+					label="@Trainvent on Telegram"
+					kind="telegram"
 				/>
 				<SocialLink
 					href="https://www.patreon.com/trainvent"
