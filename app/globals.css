@@ -388,7 +388,8 @@ body::after {
   box-shadow: 0 0 0 2.7rem rgba(47, 209, 193, 0.035), 0 0 0 5.4rem rgba(47, 209, 193, 0.025);
 }
 
-#home.hero::after {
+#home.hero::after,
+.contact-hero.hero::after {
   border: 0;
   background: url("/greyLogo/LeLogo.svg") center / 100.67% no-repeat;
   /* Trim the SVG's 3-unit outer margin so its circle meets the existing halo. */
@@ -1611,7 +1612,8 @@ main [id] {
     max-width: 80%;
   }
 
-  #home.hero::after {
+  #home.hero::after,
+  .contact-hero.hero::after {
     opacity: 0.1;
   }
 }

@@ -63,7 +63,7 @@ export default async function LocalizedContactPage({ params }: RouteProps) {
 				currentPath="/contact"
 			/>
 
-			<WagonHero className="connected-panel reveal reveal-delay-1">
+			<WagonHero className="contact-hero connected-panel reveal reveal-delay-1">
 				<p className="eyebrow">{dict.contact.eyebrow}</p>
 				<p className="hero-copy">
 					{dict.contact.heroCopy}{" "}
