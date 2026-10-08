@@ -1651,3 +1651,12 @@ main [id] {
     transition-duration: 0.01ms !important;
   }
 }
+
+.support-form-fields {
+  display: grid;
+  gap: 1rem;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}

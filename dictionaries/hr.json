@@ -153,7 +153,14 @@
     "subjectPlaceholder": "Kratki sazetak problema",
     "messageLabel": "Poruka",
     "messagePlaceholder": "Opisi svoj zahtjev i ukljuci relevantne detalje.",
-    "submitLabel": "Posalji zahtjev za podrsku"
+    "submitLabel": "Posalji zahtjev za podrsku",
+    "uploads": {
+      "label": "Privici (neobavezno)",
+      "help": "Do 3 datoteke, ukupno 10 MB. Snimke zaslona, dokumenti ili zapisnici.",
+      "error": "Zahtjev nije moguće pripremiti. Provjerite da imate najviše 3 datoteke ukupne veličine 10 MB pa pokušajte ponovno.",
+      "preparing": "Priprema zahtjeva…",
+      "notice": "Nakon slanja Google prikazuje potvrdu. Privici se pohranjuju privatno za podršku."
+    }
   },
   "imprint": {
     "metadata": {

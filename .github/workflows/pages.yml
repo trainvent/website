@@ -36,6 +36,7 @@ jobs:
       - name: Build static export
         env:
           BASE_PATH: ${{ vars.BASE_PATH }}
+          NEXT_PUBLIC_GOOGLE_SUPPORT_ENDPOINT: ${{ vars.NEXT_PUBLIC_GOOGLE_SUPPORT_ENDPOINT }}
         run: npm run build
 
       - name: Upload Pages artifact

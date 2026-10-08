@@ -153,7 +153,14 @@
     "subjectPlaceholder": "Kurze Zusammenfassung des Problems",
     "messageLabel": "Nachricht",
     "messagePlaceholder": "Beschreibe deine Anfrage und fuege die relevanten Details hinzu.",
-    "submitLabel": "Supportanfrage senden"
+    "submitLabel": "Supportanfrage senden",
+    "uploads": {
+      "label": "Anhänge (optional)",
+      "help": "Bis zu 3 Dateien, insgesamt 10 MB. Screenshots, Dokumente oder Protokolle.",
+      "error": "Die Anfrage konnte nicht vorbereitet werden. Prüfe, dass du höchstens 3 Dateien mit insgesamt 10 MB ausgewählt hast, und versuche es erneut.",
+      "preparing": "Anfrage wird vorbereitet…",
+      "notice": "Nach dem Senden zeigt Google eine Bestätigung. Anhänge werden für den Support privat gespeichert."
+    }
   },
   "imprint": {
     "metadata": {

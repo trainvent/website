@@ -153,7 +153,14 @@
     "subjectPlaceholder": "Short summary of the issue",
     "messageLabel": "Message",
     "messagePlaceholder": "Describe your request and include the relevant details.",
-    "submitLabel": "Send support request"
+    "submitLabel": "Send support request",
+    "uploads": {
+      "label": "Attachments (optional)",
+      "help": "Up to 3 files, 10 MB total. Screenshots, documents or logs.",
+      "error": "Unable to prepare your request. Check that there are at most 3 files totalling 10 MB, then try again.",
+      "preparing": "Preparing your request…",
+      "notice": "After sending, Google will show a confirmation. Attachments are stored privately for support."
+    }
   },
   "imprint": {
     "metadata": {

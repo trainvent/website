@@ -153,7 +153,14 @@
     "subjectPlaceholder": "Korte samenvatting van het probleem",
     "messageLabel": "Bericht",
     "messagePlaceholder": "Beschrijf je verzoek en voeg de relevante details toe.",
-    "submitLabel": "Supportverzoek versturen"
+    "submitLabel": "Supportverzoek versturen",
+    "uploads": {
+      "label": "Bijlagen (optioneel)",
+      "help": "Maximaal 3 bestanden, samen 10 MB. Screenshots, documenten of logbestanden.",
+      "error": "Je verzoek kon niet worden voorbereid. Controleer dat je maximaal 3 bestanden van samen 10 MB hebt geselecteerd en probeer opnieuw.",
+      "preparing": "Je verzoek wordt voorbereid…",
+      "notice": "Na verzending toont Google een bevestiging. Bijlagen worden privé opgeslagen voor ondersteuning."
+    }
   },
   "imprint": {
     "metadata": {

@@ -1,3 +1,4 @@
+import GoogleSupportForm from "../../components/google-support-form";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
@@ -41,6 +42,10 @@ export default async function LocalizedSoftwareSupportPage({
 	}
 
 	const dict = await getDictionary(lang);
+	const googleEndpoint = process.env.NEXT_PUBLIC_GOOGLE_SUPPORT_ENDPOINT;
+	if (googleEndpoint && !/^https:\/\/script\.google\.com\/macros\/s\/[\w-]+\/exec$/.test(googleEndpoint)) {
+		throw new Error("Invalid Google support deployment URL");
+	}
 	const formAction =
 		process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT ??
 		"https://formspree.io/f/your-form-id";
@@ -84,11 +89,7 @@ export default async function LocalizedSoftwareSupportPage({
 						</a>
 					</div>
 
-					<form
-						className="contact-form support-contact-form"
-						action={formAction}
-						method="POST"
-					>
+					<GoogleSupportForm endpoint={googleEndpoint} fallbackAction={formAction} labels={dict.softwareSupport.uploads} locale={lang}>
 						<input
 							type="text"
 							name="_honey"
@@ -178,7 +179,7 @@ export default async function LocalizedSoftwareSupportPage({
 								{dict.softwareSupport.submitLabel}
 							</button>
 						</div>
-					</form>
+					</GoogleSupportForm>
 				</div>
 			</WagonSection>
 		</main>
