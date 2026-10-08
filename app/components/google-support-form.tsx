@@ -3,7 +3,7 @@
 import Script from "next/script";
 import { useEffect, useId, useRef, useState, type FormEvent, type ReactNode } from "react";
 
-type Labels = { label: string; help: string; error: string; preparing: string; notice: string; success: string; failed: string; uncertain: string; captcha: string };
+type Labels = { label: string; help: string; error: string; preparing: string; success: string; failed: string; uncertain: string; captcha: string };
 type CaptchaWindow = Window & { hcaptcha?: {
 	render: (element: HTMLElement, options: Record<string, unknown>) => string;
 	remove: (widget: string) => void;
@@ -119,15 +119,14 @@ export default function GoogleSupportForm({ endpoint, fallbackAction, labels, lo
 		<Script src="https://js.hcaptcha.com/1/api.js" strategy="afterInteractive" />
 		{endpoint && <iframe name={frameName} title="Support submission response" hidden />}
 		{success ? <div className="contact-form support-contact-form" role="status">{labels.success}</div> : <form className="contact-form support-contact-form" action={endpoint || fallbackAction} method="POST" onSubmit={submit}>
-		{endpoint && <>
+		<fieldset disabled={busy} className="support-form-fields">{children}</fieldset>
+		{endpoint &&
 			<label className="field">
 				<span>{labels.label}</span>
 				<input type="file" name="attachments" multiple aria-describedby="support-upload-help" disabled={busy} />
 				<small id="support-upload-help">{labels.help}</small>
 			</label>
-			<p className="body-copy">{labels.notice}</p>
-		</>}
-		<fieldset disabled={busy} className="support-form-fields">{children}</fieldset>
+		}
 		<div ref={captchaHost} className="support-captcha" />
 		<div className="contact-form-actions"><button className="btn btn-primary" type="submit" disabled={busy}>{submitLabel}</button></div>
 		<p role="status" aria-live="polite">{error || (busy ? labels.preparing : "")}</p>

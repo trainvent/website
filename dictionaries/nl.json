@@ -159,7 +159,6 @@
       "help": "Maximaal 3 bestanden, samen 10 MB. Screenshots, documenten of logbestanden.",
       "error": "Je verzoek kon niet worden voorbereid. Controleer dat je maximaal 3 bestanden van samen 10 MB hebt geselecteerd en probeer opnieuw.",
       "preparing": "Je verzoek wordt voorbereid…",
-      "notice": "Je verzoek en bijlagen worden privé in Google Workspace opgeslagen voor ondersteuning.",
       "success": "Je supportverzoek is opgeslagen. We nemen per e-mail contact met je op.",
       "failed": "Je verzoek kon niet worden opgeslagen. Probeer opnieuw of mail support@trainvent.com.",
       "uncertain": "We hebben geen bevestiging van Google ontvangen. Je verzoek is mogelijk al opgeslagen. Neem contact op met support voordat je het opnieuw verstuurt.",
