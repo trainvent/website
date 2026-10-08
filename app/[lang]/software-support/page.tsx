@@ -89,7 +89,7 @@ export default async function LocalizedSoftwareSupportPage({
 						</a>
 					</div>
 
-					<GoogleSupportForm endpoint={googleEndpoint} fallbackAction={formAction} labels={dict.softwareSupport.uploads} locale={lang}>
+					<GoogleSupportForm endpoint={googleEndpoint} fallbackAction={formAction} labels={dict.softwareSupport.uploads} locale={lang} submitLabel={dict.softwareSupport.submitLabel} siteKey={process.env.NEXT_PUBLIC_HCAPTCHA_SITEKEY || "19c4f6ba-2b22-4014-a996-1dc2ea141098"}>
 						<input
 							type="text"
 							name="_honey"
@@ -174,11 +174,6 @@ export default async function LocalizedSoftwareSupportPage({
 							/>
 						</label>
 
-						<div className="contact-form-actions">
-							<button className="btn btn-primary" type="submit">
-								{dict.softwareSupport.submitLabel}
-							</button>
-						</div>
 					</GoogleSupportForm>
 				</div>
 			</WagonSection>

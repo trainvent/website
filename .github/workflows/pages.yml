@@ -35,6 +35,7 @@ jobs:
 
       - name: Build static export
         env:
+          NEXT_PUBLIC_HCAPTCHA_SITEKEY: ${{ vars.NEXT_PUBLIC_HCAPTCHA_SITEKEY }}
           BASE_PATH: ${{ vars.BASE_PATH }}
           NEXT_PUBLIC_GOOGLE_SUPPORT_ENDPOINT: ${{ vars.NEXT_PUBLIC_GOOGLE_SUPPORT_ENDPOINT }}
         run: npm run build

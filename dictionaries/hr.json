@@ -159,7 +159,11 @@
       "help": "Do 3 datoteke, ukupno 10 MB. Snimke zaslona, dokumenti ili zapisnici.",
       "error": "Zahtjev nije moguće pripremiti. Provjerite da imate najviše 3 datoteke ukupne veličine 10 MB pa pokušajte ponovno.",
       "preparing": "Priprema zahtjeva…",
-      "notice": "Nakon slanja Google prikazuje potvrdu. Privici se pohranjuju privatno za podršku."
+      "notice": "Vaš zahtjev i privici pohranjuju se privatno u Google Workspaceu za podršku.",
+      "success": "Vaš zahtjev za podršku je spremljen. Odgovorit ćemo e-poštom.",
+      "failed": "Vaš zahtjev nije spremljen. Pokušajte ponovno ili pišite na support@trainvent.com.",
+      "uncertain": "Nismo primili potvrdu od Googlea. Vaš zahtjev možda je već spremljen. Provjerite s podrškom prije ponovnog slanja.",
+      "captcha": "Prije slanja riješite CAPTCHA provjeru."
     }
   },
   "imprint": {

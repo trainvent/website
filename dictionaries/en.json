@@ -159,7 +159,11 @@
       "help": "Up to 3 files, 10 MB total. Screenshots, documents or logs.",
       "error": "Unable to prepare your request. Check that there are at most 3 files totalling 10 MB, then try again.",
       "preparing": "Preparing your request…",
-      "notice": "After sending, Google will show a confirmation. Attachments are stored privately for support."
+      "notice": "Your request and attachments are stored privately in Google Workspace for support.",
+      "success": "Your support request has been saved. We’ll get back to you by email.",
+      "failed": "Your request could not be saved. Please try again or email support@trainvent.com.",
+      "uncertain": "We haven’t received confirmation from Google. Your request may already be saved. Please check with support before sending it again.",
+      "captcha": "Please complete the CAPTCHA before sending."
     }
   },
   "imprint": {

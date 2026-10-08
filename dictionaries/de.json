@@ -159,7 +159,11 @@
       "help": "Bis zu 3 Dateien, insgesamt 10 MB. Screenshots, Dokumente oder Protokolle.",
       "error": "Die Anfrage konnte nicht vorbereitet werden. Prüfe, dass du höchstens 3 Dateien mit insgesamt 10 MB ausgewählt hast, und versuche es erneut.",
       "preparing": "Anfrage wird vorbereitet…",
-      "notice": "Nach dem Senden zeigt Google eine Bestätigung. Anhänge werden für den Support privat gespeichert."
+      "notice": "Deine Anfrage und Anhänge werden für den Support privat in Google Workspace gespeichert.",
+      "success": "Deine Support-Anfrage wurde gespeichert. Wir melden uns per E-Mail.",
+      "failed": "Deine Anfrage konnte nicht gespeichert werden. Versuche es erneut oder schreibe an support@trainvent.com.",
+      "uncertain": "Wir haben noch keine Bestätigung von Google erhalten. Deine Anfrage wurde möglicherweise bereits gespeichert. Bitte frage beim Support nach, bevor du sie erneut sendest.",
+      "captcha": "Bitte bestätige das CAPTCHA vor dem Senden."
     }
   },
   "imprint": {
