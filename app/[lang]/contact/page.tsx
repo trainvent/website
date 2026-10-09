@@ -42,8 +42,8 @@ export default async function LocalizedContactPage({ params }: RouteProps) {
 		process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT ??
 		"https://formspree.io/f/your-form-id";
 	const hcaptchaSiteKey =
-		process.env.NEXT_PUBLIC_HCAPTCHA_SITEKEY ??
-		"10000000-ffff-ffff-ffff-000000000001";
+		process.env.NEXT_PUBLIC_HCAPTCHA_SITEKEY?.trim() ||
+		"19c4f6ba-2b22-4014-a996-1dc2ea141098";
 
 	return (
 		<main className="site-shell">
