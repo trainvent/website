@@ -228,27 +228,6 @@ export default async function LocalizedHomePage({ params }: RouteProps) {
 				<p className="eyebrow">{dict.home.eyebrow}</p>
 				<h1>{dict.home.title}</h1>
 				<p className="hero-copy">{dict.home.copy}</p>
-				<div className="hero-actions">
-					<a
-						className="btn btn-secondary"
-						href="https://trainvent.com"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						{dict.home.secondaryCta}
-						<svg
-							className="btn-icon"
-							xmlns="http://www.w3.org/2000/svg"
-							height="24"
-							viewBox="0 -960 960 960"
-							width="24"
-							fill="currentColor"
-							aria-hidden="true"
-						>
-							<path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z" />
-						</svg>
-					</a>
-				</div>
 				<nav className="topic-nav" aria-label={dict.home.topicNavAriaLabel}>
 					<p className="topic-nav-label">{dict.home.topicNavLabel}</p>
 					<div className="topic-nav-links">

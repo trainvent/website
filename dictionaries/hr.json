@@ -5,6 +5,7 @@
   },
   "header": {
     "brandAriaLabel": "Trainvent pocetna stranica",
+    "externalLinkLabel": "Vanjska poveznica, otvara se u novoj kartici",
     "languageLabel": "Jezik",
     "localeNames": {
       "en": "Engleski",
@@ -17,6 +18,7 @@
       "home": "Pocetna",
       "contact": "Kontakt",
       "dev": "Izvori",
+      "shop": "Trgovina",
       "imprint": "Impresum"
     }
   },

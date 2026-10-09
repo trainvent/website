@@ -30,9 +30,11 @@ export default function LocalizedSiteHeader({
 					href: getLocalizedHref(locale, "/sources"),
 					label: header.navItems.dev,
 				},
+				{ href: "https://trainvent.com", label: header.navItems.shop, external: true },
 			]}
 			locale={locale}
 			currentPath={currentPath}
+			externalLinkLabel={header.externalLinkLabel}
 			languageLabel={header.languageLabel}
 			localeNames={header.localeNames}
 		/>

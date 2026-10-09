@@ -17,6 +17,7 @@ type SiteHeaderProps = {
 	navItems?: NavItem[];
 	locale?: Locale;
 	currentPath?: string;
+	externalLinkLabel?: string;
 	languageLabel?: string;
 	localeNames?: Record<Locale, string>;
 };
@@ -35,6 +36,7 @@ export default function SiteHeader({
 	navItems = defaultNavItems,
 	locale,
 	currentPath = "/",
+	externalLinkLabel = "External link, opens in a new tab",
 	languageLabel = "Language",
 	localeNames = {
 		en: "English",
@@ -66,8 +68,11 @@ export default function SiteHeader({
 								href={item.href}
 								target="_blank"
 								rel="noopener noreferrer"
+								title={externalLinkLabel}
+								aria-label={`${item.label} (${externalLinkLabel})`}
 							>
 								{item.label}
+								<span aria-hidden="true"> ↗</span>
 							</a>
 						) : (
 							<Link key={item.href} href={item.href}>

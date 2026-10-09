@@ -5,6 +5,7 @@
   },
   "header": {
     "brandAriaLabel": "Trainvent startpagina",
+    "externalLinkLabel": "Externe link, opent in een nieuw tabblad",
     "languageLabel": "Taal",
     "localeNames": {
       "en": "Engels",
@@ -17,6 +18,7 @@
       "home": "Start",
       "contact": "Contact",
       "dev": "Bronnen",
+      "shop": "Shop",
       "imprint": "Colofon"
     }
   },

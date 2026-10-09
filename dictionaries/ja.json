@@ -5,6 +5,7 @@
   },
   "header": {
     "brandAriaLabel": "Trainvent ホーム",
+    "externalLinkLabel": "外部リンク、新しいタブで開きます",
     "languageLabel": "言語",
     "localeNames": {
       "en": "英語",
@@ -17,6 +18,7 @@
       "home": "ホーム",
       "contact": "お問い合わせ",
       "dev": "ソース",
+      "shop": "ショップ",
       "imprint": "運営者情報"
     }
   },

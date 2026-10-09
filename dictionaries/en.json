@@ -5,6 +5,7 @@
   },
   "header": {
     "brandAriaLabel": "Trainvent home",
+    "externalLinkLabel": "External link, opens in a new tab",
     "languageLabel": "Language",
     "localeNames": {
       "en": "English",
@@ -17,6 +18,7 @@
       "home": "Home",
       "contact": "Contact",
       "dev": "Sources",
+      "shop": "Shop",
       "imprint": "Imprint"
     }
   },
