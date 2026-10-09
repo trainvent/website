@@ -389,7 +389,7 @@ body::after {
 }
 
 #home.hero::after,
-.contact-hero.hero::after {
+.logo-hero.hero::after {
   border: 0;
   background: url("/greyLogo/LeLogo.svg") center / 100.67% no-repeat;
   /* Trim the SVG's 3-unit outer margin so its circle meets the existing halo. */
@@ -1613,7 +1613,7 @@ main [id] {
   }
 
   #home.hero::after,
-  .contact-hero.hero::after {
+  .logo-hero.hero::after {
     opacity: 0.1;
   }
 }

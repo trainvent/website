@@ -53,6 +53,11 @@ export function WagonHero({
 	);
 }
 
+/** Compact wagon hero with the Trainvent logo and its surrounding halo. */
+export function LogoWagonHero({ className, ...props }: WagonSectionProps) {
+	return <WagonHero {...props} className={`logo-hero ${className ?? ""}`} />;
+}
+
 export function WagonCoupler({
 	className = "wagon-coupler-inline",
 	terminal = false,

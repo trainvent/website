@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 
 import { getDictionary } from "../dictionaries";
 import LocalizedSiteHeader from "../../components/localized-site-header";
-import { WagonHero, WagonSection } from "../../components/wagon-section";
+import { LogoWagonHero, WagonSection } from "../../components/wagon-section";
 import { hasLocale } from "@/lib/i18n";
 import { getPageAlternates } from "@/lib/site";
 
@@ -62,7 +62,7 @@ export default async function LocalizedSoftwareSupportPage({
 				currentPath="/software-support"
 			/>
 
-			<WagonHero className="connected-panel reveal reveal-delay-1">
+			<LogoWagonHero className="connected-panel reveal reveal-delay-1">
 				<p className="eyebrow">{dict.softwareSupport.eyebrow}</p>
 				<h1>{dict.softwareSupport.title}</h1>
 				<p className="hero-copy">
@@ -70,7 +70,7 @@ export default async function LocalizedSoftwareSupportPage({
 					<a href={`mailto:${supportEmail}`}>{supportEmail}</a>.{" "}
 					{dict.softwareSupport.heroCopyAfterEmail}
 				</p>
-			</WagonHero>
+			</LogoWagonHero>
 
 			<WagonSection className="support-contact reveal reveal-delay-2" terminal>
 				<div className="contact-layout support-contact-layout">
