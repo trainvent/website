@@ -118,6 +118,9 @@ export default async function LocalizedSoftwareSupportPage({
 								<option value="aperiodos">
 									{dict.softwareSupport.apps.aperiodos}
 								</option>
+								<option value="obsidian-sports">
+									{dict.softwareSupport.apps["obsidian-sports"]}
+								</option>
 							</select>
 						</label>
 

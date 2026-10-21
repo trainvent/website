@@ -1,5 +1,5 @@
 const MAX_BYTES = 10 * 1024 * 1024;
-const APPS = ['stimmapp', 'calcrow', 'aperiodos'];
+const APPS = ['stimmapp', 'calcrow', 'aperiodos', 'obsidian-sports'];
 const TYPES = ['account-access', 'bug-report', 'billing-or-data', 'other'];
 
 // Run once from the editor, under the Workspace account that will deploy this app.
@@ -76,7 +76,7 @@ function doPost(event) {
     const row = sheet.getLastRow();
     try {
       const notification = { to: recipient, replyTo: data.email, subject: '[Support] ' + data.subject,
-        body: 'Request: ' + id + '\nApp: ' + data.app + '\nFrom: ' + data.email + '\nType: ' + data.requestType + '\n\n' + data.message + '\n\nPrivate files:\n' + (links.join('\n') || 'None') };
+        body: 'Request: ' + id + '\nProject: ' + data.app + '\nFrom: ' + data.email + '\nType: ' + data.requestType + '\n\n' + data.message + '\n\nPrivate files:\n' + (links.join('\n') || 'None') };
       if (inboxMode) insertSupportNotification(notification);
       else MailApp.sendEmail(notification);
       sheet.getRange(row, 9).setValue(inboxMode ? 'Added to inbox' : 'Sent');

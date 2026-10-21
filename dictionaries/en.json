@@ -135,12 +135,13 @@
     "formTitle": "Send your request",
     "formCopy": "Tell us what you need and include the details that matter for your request.",
     "formSubject": "Software support request",
-    "appLabel": "App",
-    "appPlaceholder": "Choose the app",
+    "appLabel": "Project",
+    "appPlaceholder": "Choose the project",
     "apps": {
       "stimmapp": "vivot",
       "calcrow": "Calcrow",
-      "aperiodos": "aperiodos"
+      "aperiodos": "aperiodos",
+      "obsidian-sports": "Obsidian-Sports"
     },
     "emailLabel": "Registered email",
     "requestTypeLabel": "Request type",

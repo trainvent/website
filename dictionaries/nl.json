@@ -135,12 +135,13 @@
     "formTitle": "Verstuur je verzoek",
     "formCopy": "Vertel ons wat je nodig hebt en voeg de details toe die belangrijk zijn voor je verzoek.",
     "formSubject": "Verzoek om softwareondersteuning",
-    "appLabel": "App",
-    "appPlaceholder": "Kies de app",
+    "appLabel": "Project",
+    "appPlaceholder": "Kies het project",
     "apps": {
       "stimmapp": "vivot",
       "calcrow": "Calcrow",
-      "aperiodos": "aperiodos"
+      "aperiodos": "aperiodos",
+      "obsidian-sports": "Obsidian-Sports"
     },
     "emailLabel": "Geregistreerd e-mailadres",
     "requestTypeLabel": "Type verzoek",

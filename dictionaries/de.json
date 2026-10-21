@@ -135,12 +135,13 @@
     "formTitle": "Anfrage senden",
     "formCopy": "Beschreibe dein Anliegen und fuege die Details hinzu, die fuer deine Anfrage wichtig sind.",
     "formSubject": "Software-Support-Anfrage",
-    "appLabel": "App",
-    "appPlaceholder": "App auswaehlen",
+    "appLabel": "Projekt",
+    "appPlaceholder": "Projekt auswaehlen",
     "apps": {
       "stimmapp": "Stimmapp",
       "calcrow": "Calcrow",
-      "aperiodos": "aperiodos"
+      "aperiodos": "aperiodos",
+      "obsidian-sports": "Obsidian-Sports"
     },
     "emailLabel": "Registrierte E-Mail",
     "requestTypeLabel": "Anfragetyp",

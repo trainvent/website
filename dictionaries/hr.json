@@ -135,12 +135,13 @@
     "formTitle": "Posalji svoj zahtjev",
     "formCopy": "Reci nam sto ti treba i ukljuci detalje koji su vazni za tvoj zahtjev.",
     "formSubject": "Zahtjev za softversku podrsku",
-    "appLabel": "Aplikacija",
-    "appPlaceholder": "Odaberi aplikaciju",
+    "appLabel": "Projekt",
+    "appPlaceholder": "Odaberi projekt",
     "apps": {
       "stimmapp": "vivot",
       "calcrow": "Calcrow",
-      "aperiodos": "aperiodos"
+      "aperiodos": "aperiodos",
+      "obsidian-sports": "Obsidian-Sports"
     },
     "emailLabel": "Registrirani e-mail",
     "requestTypeLabel": "Vrsta zahtjeva",
