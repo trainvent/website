@@ -287,7 +287,10 @@ export default async function LocalizedHomePage({ params }: RouteProps) {
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						<span className="project-domain">{dict.home.plugins.sportsTitle}</span>
+						<span className="project-domain-row">
+							<ProjectFavicon className="project-favicon" siteUrl="https://obsidian.md" />
+							<span className="project-domain">{dict.home.plugins.sportsTitle}</span>
+						</span>
 						<span className="project-description">{dict.home.plugins.sportsDescription}</span>
 						<span className="project-cta">{dict.home.plugins.cta}</span>
 					</a>
