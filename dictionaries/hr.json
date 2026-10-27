@@ -50,6 +50,13 @@
         "linkLabel": "Pogledaj uslugu popravka bicikla"
       }
     },
+    "plugins": {
+      "title": "Dodaci",
+      "copy": "Proširenja za alate koje koristiš",
+      "sportsTitle": "Sports za Obsidian",
+      "sportsDescription": "Dodatak za Obsidian.",
+      "cta": "Pogledaj dodatak"
+    },
     "projectsEyebrow": "Projekti",
     "projectsTitle": "Predstavljamo",
     "projectsCopy": "sažeti pregled dodatnih već aktivnih projektnih stranica.",

@@ -234,6 +234,9 @@ export default async function LocalizedHomePage({ params }: RouteProps) {
 						<a className="topic-chip" href="#projects">
 							{dict.home.topics.projects}
 						</a>
+						<a className="topic-chip" href="#plugins">
+							{dict.home.plugins.title}
+						</a>
 						<a className="topic-chip" href="#services">
 							{dict.home.topics.services}
 						</a>
@@ -270,6 +273,25 @@ export default async function LocalizedHomePage({ params }: RouteProps) {
 						</div>
 					</div>
 				) : null}
+			</WagonSection>
+
+			<WagonSection id="plugins" className="reveal reveal-delay-3">
+				<div className="section-head">
+					<p className="eyebrow">{dict.home.plugins.title}</p>
+					<h2>{dict.home.plugins.copy}</h2>
+				</div>
+				<div className="project-grid">
+					<a
+						className="project-tile"
+						href="https://community.obsidian.md/plugins/sports"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<span className="project-domain">{dict.home.plugins.sportsTitle}</span>
+						<span className="project-description">{dict.home.plugins.sportsDescription}</span>
+						<span className="project-cta">{dict.home.plugins.cta}</span>
+					</a>
+				</div>
 			</WagonSection>
 
 			<WagonSection id="services" className="reveal reveal-delay-3">

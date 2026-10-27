@@ -50,6 +50,13 @@
         "linkLabel": "See bike repair service"
       }
     },
+    "plugins": {
+      "title": "Plugins",
+      "copy": "Extensions for the tools you use",
+      "sportsTitle": "Sports for Obsidian",
+      "sportsDescription": "An Obsidian plugin.",
+      "cta": "View plugin"
+    },
     "projectsEyebrow": "Projects",
     "projectsTitle": "We present",
     "projectsCopy": "a compact overview of additional already running project pages.",
