@@ -50,6 +50,13 @@
         "linkLabel": "自転車修理サービスを見る"
       }
     },
+    "plugins": {
+      "title": "プラグイン",
+      "copy": "いつものツールに拡張機能を",
+      "sportsTitle": "Sports for Obsidian",
+      "sportsDescription": "Obsidian用プラグイン。",
+      "cta": "プラグインを見る"
+    },
     "projectsEyebrow": "プロジェクト",
     "projectsTitle": "私たちは紹介します",
     "projectsCopy": "既に運用中の他のプロジェクトページのコンパクトな概要です。",

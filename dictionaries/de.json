@@ -50,6 +50,13 @@
         "linkLabel": "Fahrradservice ansehen"
       }
     },
+    "plugins": {
+      "title": "Plugins",
+      "copy": "Erweiterungen für deine Werkzeuge",
+      "sportsTitle": "Sports für Obsidian",
+      "sportsDescription": "Ein Plugin für Obsidian.",
+      "cta": "Plugin ansehen"
+    },
     "projectsEyebrow": "Projekte",
     "projectsTitle": "Wir präsentieren",
     "projectsCopy": "einen kompakten Überblick über weitere bereits laufende Projektseiten.",
