@@ -1188,28 +1188,13 @@ main [id] {
 }
 
 .support-contact-intro {
+  min-width: 0;
   align-content: start;
   padding-top: 0.25rem;
 }
 
 .support-contact-intro .body-copy {
   margin-top: 0;
-}
-
-.support-email-link {
-  width: fit-content;
-  max-width: 100%;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  color: var(--ink-soft);
-  font-size: 0.86rem;
-  text-underline-offset: 4px;
-  overflow-wrap: anywhere;
-}
-
-.support-email-link:hover {
-  color: var(--ink);
 }
 
 .support-contact-form {
@@ -1499,9 +1484,8 @@ main [id] {
   }
 
   .support-contact-intro {
-    grid-template-columns: minmax(0, 1fr) auto;
-    column-gap: 1.5rem;
-    align-items: end;
+    grid-template-columns: minmax(0, 1fr);
+    align-items: start;
   }
 
   .support-contact-intro .body-copy {

@@ -78,13 +78,6 @@ export default async function LocalizedSoftwareSupportPage({
 							<h2>{dict.softwareSupport.formTitle}</h2>
 						</div>
 						<p className="body-copy">{dict.softwareSupport.formCopy}</p>
-						<a
-							className="support-email-link"
-							href={`mailto:${supportEmail}`}
-						>
-							<span>{supportEmail}</span>
-							<span aria-hidden="true">&#8599;</span>
-						</a>
 					</div>
 
 					<GoogleSupportForm endpoint={googleEndpoint} fallbackAction={formAction} labels={dict.softwareSupport.uploads} locale={lang} submitLabel={dict.softwareSupport.submitLabel} siteKey={process.env.NEXT_PUBLIC_HCAPTCHA_SITEKEY || "19c4f6ba-2b22-4014-a996-1dc2ea141098"}>
