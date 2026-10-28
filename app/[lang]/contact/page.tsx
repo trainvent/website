@@ -64,7 +64,7 @@ export default async function LocalizedContactPage({ params }: RouteProps) {
 			/>
 
 			<LogoWagonHero className="connected-panel reveal reveal-delay-1">
-				<p className="eyebrow">{dict.contact.eyebrow}</p>
+				<h1>{dict.contact.eyebrow}</h1>
 				<p className="hero-copy">
 					{dict.contact.heroCopy}{" "}
 					<a href="mailto:info@trainvent.com">info@trainvent.com</a>

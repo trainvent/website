@@ -159,7 +159,6 @@ export default function SourcesPageClient({
 				currentPath="/sources"
 			/>
 			<header className={`${styles.header} connected-panel`}>
-				<p className={styles.eyebrow}>{dict.eyebrow}</p>
 				<h1>{dict.title}</h1>
 				<p className={styles.subtext}>
 					{dict.subtitlePrefix}{" "}

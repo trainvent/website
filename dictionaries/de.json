@@ -124,22 +124,22 @@
       "description": "Bestätigungsseite nach dem Senden einer Nachricht an Trainvent."
     },
     "eyebrow": "Kontakt",
-    "title": "Danke für deine Nachricht.",
+    "title": "Gesendet",
     "copy": "Deine Nachricht wurde gesendet. Trainvent antwortet an die E-Mail-Adresse, die du im Formular angegeben hast.",
     "backHome": "Zur Startseite",
     "sendAnother": "Noch eine Nachricht senden"
   },
   "softwareSupport": {
     "metadata": {
-      "title": "Software-Support",
+      "title": "Support",
       "description": "Allgemeine Software-Support-Seite mit kurzem Leitfaden und Kontaktformular."
     },
     "eyebrow": "Software-Support",
-    "title": "Software-Support",
+    "title": "Support",
     "heroCopyBeforeEmail": "Nutze diese Seite fuer Supportanfragen. Du kannst uns auch per E-Mail schreiben an",
     "heroCopyAfterEmail": "Bitte kontaktiere uns mit der E-Mail-Adresse, mit der du dich registriert hast.",
     "formEyebrow": "Support kontaktieren",
-    "formTitle": "Anfrage senden",
+    "formTitle": "Anfrage",
     "formCopy": "Beschreibe dein Anliegen und fuege die Details hinzu, die fuer deine Anfrage wichtig sind.",
     "formSubject": "Software-Support-Anfrage",
     "appLabel": "Projekt",
@@ -195,13 +195,13 @@
     },
     "navLabel": "Navigation des Homeserver-Services",
     "eyebrow": "Service",
-    "title": "Hilfe mit Nextcloud und Homeservern",
+    "title": "Homeserver",
     "badge": "Selbst gehostet und alltagstauglich",
     "copy": "Ich helfe beim Aufbau eines praktischen, selbst gehosteten Systems rund um Nextcloud und einen kleinen Homeserver. Dazu gehören zum Beispiel Hardwareplanung, Einrichtung des Hosts und von Installationen mit Docker, Fernzugriff, Backups, Updates, Dateisynchronisation und die grundlegenden Sicherheitsmaßnahmen, damit das Setup dauerhaft benutzbar bleibt.",
     "bookCta": "Online-Gespräch buchen",
     "mailCta": "Per E-Mail kontaktieren",
     "detailsEyebrow": "Nextcloud im Detail",
-    "detailsTitle": "Ein Heimsystem, sechs Werkzeuge für jeden Tag",
+    "detailsTitle": "Werkzeuge",
     "detailsCopy": "Nextcloud kann Kontakte, Kalender, Notizen, Aufgaben, Passwörter und Dateiverwaltung an einem Ort zusammenführen, damit Alltagsdaten auf einem System bleiben, das du selbst kontrollierst.",
     "features": {
       "contacts": {
@@ -230,7 +230,7 @@
       }
     },
     "helpEyebrow": "Womit ich helfen kann",
-    "helpTitle": "Von der ersten Box bis zum funktionierenden Alltagssystem",
+    "helpTitle": "Unterstützung",
     "helpCards": {
       "planning": {
         "title": "Planung und Hardware",
@@ -246,7 +246,7 @@
       }
     },
     "pricingEyebrow": "Details",
-    "pricingTitle": "Preise und Kontakt",
+    "pricingTitle": "Preise",
     "pricingCopy": "Homeserver- und Nextcloud-Support wird für 15 EUR pro Stunde angeboten. Sowohl Remote-Termine als auch Hilfe vor Ort sind möglich.",
     "bookLink": "Online-Gespräch buchen",
     "telegramLabel": "Telegram"
@@ -258,13 +258,13 @@
     },
     "navLabel": "Navigation des Fahrradservices",
     "eyebrow": "Service",
-    "title": "Fahrradreparatur in und um Bielefeld",
+    "title": "Fahrradreparatur",
     "copyOne": "Ich helfe bei praktischen Fahrradreparaturen für Citybikes, Trekkingräder und Alltagsräder in und um Bielefeld. Im Mittelpunkt stehen verlässliche Lösungen, klare Kommunikation und ein Fahrrad, das wieder normal genutzt werden kann, ohne aus einer einfachen Reparatur ein Drama zu machen.",
     "copyTwo": "Typische Arbeiten sind Platten, Bremseneinstellung, Ketten- und Kassettenarbeiten, Schaltungsjustierung, der Austausch verschlissener Teile und allgemeine Wartungschecks, bevor ein Fahrrad nervig oder unsicher wird.",
     "bookCta": "Reparaturgespräch buchen",
     "mailCta": "Per E-Mail kontaktieren",
     "helpEyebrow": "Womit ich helfen kann",
-    "helpTitle": "Nützliche Reparaturen für den Alltag",
+    "helpTitle": "Reparaturen",
     "helpCards": {
       "drivetrain": {
         "title": "Bremsen, Schaltung und Antrieb",
@@ -280,7 +280,7 @@
       }
     },
     "pricingEyebrow": "Details",
-    "pricingTitle": "Preise und Kontakt",
+    "pricingTitle": "Preise",
     "pricingCopy": "Fahrradservice wird für 15 EUR pro Stunde angeboten. Ersatzteile werden bei Bedarf zusätzlich berechnet.",
     "bookLink": "Reparaturgespräch buchen",
     "telegramLabel": "Telegram"
@@ -292,7 +292,7 @@
     },
     "navLabel": "Navigation der Entwicklerquellen",
     "eyebrow": "Entwicklerquellen",
-    "title": "GitHub-Projekte",
+    "title": "Quellen",
     "subtitlePrefix": "Automatisch synchronisiert von",
     "loadingProjects": "Projekte werden geladen...",
     "loading": "Lädt...",

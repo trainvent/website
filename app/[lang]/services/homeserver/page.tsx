@@ -148,7 +148,6 @@ export default async function LocalizedHomeserverPage({ params }: RouteProps) {
 				<div className="service-hero-layout">
 					<div>
 						<div className="section-head">
-							<p className="eyebrow">{dict.homeserver.eyebrow}</p>
 							<h1>{dict.homeserver.title}</h1>
 						</div>
 						<div className="service-badge-row">
@@ -176,7 +175,6 @@ export default async function LocalizedHomeserverPage({ params }: RouteProps) {
 
 			<WagonSection className="reveal reveal-delay-2">
 				<div className="section-head">
-					<p className="eyebrow">{dict.homeserver.detailsEyebrow}</p>
 					<h2>{dict.homeserver.detailsTitle}</h2>
 				</div>
 				<p className="body-copy">{dict.homeserver.detailsCopy}</p>
@@ -197,7 +195,6 @@ export default async function LocalizedHomeserverPage({ params }: RouteProps) {
 
 			<WagonSection className="reveal reveal-delay-3">
 				<div className="section-head">
-					<p className="eyebrow">{dict.homeserver.helpEyebrow}</p>
 					<h2>{dict.homeserver.helpTitle}</h2>
 				</div>
 				<div className="cards">
@@ -218,7 +215,6 @@ export default async function LocalizedHomeserverPage({ params }: RouteProps) {
 
 			<WagonSection className="reveal reveal-delay-4" terminal>
 				<div className="section-head">
-					<p className="eyebrow">{dict.homeserver.pricingEyebrow}</p>
 					<h2>{dict.homeserver.pricingTitle}</h2>
 				</div>
 				<p className="body-copy">{dict.homeserver.pricingCopy}</p>

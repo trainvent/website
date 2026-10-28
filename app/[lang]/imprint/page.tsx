@@ -47,6 +47,7 @@ export default async function LocalizedImprintPage({ params }: RouteProps) {
 				currentPath="/imprint"
 			/>
 			<WagonSection className="connected-panel reveal reveal-delay-1" terminal>
+				<h1>{dict.imprint.metadata.title}</h1>
 				<p>{dict.imprint.providerLabel}</p>
 				<address>
 					<strong>Trainvent, owner Leon Marquardt</strong>

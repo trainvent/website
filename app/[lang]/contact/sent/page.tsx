@@ -48,7 +48,6 @@ export default async function LocalizedContactSentPage({ params }: RouteProps) {
 			<div className="ambient ambient-bottom" aria-hidden="true" />
 
 			<WagonHero className="reveal" terminal>
-				<p className="eyebrow">{dict.contactSent.eyebrow}</p>
 				<h1>{dict.contactSent.title}</h1>
 				<p className="hero-copy">{dict.contactSent.copy}</p>
 				<div className="hero-actions">

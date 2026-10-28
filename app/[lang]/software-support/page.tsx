@@ -63,7 +63,6 @@ export default async function LocalizedSoftwareSupportPage({
 			/>
 
 			<LogoWagonHero className="connected-panel reveal reveal-delay-1">
-				<p className="eyebrow">{dict.softwareSupport.eyebrow}</p>
 				<h1>{dict.softwareSupport.title}</h1>
 				<p className="hero-copy">
 					{dict.softwareSupport.heroCopyBeforeEmail}{" "}
@@ -76,7 +75,6 @@ export default async function LocalizedSoftwareSupportPage({
 				<div className="contact-layout support-contact-layout">
 					<div className="contact-copy support-contact-intro">
 						<div className="section-head">
-							<p className="eyebrow">{dict.softwareSupport.formEyebrow}</p>
 							<h2>{dict.softwareSupport.formTitle}</h2>
 						</div>
 						<p className="body-copy">{dict.softwareSupport.formCopy}</p>

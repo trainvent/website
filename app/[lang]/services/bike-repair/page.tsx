@@ -51,7 +51,6 @@ export default async function LocalizedBikeRepairPage({ params }: RouteProps) {
 			/>
 			<WagonSection className="connected-panel reveal reveal-delay-1">
 				<div className="section-head">
-					<p className="eyebrow">{dict.bikeRepair.eyebrow}</p>
 					<h1>{dict.bikeRepair.title}</h1>
 				</div>
 				<p className="body-copy">{dict.bikeRepair.copyOne}</p>
@@ -73,7 +72,6 @@ export default async function LocalizedBikeRepairPage({ params }: RouteProps) {
 
 			<WagonSection className="reveal reveal-delay-2">
 				<div className="section-head">
-					<p className="eyebrow">{dict.bikeRepair.helpEyebrow}</p>
 					<h2>{dict.bikeRepair.helpTitle}</h2>
 				</div>
 				<div className="cards">
@@ -94,7 +92,6 @@ export default async function LocalizedBikeRepairPage({ params }: RouteProps) {
 
 			<WagonSection className="reveal reveal-delay-3" terminal>
 				<div className="section-head">
-					<p className="eyebrow">{dict.bikeRepair.pricingEyebrow}</p>
 					<h2>{dict.bikeRepair.pricingTitle}</h2>
 				</div>
 				<p className="body-copy">{dict.bikeRepair.pricingCopy}</p>
