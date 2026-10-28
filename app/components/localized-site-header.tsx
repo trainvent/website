@@ -26,10 +26,6 @@ export default function LocalizedSiteHeader({
 					href: getLocalizedHref(locale, "/contact"),
 					label: header.navItems.contact,
 				},
-				{
-					href: getLocalizedHref(locale, "/sources"),
-					label: header.navItems.dev,
-				},
 				{ href: "https://trainvent.com", label: header.navItems.shop, external: true },
 			]}
 			locale={locale}

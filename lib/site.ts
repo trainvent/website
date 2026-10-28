@@ -14,7 +14,6 @@ export const indexablePaths = [
 	"/contact",
 	"/imprint",
 	"/software-support",
-	"/sources",
 	"/services/bike-repair",
 	"/services/homeserver",
 ] as const;

@@ -25,7 +25,6 @@ type SiteHeaderProps = {
 const defaultNavItems: NavItem[] = [
 	{ href: "/", label: "Home" },
 	{ href: "/contact", label: "Contact" },
-	{ href: "/sources", label: "Sources" },
 	{ href: "/imprint", label: "Imprint" },
 ];
 
