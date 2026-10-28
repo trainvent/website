@@ -225,8 +225,14 @@ export default async function LocalizedHomePage({ params }: RouteProps) {
 				id="home"
 				className="hero connected-panel home-wagon reveal reveal-delay-1"
 			>
-				<p className="eyebrow">{dict.home.eyebrow}</p>
-				<h1>{dict.home.title}</h1>
+				{dict.home.title ? (
+					<>
+						<p className="eyebrow">{dict.home.eyebrow}</p>
+						<h1>{dict.home.title}</h1>
+					</>
+				) : (
+					<h1>{dict.home.eyebrow}</h1>
+				)}
 				<p className="hero-copy">{dict.home.copy}</p>
 				<nav className="topic-nav" aria-label={dict.home.topicNavAriaLabel}>
 					<p className="topic-nav-label">{dict.home.topicNavLabel}</p>
@@ -250,8 +256,14 @@ export default async function LocalizedHomePage({ params }: RouteProps) {
 
 			<WagonSection id="projects" className="reveal reveal-delay-2">
 				<div className="section-head">
-					<p className="eyebrow">{dict.home.projectsEyebrow}</p>
-					<h2>{dict.home.projectsTitle}</h2>
+					{dict.home.projectsTitle ? (
+						<>
+							<p className="eyebrow">{dict.home.projectsEyebrow}</p>
+							<h2>{dict.home.projectsTitle}</h2>
+						</>
+					) : (
+						<h2>{dict.home.projectsEyebrow}</h2>
+					)}
 				</div>
 				<p className="body-copy">{dict.home.projectsCopy}</p>
 				<div className="project-grid">
@@ -277,8 +289,14 @@ export default async function LocalizedHomePage({ params }: RouteProps) {
 
 			<WagonSection id="plugins" className="reveal reveal-delay-3">
 				<div className="section-head">
-					<p className="eyebrow">{dict.home.plugins.title}</p>
-					<h2>{dict.home.plugins.copy}</h2>
+					{dict.home.plugins.copy ? (
+						<>
+							<p className="eyebrow">{dict.home.plugins.title}</p>
+							<h2>{dict.home.plugins.copy}</h2>
+						</>
+					) : (
+						<h2>{dict.home.plugins.title}</h2>
+					)}
 				</div>
 				<div className="project-grid">
 					<a
@@ -299,8 +317,14 @@ export default async function LocalizedHomePage({ params }: RouteProps) {
 
 			<WagonSection id="services" className="reveal reveal-delay-3">
 				<div className="section-head">
-					<p className="eyebrow">{dict.home.servicesEyebrow}</p>
-					<h2>{dict.home.servicesTitle}</h2>
+					{dict.home.servicesTitle ? (
+						<>
+							<p className="eyebrow">{dict.home.servicesEyebrow}</p>
+							<h2>{dict.home.servicesTitle}</h2>
+						</>
+					) : (
+						<h2>{dict.home.servicesEyebrow}</h2>
+					)}
 				</div>
 				<div className="cards">
 					<article className="card">
@@ -331,9 +355,11 @@ export default async function LocalizedHomePage({ params }: RouteProps) {
 					id="about"
 					className="about-wagon"
 					terminal
-					aria-label={dict.home.aboutTitle}
+					aria-labelledby="about-title"
 				>
-					<p className="eyebrow">{dict.home.aboutEyebrow}</p>
+					<div className="section-head">
+						<h2 id="about-title">{dict.home.aboutEyebrow}</h2>
+					</div>
 					<div className="people-panels">
 						<section className="people-panel" aria-labelledby="team-title">
 							<h3 id="team-title">{dict.home.teamTitle}</h3>

@@ -25,7 +25,7 @@
   "home": {
     "navLabel": "Hauptnavigation",
     "eyebrow": "Intro",
-    "title": "Ein Überblick",
+    "title": "",
     "copy": "Hier gibt es Einsicht auf alle Projekte und Kontaktmöglichkeiten dieser Firma",
     "secondaryCta": "Shop",
     "topicNavAriaLabel": "Themen der Startseite",
@@ -37,7 +37,7 @@
       "contributors": "Mitwirkende"
     },
     "servicesEyebrow": "Leistungen",
-    "servicesTitle": "Wir bieten",
+    "servicesTitle": "",
     "services": {
       "homeserver": {
         "title": "Homeserver- und Nextcloud-Support",
@@ -52,14 +52,14 @@
     },
     "plugins": {
       "title": "Plugins",
-      "copy": "Wir erweitern",
+      "copy": "",
       "sportsTitle": "Sports für Obsidian",
       "sportsDescription": "Ein Plugin für Obsidian.",
       "cta": "Plugin ansehen"
     },
     "projectsEyebrow": "Projekte",
-    "projectsTitle": "Wir präsentieren",
-    "projectsCopy": "einen kompakten Überblick über weitere bereits laufende Projektseiten.",
+    "projectsTitle": "",
+    "projectsCopy": "Ein kompakter Überblick über weitere bereits laufende Projektseiten.",
     "projectCta": "Seite öffnen",
     "inDevelopmentLabel": "in Entwicklung",
     "unprototypedLabel": "noch nicht prototypisiert",
