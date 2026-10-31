@@ -66,8 +66,8 @@ export default function LocalizedSiteFooter({
 					{labels.footerSupport}
 				</a>
 				<SocialLink
-					href="https://mastodon.social/@trainvent"
-					label="@trainvent@mastodon.social on Mastodon"
+					href="https://mas.to/@trainvent"
+					label="@trainvent@mas.to on Mastodon"
 					kind="mastodon"
 				/>
 				<SocialLink
