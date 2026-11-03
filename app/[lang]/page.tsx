@@ -243,6 +243,9 @@ export default async function LocalizedHomePage({ params }: RouteProps) {
 						<a className="topic-chip" href="#plugins">
 							{dict.home.plugins.title}
 						</a>
+						<a className="topic-chip" href="#design">
+							{dict.home.design.title}
+						</a>
 						<a className="topic-chip" href="#services">
 							{dict.home.topics.services}
 						</a>
@@ -313,6 +316,35 @@ export default async function LocalizedHomePage({ params }: RouteProps) {
 						<span className="project-cta">{dict.home.plugins.cta}</span>
 					</a>
 				</div>
+			</WagonSection>
+
+			<WagonSection id="design" className="reveal reveal-delay-3" aria-labelledby="design-title">
+				<div className="section-head">
+					<h2 id="design-title">{dict.home.design.title}</h2>
+				</div>
+				<a
+					className="project-tile design-feature"
+					href="https://github.com/trainvent/arcubic/releases"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<Image
+						className="design-artwork"
+						src="/arcubic-title.svg"
+						alt="Arcubic"
+						width={1600}
+						height={620}
+					/>
+					<div className="design-details">
+						<div className="design-heading">
+							<h3>Arcubic</h3>
+							<span className="design-status">{dict.home.design.status}</span>
+						</div>
+						<p className="design-tagline">{dict.home.design.tagline}</p>
+						<p className="project-description">{dict.home.design.description}</p>
+						<span className="project-cta">{dict.home.design.cta} ↗</span>
+					</div>
+				</a>
 			</WagonSection>
 
 			<WagonSection id="services" className="reveal reveal-delay-3">

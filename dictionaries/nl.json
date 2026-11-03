@@ -50,6 +50,13 @@
         "linkLabel": "Bekijk fietsservice"
       }
     },
+    "design": {
+      "title": "Design",
+      "tagline": "Drie kleuren, één curve.",
+      "description": "Ons designsysteem voor Obsidian, terminals en webapps. Teal, amber en gebrand oranje met strakke geometrie, tastbare bedieningselementen en lichte en donkere modi.",
+      "status": "Alfa",
+      "cta": "Releases bekijken"
+    },
     "plugins": {
       "title": "Plugins",
       "copy": "Wij breiden uit",

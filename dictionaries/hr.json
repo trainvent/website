@@ -50,6 +50,13 @@
         "linkLabel": "Pogledaj uslugu popravka bicikla"
       }
     },
+    "design": {
+      "title": "Dizajn",
+      "tagline": "Tri boje, jedna krivulja.",
+      "description": "Naš dizajnerski sustav za Obsidian, terminale i web-aplikacije. Tirkizna, jantarna i zagasito narančasta uz jasnu geometriju, taktilne kontrole te svijetli i tamni način rada.",
+      "status": "Alfa",
+      "cta": "Pogledaj izdanja"
+    },
     "plugins": {
       "title": "Dodaci",
       "copy": "Proširujemo",

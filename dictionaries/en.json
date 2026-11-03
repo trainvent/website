@@ -50,6 +50,13 @@
         "linkLabel": "See bike repair service"
       }
     },
+    "design": {
+      "title": "Design",
+      "tagline": "Three colors, one curve.",
+      "description": "Our design system for Obsidian, terminals and web apps. Teal, amber and burnt orange meet crisp geometry, tactile controls, and light and dark modes.",
+      "status": "Alpha",
+      "cta": "Explore releases"
+    },
     "plugins": {
       "title": "Plugins",
       "copy": "We extend",

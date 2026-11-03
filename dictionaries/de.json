@@ -50,6 +50,13 @@
         "linkLabel": "Fahrradservice ansehen"
       }
     },
+    "design": {
+      "title": "Design",
+      "tagline": "Drei Farben, eine Kurve.",
+      "description": "Unser Designsystem für Obsidian, Terminals und Web-Apps. Türkis, Amber und gebranntes Orange treffen auf klare Geometrie, fühlbare Bedienelemente sowie helle und dunkle Modi.",
+      "status": "Alpha",
+      "cta": "Releases ansehen"
+    },
     "plugins": {
       "title": "Plugins",
       "copy": "",
