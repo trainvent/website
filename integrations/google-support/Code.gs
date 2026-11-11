@@ -1,5 +1,5 @@
 const MAX_BYTES = 10 * 1024 * 1024;
-const APPS = ['stimmapp', 'calcrow', 'aperiodos', 'obsidian-sports'];
+const APPS = ['stimmapp', 'calcrow', 'aperiodos', 'obsidian-sports', 'stowgui'];
 const TYPES = ['account-access', 'bug-report', 'billing-or-data', 'other'];
 
 // Run once from the editor, under the Workspace account that will deploy this app.

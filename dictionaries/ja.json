@@ -155,7 +155,8 @@
       "stimmapp": "vivot",
       "calcrow": "Calcrow",
       "aperiodos": "aperiodos",
-      "obsidian-sports": "Obsidian-Sports"
+      "obsidian-sports": "Obsidian-Sports",
+      "stowgui": "stowGUI"
     },
     "emailLabel": "登録済みメールアドレス",
     "requestTypeLabel": "依頼種別",
