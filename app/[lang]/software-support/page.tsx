@@ -1,4 +1,5 @@
 import GoogleSupportForm from "../../components/google-support-form";
+import SupportAppSelect from "../../components/support-app-select";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
@@ -96,7 +97,7 @@ export default async function LocalizedSoftwareSupportPage({
 
 						<label className="field">
 							<span>{dict.softwareSupport.appLabel}</span>
-							<select name="app" required defaultValue="">
+							<SupportAppSelect>
 								<option value="" disabled>
 									{dict.softwareSupport.appPlaceholder}
 								</option>
@@ -112,7 +113,7 @@ export default async function LocalizedSoftwareSupportPage({
 								<option value="obsidian-sports">
 									{dict.softwareSupport.apps["obsidian-sports"]}
 								</option>
-							</select>
+							</SupportAppSelect>
 						</label>
 
 						<label className="field">

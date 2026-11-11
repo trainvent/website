@@ -2,7 +2,8 @@ import { defaultLocale, locales } from "@/lib/i18n";
 
 // Run while the HTML is parsed, before the English fallback can be painted.
 // Waiting for a React effect would flash English for other browser languages.
-const redirectScript = `(() => {
+function getRedirectScript(pathname: string) {
+	return `(() => {
 	const supported = ${JSON.stringify(locales)};
 	const fallback = ${JSON.stringify(defaultLocale)};
 	const languages = navigator.languages?.length
@@ -20,9 +21,12 @@ const redirectScript = `(() => {
 		window.setTimeout(() => pending.remove(), 3000);
 	}
 
-	window.location.replace("/" + locale + "/" + window.location.search + window.location.hash);
+	const basePath = ${JSON.stringify(process.env.BASE_PATH ?? "")};
+	const pathname = ${JSON.stringify(pathname)};
+	window.location.replace(basePath + "/" + locale + pathname + window.location.search + window.location.hash);
 })();`;
+}
 
-export default function RootLocaleRedirect() {
-	return <script dangerouslySetInnerHTML={{ __html: redirectScript }} />;
+export default function RootLocaleRedirect({ pathname = "/" }: { pathname?: string }) {
+	return <script dangerouslySetInnerHTML={{ __html: getRedirectScript(pathname) }} />;
 }
