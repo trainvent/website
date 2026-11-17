@@ -43,6 +43,7 @@ const projectSites: Array<{
 		url: "https://www.aperiodos.com",
 		label: "aperiodos",
 	},
+	{ key: "stowgui", url: "https://stowgui.com" },
 	{ key: "hexaclamp", url: "https://hexaclamp.com", note: "development" },
 	{ key: "portopener", url: "https://portopener.com", note: "unprototyped" },
 	{ key: "trexip", url: "https://trexip.com", note: "unprototyped" },
